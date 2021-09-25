@@ -1,7 +1,7 @@
 To conserve memory, Brackets currently disables some functionality on projects that contain over 30,000 files. This includes most features that search across multiple files, such as **Find/Replace in Files**, **Quick Edit** (inline editors), and **Quick Open**.
 
 You may see the following error message in that case:
-> This project contains more than 30,000 files. Features that operate across multiple files may be disabled or behave as if the project is empty. <a href='https://github.com/adobe/brackets/wiki/Large-Projects'>Read more about working with large projects</a>.
+> This project contains more than 30,000 files. Features that operate across multiple files may be disabled or behave as if the project is empty. <a href='https://github.com/brackets-cont/brackets/wiki/Large-Projects'>Read more about working with large projects</a>.
 
 ## Workarounds
 

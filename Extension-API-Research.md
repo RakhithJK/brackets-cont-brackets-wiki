@@ -460,7 +460,7 @@ See [the card in Trello](https://trello.com/c/qJ0TgoVu/1361-s-research-promises-
 We should be able to provide 100% backwards compatibility with new module loading while also setting the stage for cross-extension dependencies.
 
 * Update to latest cajon
-* Configure `core` package to load Brackets core modules (see [James Burke's comments](https://github.com/adobe/brackets/issues/4986) for hints)
+* Configure `core` package to load Brackets core modules (see [James Burke's comments](https://github.com/brackets-cont/brackets/issues/4986) for hints)
 * Make deprecated version of `brackets.getModule` that uses global `require` context but adds "core/" to the module.
 * Change extension loading to no longer create a new require context
 * Verify that JavaScript Code Hints still works (it loads require into a Web Worker)
@@ -471,7 +471,7 @@ See [the card in Trello](https://trello.com/c/Qk7uqIw8/991-research-extension-lo
 
 #### Events
 
-See [the Events section](https://github.com/adobe/brackets/wiki/Extension-API-Research#events) of the extension API research. I have been unable to find a library that does precisely what we want. We want an EventEmitter and global Event Bus (which is basically a singleton EventEmitter) with these features:
+See [the Events section](https://github.com/brackets-cont/brackets/wiki/Extension-API-Research#events) of the extension API research. I have been unable to find a library that does precisely what we want. We want an EventEmitter and global Event Bus (which is basically a singleton EventEmitter) with these features:
 
 * Channel/Event names follow a "dotted.name.format"
 * Events should be registered. An options object can be used for future expansion (should a channel's messages not be wrapped in try/catch for performance reasons, for example). A description of the purpose of the event and information about the data sent to the handler should be included.
@@ -519,7 +519,7 @@ In priority / implementation order:
 * Extensions authors get code hints for core APIs
 * Less verbose per-module boilerplate, matching Node module format more closely
 * **[Sample code here...](https://gist.github.com/peterflynn/6323175)**
-* [Implementation research notes here...](https://github.com/adobe/brackets/wiki/ModuleLoader)
+* [Implementation research notes here...](https://github.com/brackets-cont/brackets/wiki/ModuleLoader)
 * **Open question:** What do we do for worker-thread code? E.g. see _tern-worker.js_ in JS code hints &ndash; it looks like an unusual edge case for module loading... _(Added to [implementation research story](https://trello.com/c/Qk7uqIw8/991-research-extension-loader-implementation))._
 
 #### 2. Cross-extension dependencies

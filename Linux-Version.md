@@ -1,7 +1,7 @@
 Download Brackets
 ====
 
-* Contributors - See [Linux Development For Contributors](https://github.com/adobe/brackets/wiki/Linux-Development-for-Contributors). This is your guide to setting up a development environment, navigating your way around the code base, finding Linux specific user stories to contribute to, and updates on our progress overall.
+* Contributors - See [Linux Development For Contributors](https://github.com/brackets-cont/brackets/wiki/Linux-Development-for-Contributors). This is your guide to setting up a development environment, navigating your way around the code base, finding Linux specific user stories to contribute to, and updates on our progress overall.
 * Users - Visit [brackets.io](http://brackets.io) for 64-bit and 32-bit debian package downloads.
 
 Feature Status
@@ -9,7 +9,7 @@ Feature Status
 
 The latest Linux builds (as of Release 1.0), are **practically** at feature parity with the the Mac and Windows builds. However, there are notable features (e.g. Native Menus) that are in various stages of planning and development. To be clear though, Brackets features going forward that only rely on features in the browser can be developed in lock-step on all 3 platforms.
 
-This table lists features that appear in the Linux build but do not function as expected. Please see the [Linux Development For Contributors](https://github.com/adobe/brackets/wiki/Linux-Development-for-Contributors) for progress on these features.
+This table lists features that appear in the Linux build but do not function as expected. Please see the [Linux Development For Contributors](https://github.com/brackets-cont/brackets/wiki/Linux-Development-for-Contributors) for progress on these features.
 
 Known Issues
 ----
@@ -22,7 +22,7 @@ Known Issues
 FAQ
 ====
 
-1. **I found a bug, where do I file it?** Here [Brackets issues](https://github.com/adobe/brackets/issues)
+1. **I found a bug, where do I file it?** Here [Brackets issues](https://github.com/brackets-cont/brackets/issues)
 1. **I want to help, but I don't have any C++ or GTK experience. How can I help?** Start learning C++ and GTK! Otherwise, see the next question.
 1. **I can't help on the native shell, but how else can I help?** You can help fix issues (Linux-specific or not) in the www code located in the brackets repository.
 1. **Why isn't Linux distribution X supported?**
@@ -32,7 +32,7 @@ We're currently focused on Debian/Ubuntu since [Chromium Embedded Framework (CEF
 1. **How do I use a browser other than Google Chrome?** You can't, for now. For all platforms, Brackets only supports Chrome and Chromium.
 1. **Live Development doesn't work with the Chromium browser.  How can I fix it?**  If you want to use the Chromium browser for Live Development, you will need to add symlink the file `/usr/bin/google-chrome` to the chromium executable which is normally located at `/usr/bin/chromium-browser`. All it should take is `sudo ln -s /usr/bin/chromium-browser /usr/bin/google-chrome`.
 1. **What IDE or tools should I use to work on brackets-shell?** Anything you want.
-1. **I really want to use Brackets in my browser instead of the native shell. How do I do that?** This use case is unsupported currently. However, there is a (somewhat stale) [in-browser branch](https://github.com/adobe/brackets/tree/in-browser/) that implements required file system functionality. See this [Google Group thread](https://groups.google.com/d/msg/brackets-dev/HR4lwxEKt6M/WHj4fcstLwMJ) for an introduction.
+1. **I really want to use Brackets in my browser instead of the native shell. How do I do that?** This use case is unsupported currently. However, there is a (somewhat stale) [in-browser branch](https://github.com/brackets-cont/brackets/tree/in-browser/) that implements required file system functionality. See this [Google Group thread](https://groups.google.com/d/msg/brackets-dev/HR4lwxEKt6M/WHj4fcstLwMJ) for an introduction.
 
 Log
 ----

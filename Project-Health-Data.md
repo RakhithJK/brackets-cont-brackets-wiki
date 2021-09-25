@@ -12,7 +12,7 @@ Brackets Health Report is:
 
 * **pseudonymous** – the data sent will never include your identity or private information like filenames.
 * **Aggregated** – Brackets does not send individual events – only averages and totals.
-* **Transparent** – [the code is open-source](https://github.com/adobe/brackets/tree/master/src/extensions/default/HealthData), and you can view the data Brackets is sending via _Help > Health Report_. We'll openly share what we learn from the data so the whole community can benefit.
+* **Transparent** – [the code is open-source](https://github.com/brackets-cont/brackets/tree/master/src/extensions/default/HealthData), and you can view the data Brackets is sending via _Help > Health Report_. We'll openly share what we learn from the data so the whole community can benefit.
 * **Minimal** – every piece of information has a purpose directly tied to making Brackets better.
 * **Optional** – you can always opt out of the Brackets Health Report. But for all the reasons above, we urge you not to!
 
@@ -124,7 +124,7 @@ We'll be sure to announce any changes either on the [blog](http://blog.brackets.
 
 # Implementation Notes
 
-[View the source code here](https://github.com/adobe/brackets/tree/master/src/extensions/default/HealthData).
+[View the source code here](https://github.com/brackets-cont/brackets/tree/master/src/extensions/default/HealthData).
 
 No data is sent for at least 30 minutes the first time Brackets is launched. This ensures that users who want to opt out have time to do so. After that, data is sent every 24 hours when Brackets is running. If Brackets is not running when 24 has elapsed since the last Health Report snapshot, Brackets will send the report the next time it is launched.
 

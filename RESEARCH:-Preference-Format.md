@@ -1,6 +1,6 @@
 Status: implemented - _this page no longer maintained_
 
-**See [Preferences System documentation](https://github.com/adobe/brackets/wiki/Preferences-System) for current information.**
+**See [Preferences System documentation](https://github.com/brackets-cont/brackets/wiki/Preferences-System) for current information.**
 
 <br><br>
 ## Implementation Notes
@@ -9,7 +9,7 @@ Status: implemented - _this page no longer maintained_
 
 These notes are for the implementation that started during innovation days and is slated to be completed during Sprint 36.
 
-The first thing to note is that I've made *two* implementations. They have similar concepts at the top level, but the underlying implementations have different characteristics. The [first implementation](https://github.com/adobe/brackets/blob/6f363c93ece9fc37e757bba3e9aded5f66530ec1/src/preferences/PreferencesBase.js), which I'll call P1:
+The first thing to note is that I've made *two* implementations. They have similar concepts at the top level, but the underlying implementations have different characteristics. The [first implementation](https://github.com/brackets-cont/brackets/blob/6f363c93ece9fc37e757bba3e9aded5f66530ec1/src/preferences/PreferencesBase.js), which I'll call P1:
 
 1. Was straightforward
 2. Has to traverse the data structures on every preference look up
@@ -17,7 +17,7 @@ The first thing to note is that I've made *two* implementations. They have simil
 4. supports dynamic changes to the parts of a preference manager
 5. Works
 
-The [second implementation](https://github.com/adobe/brackets/blob/91ca1d1b36bf89cc5aabe21f6726d27fcb1e6c9a/src/preferences/PreferencesBase.js), henceforth P2:
+The [second implementation](https://github.com/brackets-cont/brackets/blob/91ca1d1b36bf89cc5aabe21f6726d27fcb1e6c9a/src/preferences/PreferencesBase.js), henceforth P2:
 
 1. Has a bit more indirection (but is only 70 lines longer)
 2. Returns the value of a pref in a single object lookup
@@ -79,7 +79,7 @@ My thinking is not that we directly support EditorConfig at this time, but rathe
 
 PathLayer supports setting preferences based on the file path.
 
-For the time being, we have choosen to support *only* the PathLayer, and that is likely adequate. The advantage to also enabling the LanguageLayer is that some languages are invoked by multiple extensions and the user would not need to explicitly pick which files are affected by a setting. Also, using the PathLayer from user-level preferences doesn't make a lot of sense whereas using the LanguageLayer does. There is [an issue open for resurrecting the LanguageLayer](https://github.com/adobe/brackets/issues/6558).
+For the time being, we have choosen to support *only* the PathLayer, and that is likely adequate. The advantage to also enabling the LanguageLayer is that some languages are invoked by multiple extensions and the user would not need to explicitly pick which files are affected by a setting. Also, using the PathLayer from user-level preferences doesn't make a lot of sense whereas using the LanguageLayer does. There is [an issue open for resurrecting the LanguageLayer](https://github.com/brackets-cont/brackets/issues/6558).
 
 ### Setting Preferences
 
@@ -110,7 +110,7 @@ View state *can* (and I'd argue, should) be managed by the new PreferencesManage
 
 ### Conversion
 
-There is a [conversion function in PreferencesManager](https://github.com/adobe/brackets/blob/1484c427534c2a88ecc5cc77b619eddeaf7b1b00/src/preferences/PreferencesManager.js#L275) for converting from the old format prefs to the new.
+There is a [conversion function in PreferencesManager](https://github.com/brackets-cont/brackets/blob/1484c427534c2a88ecc5cc77b619eddeaf7b1b00/src/preferences/PreferencesManager.js#L275) for converting from the old format prefs to the new.
 
 # Original Research Results
 
@@ -122,7 +122,7 @@ This proposal does not attempt to cover the resulting UI changes except to the e
 
 The body of this proposal describes the conditions and the details of the new system.  The appendices provide additional insight into how other products (ie. Adobe CC and competitive) implement their preference settings.
 
-For more information, please see this [research page](https://github.com/adobe/brackets/wiki/Preferences) on the Brackets team Wiki.
+For more information, please see this [research page](https://github.com/brackets-cont/brackets/wiki/Preferences) on the Brackets team Wiki.
 
 ## B. Proposed Use Cases and Workflows
 
@@ -178,7 +178,7 @@ Currently, Brackets serializes its preferences into a not-easily-user-editable, 
 
 To support this new feature epic, we propose to extend this implementation in the following ways:
 
-First, we propose updating the Brackets' existing PreferenceStorage.js implementation to use the native file system APIs (or [Glenn's upcoming, evolved file system](https://github.com/adobe/brackets/wiki/File-System)) to replace the currently used localStorage file i/o.  Rather than a single, binary localStorage database, the new implementation will serialize individual JSON files, named `brackets.settings.json` that will contain text-based, user-readable/-editable JSON name-value pairs.
+First, we propose updating the Brackets' existing PreferenceStorage.js implementation to use the native file system APIs (or [Glenn's upcoming, evolved file system](https://github.com/brackets-cont/brackets/wiki/File-System)) to replace the currently used localStorage file i/o.  Rather than a single, binary localStorage database, the new implementation will serialize individual JSON files, named `brackets.settings.json` that will contain text-based, user-readable/-editable JSON name-value pairs.
 
 _**[Glenn]** You mention above that things like full file paths and panel sizes should not be saved in preferences, but the proposal is to move **all** of existing preferences to a `brackets.settings.json` file. Since the current prefs store full paths and panel sizes, what are the plans for these items?_
 

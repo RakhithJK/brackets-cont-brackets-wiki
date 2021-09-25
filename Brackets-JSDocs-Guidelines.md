@@ -46,4 +46,4 @@ If you have the apify app installed, then you can use the [Brackets Apify extens
 
 The [Grunt Apify app](https://github.com/jbalsas/grunt-apify) is for automating the generation of API Docs.
 
-See the [Generating Brackets API Docs page](https://github.com/adobe/brackets/wiki/Generating-Brackets-API-Docs) for how to update docs to be loaded to http://brackets.io/docs/current.
+See the [Generating Brackets API Docs page](https://github.com/brackets-cont/brackets/wiki/Generating-Brackets-API-Docs) for how to update docs to be loaded to http://brackets.io/docs/current.

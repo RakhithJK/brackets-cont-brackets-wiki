@@ -16,7 +16,7 @@ We think this change can achieve all of the following goals:
 If you have written extensions, here's what you need to know...
 
 You can use this branch to test your extensions with the new API behavior:
-https://github.com/adobe/brackets/tree/couzteau/preview-images
+https://github.com/brackets-cont/brackets/tree/couzteau/preview-images
 
 
 ### EditorManager getters
@@ -92,4 +92,4 @@ DocumentCommandHandlers.doOpen will own the responsibility to determine wether a
 ![2](https://trello-attachments.s3.amazonaws.com/4f90a6d98f77505d7940ce88/4f91ec23c0e7c29036c1e92f/e3a0f30e8308702b98469e910d0c7a5f/Brackets_ImageView_004.png)
 ![3](https://trello-attachments.s3.amazonaws.com/4f90a6d98f77505d7940ce88/4f91ec23c0e7c29036c1e92f/468e703d2a78ee5f0b7f9774331483ca/Brackets_ImageView_003.png)
 
-[Further discussion on this story](https://github.com/adobe/brackets/wiki/Preview-Images-Research----old-drafts)
+[Further discussion on this story](https://github.com/brackets-cont/brackets/wiki/Preview-Images-Research----old-drafts)

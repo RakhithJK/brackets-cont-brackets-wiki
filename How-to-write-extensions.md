@@ -1,4 +1,4 @@
-If you'd like to develop a theme, take a look at [Creating Themes](https://github.com/adobe/brackets/wiki/Creating+Themes)
+If you'd like to develop a theme, take a look at [Creating Themes](https://github.com/brackets-cont/brackets/wiki/Creating+Themes)
 
 There are three stages to developing an extension:
 
@@ -8,7 +8,7 @@ There are three stages to developing an extension:
 
 Follow these links to the sections below for details!
 
-Looking for inspiration? Check out the **[Extension Ideas list](https://github.com/adobe/brackets/issues?q=label%3A%22Extension+Idea%22)**.
+Looking for inspiration? Check out the **[Extension Ideas list](https://github.com/brackets-cont/brackets/issues?q=label%3A%22Extension+Idea%22)**.
 
 ## Creating an Extension
 
@@ -17,7 +17,7 @@ Looking for inspiration? Check out the **[Extension Ideas list](https://github.c
 * For a quick start, you can paste in the [[Simple "Hello World" extension]] or the code from an [existing extension](https://brackets-registry.aboutweb.com/) that is similar to what you want to do.
 * If you're working on anything big we recommend you post to the [brackets-dev Google group](http://groups.google.com/group/brackets-dev) or the [#brackets IRC channel on freenode](http://freenode.net) early on so you can get feedback (there may be others working on similar ideas!).
 
-> \* Note: Because Extension Manager lets you delete extensions from this location, in the long run it's _**safer** to develop inside the `src/extensions/dev`_ folder. The best way to do that is to [clone the Brackets source](https://github.com/adobe/brackets/wiki/How-to-Hack-on-Brackets) and run from that copy. This also makes it easy to test your extensions with upcoming Brackets changes before they're released.
+> \* Note: Because Extension Manager lets you delete extensions from this location, in the long run it's _**safer** to develop inside the `src/extensions/dev`_ folder. The best way to do that is to [clone the Brackets source](https://github.com/brackets-cont/brackets/wiki/How-to-Hack-on-Brackets) and run from that copy. This also makes it easy to test your extensions with upcoming Brackets changes before they're released.
 
 ## Testing/Debugging Workflow
 
@@ -33,7 +33,7 @@ You can also [write unit tests for your extension](Extension Unit Tests).
 
 ## Publishing Extensions
 
-1. Add a **[package.json file](https://github.com/adobe/brackets/wiki/Extension-package-format#packagejson-format)** next to your main.js
+1. Add a **[package.json file](https://github.com/brackets-cont/brackets/wiki/Extension-package-format#packagejson-format)** next to your main.js
 2. ZIP up your entire extension folder (the GitHub "Download ZIP" button is handy for this) or use the command `git archive --format zip -o yourextension.zip master` to generate a zip file.
     * Note: we've had difficulty with ZIP files created from Finder on the Mac. If you get an error when uploading your ZIP file, try creating it from the command line instead.
     * If your extension utilizes git submodules, they must be wrapped in the ZIP. For a solution, refer to [this blog](http://www.topbug.net/blog/2012/03/31/archive-a-git-superproject-and-its-submodules) and use [git-archive-all](https://github.com/Kentzo/git-archive-all).
@@ -44,7 +44,7 @@ For more, see [[Extension Registry Help]].
 
 ## Common How-Tos
 
-**API docs** are available [online](http://brackets.io/docs/current) or as JSDoc comments inline in the [Brackets source code](https://github.com/adobe/brackets/tree/master/src).
+**API docs** are available [online](http://brackets.io/docs/current) or as JSDoc comments inline in the [Brackets source code](https://github.com/brackets-cont/brackets/tree/master/src).
 
 ### Using modules
 
@@ -68,7 +68,7 @@ As a convenience, ```addMenuItem()``` also lets you create a keyboard shortcut f
 
 **Add a menu divider** Get a top level or context menu as explained above.  Then add a menu dividers via ```theMenu.addMenuDivider()```. It will default to the last position currently in the menu.  You have the option of placing it with the position parameter ```first``` and ```last```, which will place the divider accordingly. Additionally, you can set position parameter to ```before``` and ```after```, pass in a Command ID, and place the divider accordingly.  
 
-**Add a keyboard shortcut:** To add a keyboard shortcut without any related menu item, call ```KeyBindingManager.addBinding()``` directly, linking a shortcut to your Command id. Be sure to use the [Brackets Shortcuts](https://github.com/adobe/brackets/wiki/Brackets-Shortcuts) page to see which shortcuts are available and to add the shortcuts that you use to the list.
+**Add a keyboard shortcut:** To add a keyboard shortcut without any related menu item, call ```KeyBindingManager.addBinding()``` directly, linking a shortcut to your Command id. Be sure to use the [Brackets Shortcuts](https://github.com/brackets-cont/brackets/wiki/Brackets-Shortcuts) page to see which shortcuts are available and to add the shortcuts that you use to the list.
 
 To decline a keyboard event and allow other parts of Brackets to handle it, make your Command handler return a `$.Promise` that is _already_ rejected at the time you return it. (This is useful if you want to override editing keys like Enter only when the cursor lies in certain places, and allow the default behavior in other cases; or always override a key in the code editor but allow default behavior in simpler textfields). _(Note: requires Sprint 18 or later)_
 
@@ -96,7 +96,7 @@ For each API listed, see [documentation](http://brackets.io/docs/current/) for m
 
 **Quick Docs:** Similar to Quick Edit, but register your provider with `EditorManager.registerInlineDocsProvider()` instead.
 
-**Quick Find Definition:** To provide quick symbol navigation for a new language, use `QuickOpen.addQuickOpenPlugin()`. Register for a specific language id and only return true from `match()` when an "@" prefix is present (see [CSS support](https://github.com/adobe/brackets/blob/master/src/extensions/default/QuickOpenCSS/main.js) for a simple example).
+**Quick Find Definition:** To provide quick symbol navigation for a new language, use `QuickOpen.addQuickOpenPlugin()`. Register for a specific language id and only return true from `match()` when an "@" prefix is present (see [CSS support](https://github.com/brackets-cont/brackets/blob/master/src/extensions/default/QuickOpenCSS/main.js) for a simple example).
 
 **Quick Open:** To add a new _global_ search feature (like Quick Open), use `QuickOpen.addQuickOpenPlugin()` with an empty `languageIds` array. Pick a new, unique prefix for `match()` to respond to, and register a new command that invokes `QuickOpen.beginSearch()` with your custom prefix. (See the [File Navigation Shortcuts](https://github.com/peterflynn/brackets-editor-nav/blob/master/main.js#L128) extension for a simple example).
 
@@ -156,7 +156,7 @@ prefs.save();
 
 ### Accessing Node APIs
 
-Brackets includes a built-in [Node.js](http://nodejs.org/) server that runs as a side process.  Your extension can include code that runs in Node &ndash; accessing useful Node APIs and pulling in helpful NPM libraries.  [Read more on running code in Brackets' Node instance...](https://github.com/adobe/brackets/wiki/Brackets-Node-Process:-Overview-for-Developers#usage-example)
+Brackets includes a built-in [Node.js](http://nodejs.org/) server that runs as a side process.  Your extension can include code that runs in Node &ndash; accessing useful Node APIs and pulling in helpful NPM libraries.  [Read more on running code in Brackets' Node instance...](https://github.com/brackets-cont/brackets/wiki/Brackets-Node-Process:-Overview-for-Developers#usage-example)
 
 ### Further reading
 

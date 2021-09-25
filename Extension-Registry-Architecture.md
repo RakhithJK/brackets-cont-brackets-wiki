@@ -1,6 +1,6 @@
 Status: In Development
 
-The extension registry needs to implement the [server API](https://github.com/adobe/brackets/wiki/Extension-Repository-Server-API). We want the registry to be:
+The extension registry needs to implement the [server API](https://github.com/brackets-cont/brackets/wiki/Extension-Repository-Server-API). We want the registry to be:
 
 * fast
 * simple
@@ -26,7 +26,7 @@ Node offers a number of features that make it well-suited to serving as the plat
 * Everyone on the team knows JavaScript already :)
 * Node's single-threaded nature makes it straightforward to synchronize writes to the registry
 
-The registry server code will be in the [brackets-registry repository](https://github.com/adobe/brackets-registry). We have chosen [Express](http://expressjs.com/) as the web framework and will use [Handlebars templates](https://github.com/donpark/hbs).
+The registry server code will be in the [brackets-registry repository](https://github.com/brackets-cont/brackets-registry). We have chosen [Express](http://expressjs.com/) as the web framework and will use [Handlebars templates](https://github.com/donpark/hbs).
 
 ## Speed and Reliability: S3-based Repository ##
 

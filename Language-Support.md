@@ -1,8 +1,8 @@
 Starting with release 0.39, file extensions and file names can be mapped to languages via preferences. See [Preferences](#preferences) below.
 
-Extensions can add basic language support &ndash; like syntax highlighting and comment toggling &ndash; via the [LanguageManager](https://github.com/adobe/brackets/blob/master/src/language/LanguageManager.js) API. This page explains how to use LanguageManager, and documents how language support in Brackets is currently implemented.
+Extensions can add basic language support &ndash; like syntax highlighting and comment toggling &ndash; via the [LanguageManager](https://github.com/brackets-cont/brackets/blob/master/src/language/LanguageManager.js) API. This page explains how to use LanguageManager, and documents how language support in Brackets is currently implemented.
 
-Some languages are built into core Brackets by default (for a list, see [languages.json](https://github.com/adobe/brackets/blob/master/src/language/languages.json)). A small set of these (HTML, JS, CSS) support richer editing features such as Quick Edit, Quick Find Definition, code hints, and Live Preview. _Some_ of those capabilities are extensible for new languages already (see [Extending specific Brackets features](https://github.com/adobe/brackets/wiki/How%20to%20write%20extensions#extending-specific-brackets-features)); others are not ready to support additional languages yet ([Language Support Changes](Language Support Changes) lists proposals for making the remaining rich functionality extensible).
+Some languages are built into core Brackets by default (for a list, see [languages.json](https://github.com/brackets-cont/brackets/blob/master/src/language/languages.json)). A small set of these (HTML, JS, CSS) support richer editing features such as Quick Edit, Quick Find Definition, code hints, and Live Preview. _Some_ of those capabilities are extensible for new languages already (see [Extending specific Brackets features](https://github.com/brackets-cont/brackets/wiki/How%20to%20write%20extensions#extending-specific-brackets-features)); others are not ready to support additional languages yet ([Language Support Changes](Language Support Changes) lists proposals for making the remaining rich functionality extensible).
 
 ## Preferences
 
@@ -21,7 +21,7 @@ If you have a file that is in a language that Brackets already has support for, 
 
 With that file in your project, or those preferences in your user-level brackets.json file, any time you open `something.foo`, Brackets will treat the file as JavaScript. If you open `pavement`, Brackets will treat the file as Python.
 
-For these preferences, you map from the file name or extension to a language name as defined in [languages.json](https://github.com/adobe/brackets/blob/master/src/language/languages.json) or in an extension that provides support for the language you're interested in.
+For these preferences, you map from the file name or extension to a language name as defined in [languages.json](https://github.com/brackets-cont/brackets/blob/master/src/language/languages.json) or in an extension that provides support for the language you're interested in.
 
 ## Defining a new language
 
@@ -59,7 +59,7 @@ language.setLineCommentSyntax(["#"]);
 language.setBlockCommentSyntax("###", "###");
 ```
 
-For further details, please refer to the comments in [LanguageManager.js](https://github.com/adobe/brackets/blob/master/src/language/LanguageManager.js).
+For further details, please refer to the comments in [LanguageManager.js](https://github.com/brackets-cont/brackets/blob/master/src/language/LanguageManager.js).
 
 
 ## Using an existing language
@@ -104,7 +104,7 @@ A ``Language`` object contains model data for a language. The following methods 
 
 The remainder of this page documents what parts of language support are hardcoded and need to be refactored to allow extensibility, or require new capabilities before they can be refactored. See also [[Language Support Changes]].
 
-These notes are based on the [LESS Refactoring](https://github.com/adobe/brackets/pull/2844) work.
+These notes are based on the [LESS Refactoring](https://github.com/brackets-cont/brackets/pull/2844) work.
 
 
 ### No changes required
@@ -134,20 +134,20 @@ These are okay the way they are.
 
 These need to be changed to use existing functionality.
 
-* __Done:__ brackets.js __requires language/JSLintUtils.js__. This can be refactored into an extension without introducing new APIs. See [issue #3094](https://github.com/adobe/brackets/issues/3094) and [pull request #3143](https://github.com/adobe/brackets/pull/3143).
+* __Done:__ brackets.js __requires language/JSLintUtils.js__. This can be refactored into an extension without introducing new APIs. See [issue #3094](https://github.com/brackets-cont/brackets/issues/3094) and [pull request #3143](https://github.com/brackets-cont/brackets/pull/3143).
 * brackets.js __requires editor/CSSInlineEditor.js__. It should first call __require("editor/MultiRangeInlineEditor")__ (loaded by CSSInlineEditor.js), since this defines shortcuts for inline editor navigation. Then the CSSInlineEditor could be moved to an extension.
 * editor/CodeHintManager.js
-    * _In progress:_ Method `registerHintProvider` **registers hint providers by mode**. This can simply be changed to check for language IDs since currently all modes this function is being called with (either by Brackets or the known extensions) belong to a language with an equal ID ("css", "html", "javascript"). See [issue #3085](https://github.com/adobe/brackets/issues/3085) and [pull request #3270](https://github.com/adobe/brackets/pull/3270).
+    * _In progress:_ Method `registerHintProvider` **registers hint providers by mode**. This can simply be changed to check for language IDs since currently all modes this function is being called with (either by Brackets or the known extensions) belong to a language with an equal ID ("css", "html", "javascript"). See [issue #3085](https://github.com/brackets-cont/brackets/issues/3085) and [pull request #3270](https://github.com/brackets-cont/brackets/pull/3270).
 * __Done:__ editor/CSSInlineEditor.js
     * Inline editor provider `htmlToCSSProvider` **decides to open based on the editor mode**. This can simply be changed to check for the language ID to be "html" (via `editor.getLanguageForSelection().getId()`).
-* project/FileIndexManager.js. See [pull request #3301](https://github.com/adobe/brackets/pull/3301).
+* project/FileIndexManager.js. See [pull request #3301](https://github.com/brackets-cont/brackets/pull/3301).
     * Maintains an index called "css" using only files ending with ".css", i.e. **uses file extensions**. The call to add this index should be moved to CSSUtils (the only place this index is used at the moment). In addition, the filter function can be changed to use the language API: `return LanguageManager.getLanguageForPath(entry.name).getId() === "css";`
 * __Done:__ language/JSLintUtils.js
-    * Method `run` to run JSLint on the current document. Checks if the extension is .js, therefore **uses file extensions**. See [issue #3094](https://github.com/adobe/brackets/issues/3094) and [pull request #3143](https://github.com/adobe/brackets/pull/3143).
+    * Method `run` to run JSLint on the current document. Checks if the extension is .js, therefore **uses file extensions**. See [issue #3094](https://github.com/brackets-cont/brackets/issues/3094) and [pull request #3143](https://github.com/brackets-cont/brackets/pull/3143).
 * language/JSUtils.js
     * Method `findMatchingFunctions` finds all functions with a specified name within a set of files. Filters these files by checking that the file extension is ".js", i.e. **uses file extensions**. This should use the language API instead (determine the language for the file and check whether that language has the ID "javascript").
 * __Done:__ search/QuickOpen
-    * Method `addQuickOpenPlugin` **uses file extensions** to register plugins. It should use language IDs instead. It is currently only used with file extensions "css", "js" and "html". For "css" and "html", the calling code can remain unchanged, transparently changing the meaning of the string from file extension to language ID. For "js", the calling code needs to use "javascript" instead. Currently `extensions/default/QuickOpenJavaScript/main.js` is the only place in either Brackets core or the extensions that uses this file extension. See [pull request #3301](https://github.com/adobe/brackets/pull/3301).
+    * Method `addQuickOpenPlugin` **uses file extensions** to register plugins. It should use language IDs instead. It is currently only used with file extensions "css", "js" and "html". For "css" and "html", the calling code can remain unchanged, transparently changing the meaning of the string from file extension to language ID. For "js", the calling code needs to use "javascript" instead. Currently `extensions/default/QuickOpenJavaScript/main.js` is the only place in either Brackets core or the extensions that uses this file extension. See [pull request #3301](https://github.com/brackets-cont/brackets/pull/3301).
 
 
 ### Issues that should be addressed as part of other planned work
@@ -156,7 +156,7 @@ These are places that affect areas we already have plans to work on, and where i
 
 * document/DocumentCommandHandlers.js
     * Method `_handleNewItemInProject` hardcodes ".js"/"Untitled.js" as the default file extension/name for new files. Changing this to work as proposed in [card #291](https://trello.com/c/WUdhIRlh) would remove this issue.
-* language/{CSSUtils|HTMLUtils|JSUtils}.js should be provided by default extensions. For this to work, all other parts that depend on them (ideally only other extensions) need to be able to access these extensions. Supporting this is part of the [ongoing extensions research](https://github.com/adobe/brackets/wiki/Extensions2).
+* language/{CSSUtils|HTMLUtils|JSUtils}.js should be provided by default extensions. For this to work, all other parts that depend on them (ideally only other extensions) need to be able to access these extensions. Supporting this is part of the [ongoing extensions research](https://github.com/brackets-cont/brackets/wiki/Extensions2).
     * brackets.js __loads JSUtils.js__. This is only necessary so extensions can load it synchronously via `JSUtils = brackets.getModule("language/JSUtils")` instead of asynchronously via `brackets.getModule(["language/JSUtils"], function (JSUtils) { ... })`. This can be removed once JSUtils can be loaded as an extension.
     * brackets.js __exports CSSUtils and JSUtils for tests__. Tests should instead load these modules from extensions, but this depends on the point above.
     * editor/CSSInlineEditor.js __relies on HTMLUtils and CSSUtils__.
@@ -165,7 +165,7 @@ These are places that affect areas we already have plans to work on, and where i
 * utils/ExtensionUtils
     * Method `loadStyleSheet` **uses file extensions** to support LESS files. Once we have a compiler infrastructure in place, any path could be mapped to a language, and if there's a compiler to CSS for that language, it should be used. Note that is only relevant for extension developers.
 * utils/TokenUtils
-    * Method `getModeAt` **has a hardcoded special case for XML**. Once the other places are no longer based on this mode, but on the language, this can be removed to just report "xml". For HTML documents, the language manager maps the "xml" mode to the HTML language. XML documents are not affected by this. See [issue #2965](https://github.com/adobe/brackets/issues/2965) for a related discussion.
+    * Method `getModeAt` **has a hardcoded special case for XML**. Once the other places are no longer based on this mode, but on the language, this can be removed to just report "xml". For HTML documents, the language manager maps the "xml" mode to the HTML language. XML documents are not affected by this. See [issue #2965](https://github.com/brackets-cont/brackets/issues/2965) for a related discussion.
 
 
 ### Code that relies on the current editor state
@@ -188,7 +188,7 @@ These places currently access CodeMirror's state directly and are therefore not 
 This relates to places that require information about the semantics of code beyond what is provided by CodeMirror.
 
 * editor/Editor.js
-    * Method `_checkElectricChars` adjusts the current line's indentation when blocks are ended. **The characters to detect block boundaries are hard-coded - `]`, `{`, `}` and `)`.** The function is supposed to replace CodeMirror's own implementation, citing [bugs](https://github.com/adobe/brackets/pull/250). In contrast to `_checkElectricChars`, CodeMirror's own implementation does not re-indent the line after typing "]" in a JavaScript file, so for now we cannot remove our own implementation without removing existing functionality.
+    * Method `_checkElectricChars` adjusts the current line's indentation when blocks are ended. **The characters to detect block boundaries are hard-coded - `]`, `{`, `}` and `)`.** The function is supposed to replace CodeMirror's own implementation, citing [bugs](https://github.com/brackets-cont/brackets/pull/250). In contrast to `_checkElectricChars`, CodeMirror's own implementation does not re-indent the line after typing "]" in a JavaScript file, so for now we cannot remove our own implementation without removing existing functionality.
 
 
 ### Starting Live Preview

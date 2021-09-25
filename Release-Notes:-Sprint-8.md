@@ -4,9 +4,9 @@ What's new in Sprint 8
 We didn't add major new user-visible features in Sprint 8. Our main goals for the sprint were architectural:
 * Make progress on the extensibility architecture of Brackets
     * Created some prototype extensions in order to see what we need to improve. These have been checked into master in the `extensions/disabled` folder; to try them out, copy them to the `extensions/user` folder.
-    * Wrote up some notes on ways we should improve extensibility: [Extension Experiments](https://github.com/adobe/brackets/wiki/Extension-Experiments)
+    * Wrote up some notes on ways we should improve extensibility: [Extension Experiments](https://github.com/brackets-cont/brackets/wiki/Extension-Experiments)
 * Begin investigating how to instrument Brackets for performance: file open, typing speed
-    * Typing speed <https://github.com/adobe/brackets/wiki/Typing-Speed-Mini-Spec>
+    * Typing speed <https://github.com/brackets-cont/brackets/wiki/Typing-Speed-Mini-Spec>
 
 In addition, we began accepting contributions from the open source community as well as other people outside the original Brackets team. Here are a few of the more notable ones:
 * [ryanstewart](http://github.com/ryanstewart) made the sidebar resizable
@@ -16,7 +16,7 @@ In addition, we began accepting contributions from the open source community as 
 
 Bugs fixed in Sprint 8
 ----------------------
-See [closed sprint 8 bugs](https://github.com/adobe/brackets/issues?labels=sprint+8&milestone=&page=1&state=closed). A few other bugs might have been fixed that weren't tagged.
+See [closed sprint 8 bugs](https://github.com/brackets-cont/brackets/issues?labels=sprint+8&milestone=&page=1&state=closed). A few other bugs might have been fixed that weren't tagged.
 
 Known issues in Sprint 8
 ------------------------

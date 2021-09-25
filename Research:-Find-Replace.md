@@ -9,10 +9,10 @@ In proposed priority order:
 #### Search bar UI
 * [ReplaceUI] Single-stage Replace UI with Find/Replace fields visible at same time. Incremental search with highlighting during Replace. (Or even eliminate distinction between Find & Replace modes altogether?) https://trello.com/c/7TjNR4lD/361-3-incremental-search and https://trello.com/c/MbM48GiP/262-replace-in-single-file
     * Improve overall visual polish at the same time
-    * Keyboard shortcuts during Replace - https://trello.com/c/7HVPLeer/975-replace-dialog-keyboard-support -> PR in progress: https://github.com/adobe/brackets/pull/5969
+    * Keyboard shortcuts during Replace - https://trello.com/c/7HVPLeer/975-replace-dialog-keyboard-support -> PR in progress: https://github.com/brackets-cont/brackets/pull/5969
     * Gesture to turn Find to a replace operation (if not already unified by previous story)
 * [QueryOptions] Explicit toggles for case-sensitive & regexp - https://trello.com/c/MBroELwS/260-3-find-in-current-file, https://trello.com/c/VTWxph8k/306-search-replace-w-regular-expressions
-* [SearchUI] Enter key should not close modal - https://github.com/adobe/brackets/issues/2299 and https://trello.com/c/MBroELwS
+* [SearchUI] Enter key should not close modal - https://github.com/brackets-cont/brackets/issues/2299 and https://trello.com/c/MBroELwS
 * [Maintainability] Unit tests for existing functionality (see "dangling stories" list below, for starters)
 
 #### Navigation polish & history 
@@ -60,7 +60,7 @@ In proposed priority order:
 
 These are generally done, but they lack unit tests and may need some UI polish:
 
-* Maintain result list as text edited (or files deleted/added/renamed) https://trello.com/c/AFF2Lnll/266-8-find-in-project-aka-find-in-files from https://github.com/adobe/brackets/issues/780
+* Maintain result list as text edited (or files deleted/added/renamed) https://trello.com/c/AFF2Lnll/266-8-find-in-project-aka-find-in-files from https://github.com/brackets-cont/brackets/issues/780
 * Find all results in single/current file https://trello.com/c/FIQZdqrH/308-1-71-single-file-find-all
 * Incremental search https://trello.com/c/7TjNR4lD/361-3-incremental-search
 * Replace All https://trello.com/c/DdGMEh3f/348-3-111-replace-all-as-a-role-i-want-to-feature-so-that-value
@@ -85,7 +85,7 @@ These are generally done, but they lack unit tests and may need some UI polish:
 * [Highlighting] Improve highlighting performance & raise result max limit
 * [ResultsList] Result list history - https://trello.com/c/KY4eJL7V (not query history, but essentially cached results)
 * [ResultsList] Concatenated / multiple results lists - https://trello.com/c/KY4eJL7V/1038-find-in-files-preserve-previous-results
-* [ResultsList] Display the first result - https://trello.com/c/AFF2Lnll/266-8-find-in-project-aka-find-in-files from https://github.com/adobe/brackets/issues/995 - _or_ if single result, jump to it, else show list (like WebStorm)
+* [ResultsList] Display the first result - https://trello.com/c/AFF2Lnll/266-8-find-in-project-aka-find-in-files from https://github.com/brackets-cont/brackets/issues/995 - _or_ if single result, jump to it, else show list (like WebStorm)
 
 ## Existing Stories
 

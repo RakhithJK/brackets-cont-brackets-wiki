@@ -79,4 +79,4 @@ It would be nice if the shell color could change in some fashion to suit the the
 
 ## Implementation
 
-Themes in Brackets core [PR](https://github.com/adobe/brackets/pull/7616)
+Themes in Brackets core [PR](https://github.com/brackets-cont/brackets/pull/7616)

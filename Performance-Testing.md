@@ -19,7 +19,7 @@ So, believe it or not... the way we've gotten more accurate data is by recording
 <a name="proposals"></a>**Optimization proposals**
 
 [Alex](https://github.com/chicu123) has proposed three changes to improve typing & scrolling performance:
-* [#1007](https://github.com/adobe/brackets/pull/1007): Hoist the CodeMirror instances out of the layout. Place them near the root of the document and programmatically move/size them as appropriate.
+* [#1007](https://github.com/brackets-cont/brackets/pull/1007): Hoist the CodeMirror instances out of the layout. Place them near the root of the document and programmatically move/size them as appropriate.
     * _Test results:_ Scrolling framerate is roughly doubled -- basically pegged at 60 Hz now. Typing response time is cut by 1/3, putting Brackets roughly on par with the average text editor.
     * _Risks/downsides:_ The editor reacts to horizontal resizing less smoothly than before.  Noticeable mainly by looking at the vertical scrollbar, or moreso with the inline editor rule list if one is open.  Unusual DOM placement makes CSS selectors and event bubbling a bit counterintuitive.  The patch also has a couple bugs that are presumably fixable (breaks project panel resizing; breaks quick open popup; hides the "[ ]" background).
     * _Next steps:_

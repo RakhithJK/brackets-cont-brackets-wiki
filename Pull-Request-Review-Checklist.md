@@ -1,4 +1,4 @@
-This checklist is for Brackets Committers to assist in reviewing pull requests to ensure that they are ready to merge. It has some elements in common with the [Pull Request Checklist](https://github.com/adobe/brackets/wiki/Pull-Request-Checklist) because committers have a chance to double check work before it goes in.
+This checklist is for Brackets Committers to assist in reviewing pull requests to ensure that they are ready to merge. It has some elements in common with the [Pull Request Checklist](https://github.com/brackets-cont/brackets/wiki/Pull-Request-Checklist) because committers have a chance to double check work before it goes in.
 
 How to use the checklist:
 
@@ -13,7 +13,7 @@ How to use the checklist:
 * Was there new third-party code? If so, what's the license? (ideally MIT or BSD)
 * Does this change belong in core? Some features would be better as an extension - could it be done as an extension by separating out a more limited set of core changes (e.g. more generic APIs)?
 * Any major architectural or UI changes have been discussed in the forum?
-* All new APIs are documented in the [Release Notes] (https://github.com/adobe/brackets/wiki/Release-Notes)?
+* All new APIs are documented in the [Release Notes] (https://github.com/brackets-cont/brackets/wiki/Release-Notes)?
 
 ### Testing the change ###
 

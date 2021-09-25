@@ -2,7 +2,7 @@
 * [[How to Hack on Brackets]]
 * [[How to write extensions]]
 * [[Brackets Development How Tos]]
-* [Brackets on Hacker Notes](http://www.thehackernotes.com/adobe/brackets)
+* [Brackets on Hacker Notes](http://www.thehackernotes.com/brackets-cont/brackets)
 
 ### Videos
 See **[Videos page](Videos)** for a full listing of intro videos, conference talks, cools demos, etc.

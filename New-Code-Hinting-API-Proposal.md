@@ -1,5 +1,5 @@
 <br>
-_These APIs were implemented in Sprint 18._ For background on the direction our code hinting APIs are going, see [Code Hinting Functional Specifications](https://github.com/adobe/brackets/wiki/Code-Hinting-Functional-Specifications). 
+_These APIs were implemented in Sprint 18._ For background on the direction our code hinting APIs are going, see [Code Hinting Functional Specifications](https://github.com/brackets-cont/brackets/wiki/Code-Hinting-Functional-Specifications). 
 
 ## `CodeHintManager.registerHintProvider(provider, modes, priority)`
 

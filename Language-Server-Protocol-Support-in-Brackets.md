@@ -50,7 +50,7 @@ The actual LanguageClient is hosted within the node context. This client is resp
 
 Once the server is spawned and LanguageClient created, we get an interface object that allows us to send and receive requests and notifications to and from the server using the LanguageClient.
 
-This interface is an instance of [LanguageClientWrapper](https://github.com/adobe/brackets/blob/master/src/languageTools/LanguageClientWrapper.js).
+This interface is an instance of [LanguageClientWrapper](https://github.com/brackets-cont/brackets/blob/master/src/languageTools/LanguageClientWrapper.js).
 
 The entire communications logic is abstracted and is Promise based.
 
@@ -61,7 +61,7 @@ Refer to the control flow diagram below to understand how LSP works in Brackets.
 ## Creating an LSP Extension
 
 **Pre-requisites**: 
-[How to write Brackets Extensions](https://github.com/adobe/brackets/wiki/How-to-Write-Extensions) 
+[How to write Brackets Extensions](https://github.com/brackets-cont/brackets/wiki/How-to-Write-Extensions) 
 
 The Language Client in Brackets abstracts the communication between the Extension context in Brackets and Node, streamlining the connection between the Extension and the Language Server.
 
@@ -82,7 +82,7 @@ Bare minimally the developer will need two files to create a LanguageClient exte
       * Manage the lifecycle of Language Server, using the client.
       * Interact with Brackets’ core and Language Server to provide tooling.
 
-        See reference [here](https://github.com/adobe/brackets/blob/master/test/spec/LanguageTools-test-files/clients/FeatureClient/main.js)
+        See reference [here](https://github.com/brackets-cont/brackets/blob/master/test/spec/LanguageTools-test-files/clients/FeatureClient/main.js)
 
   2. **client.js**
       * Contains Information specific to launching a Language Server
@@ -90,7 +90,7 @@ Bare minimally the developer will need two files to create a LanguageClient exte
       * Handles any other to-and-fro of information between Brackets and Node which might be required before spawning the server, like ‘runtime’ path, specific options etc.
       * Infrastructure provided as part of LSP.
 
-        See reference [here](https://github.com/adobe/brackets/blob/master/test/spec/LanguageTools-test-files/clients/FeatureClient/client.js)
+        See reference [here](https://github.com/brackets-cont/brackets/blob/master/test/spec/LanguageTools-test-files/clients/FeatureClient/client.js)
 
 ### Interfacing with Language Server
 
@@ -186,10 +186,10 @@ function init(domainManager) {
 client.setOptions(options); //We generally load the options later when the options
 // require some information from the Brackets context that is not immediately available in init method.
 
-//See https://github.com/adobe/brackets/blob/master/test/spec/LanguageTools-test-files/clients/CommunicationTestClient/client.js
+//See https://github.com/brackets-cont/brackets/blob/master/test/spec/LanguageTools-test-files/clients/CommunicationTestClient/client.js
 ```
 
-### [Sample Language Client File](https://github.com/adobe/brackets/blob/master/test/spec/LanguageTools-test-files/clients/FeatureClient/client.js)
+### [Sample Language Client File](https://github.com/brackets-cont/brackets/blob/master/test/spec/LanguageTools-test-files/clients/FeatureClient/client.js)
 
 * **main.js**:
 1. Load the LanguageTools module in main.js
@@ -405,11 +405,11 @@ client.onCustomRequest("custom/serverRequest", function (params) {
 });
  
 //Can be used to extend the server and handle Brackets specific events
-//https://github.com/adobe/brackets/blob/master/test/spec/LanguageTools-test.js#L1482
+//https://github.com/brackets-cont/brackets/blob/master/test/spec/LanguageTools-test.js#L1482
 client.addOnCustomEventHandler("triggerDiagnostics", function () {
     //do something
 });
 ```
-Notes: Refer to Sample implementations for [Requests](https://github.com/adobe/brackets/blob/master/src/languageTools/DefaultProviders.js) and [Notifications](https://github.com/adobe/brackets/blob/master/src/languageTools/DefaultEventHandlers.js) for reference.
+Notes: Refer to Sample implementations for [Requests](https://github.com/brackets-cont/brackets/blob/master/src/languageTools/DefaultProviders.js) and [Notifications](https://github.com/brackets-cont/brackets/blob/master/src/languageTools/DefaultEventHandlers.js) for reference.
 
-Additionally, we have created a [reference](https://github.com/adobe/brackets/tree/master/src/extensions/default/PhpTooling) adoption for the [PHP language server](https://github.com/felixfbecker/php-language-server) which can be studied to understand how these APIs work within Brackets.
+Additionally, we have created a [reference](https://github.com/brackets-cont/brackets/tree/master/src/extensions/default/PhpTooling) adoption for the [PHP language server](https://github.com/felixfbecker/php-language-server) which can be studied to understand how these APIs work within Brackets.

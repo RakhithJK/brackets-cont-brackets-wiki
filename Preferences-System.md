@@ -1,9 +1,9 @@
 This is a reference for _writing code_ that uses the preferences APIs (for extension authors, etc.).<br>
-For how to use preferences _as a Brackets end user_, see [How to Use Brackets - Preferences](https://github.com/adobe/brackets/wiki/How-to-Use-Brackets#preferences).
+For how to use preferences _as a Brackets end user_, see [How to Use Brackets - Preferences](https://github.com/brackets-cont/brackets/wiki/How-to-Use-Brackets#preferences).
 
 ## Preferences System Basics
 
-See also: [**Quick example** with sample code](https://github.com/adobe/brackets/wiki/How-to-write-extensions#working-with-preferences)
+See also: [**Quick example** with sample code](https://github.com/brackets-cont/brackets/wiki/How-to-write-extensions#working-with-preferences)
 
 The preferences system has a collection of "scopes" that are searched in order for a given preferences key. There are a handful of ways to customize the behavior as needed, but a typical preference lookup will search scopes in this order:
 
@@ -59,7 +59,7 @@ Define a preference with the ID of the pref (these would be prefixed to be `myex
 `definePreference` returns a Preference object which allows you to listen for change events.
 
 ### Code Hints for Preferences
-All the preferences defined are available as code hints in `brackets.json` and `.brackets.json` unless they are excluded. You can additionally configure code hint descriptions to each of the preference entry. See. [this page](https://github.com/adobe/brackets/wiki/preferences-code-hints-for-developers) for more details.
+All the preferences defined are available as code hints in `brackets.json` and `.brackets.json` unless they are excluded. You can additionally configure code hint descriptions to each of the preference entry. See. [this page](https://github.com/brackets-cont/brackets/wiki/preferences-code-hints-for-developers) for more details.
 
 ### Change Events
 

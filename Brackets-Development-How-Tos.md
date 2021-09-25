@@ -3,7 +3,7 @@ APIs and information below **may change** in the future. Breaking API changes ar
 ## API Docs
 
 * Formatted docs at: **http://brackets.io/docs/current**
-* All documentation is also inline in the [Brackets source code](https://github.com/adobe/brackets/tree/master/src), as JSDoc comments
+* All documentation is also inline in the [Brackets source code](https://github.com/brackets-cont/brackets/tree/master/src), as JSDoc comments
 
 
 ## Application Init
@@ -84,7 +84,7 @@ The Document and its full text content will be kept in memory until you call `re
 
 To modify a Document's text content, use `Document.replaceRange()`. If you're going to call it multiple times as the result of a single user action, wrap all your calls in `Document.batchOperation()` to ensure they're all batched into a single Undo/Redo entry.
 
-In many cases, if you're implementing a new kind of edit, you'll want to handle multiple selections. See [Changes to Editor selection APIs](https://github.com/adobe/brackets/wiki/Brackets-CodeMirror-v4-Migration-Guide#changes-to-editor-selection-apis) and [Performing edits on multiple selections](https://github.com/adobe/brackets/wiki/Brackets-CodeMirror-v4-Migration-Guide#performing-edits-on-multiple-selections) for more information.
+In many cases, if you're implementing a new kind of edit, you'll want to handle multiple selections. See [Changes to Editor selection APIs](https://github.com/brackets-cont/brackets/wiki/Brackets-CodeMirror-v4-Migration-Guide#changes-to-editor-selection-apis) and [Performing edits on multiple selections](https://github.com/brackets-cont/brackets/wiki/Brackets-CodeMirror-v4-Migration-Guide#performing-edits-on-multiple-selections) for more information.
 
 ## <a name="commands"></a>Menus and Keyboard Shortcuts ##
 
@@ -115,8 +115,8 @@ promise.done(function (text) {
 });
 ```
 
-Note that paths in Brackets _always_ use "/" separators, regardless of OS. [Read more on path format](https://github.com/adobe/brackets/blob/master/src/filesystem/FileSystem.js#L43-L52).
+Note that paths in Brackets _always_ use "/" separators, regardless of OS. [Read more on path format](https://github.com/brackets-cont/brackets/blob/master/src/filesystem/FileSystem.js#L43-L52).
 
 ## Accessing Node Modules from Brackets
 
-See [Brackets Node Process: Overview for Developers](https://github.com/adobe/brackets/wiki/Brackets-Node-Process:-Overview-for-Developers).
+See [Brackets Node Process: Overview for Developers](https://github.com/brackets-cont/brackets/wiki/Brackets-Node-Process:-Overview-for-Developers).

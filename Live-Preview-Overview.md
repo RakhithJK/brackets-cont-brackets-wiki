@@ -8,16 +8,16 @@ Live Preview has been implemented 2 ways:
 
     - [Remote Debugging Protocol documentation](https://developer.chrome.com/devtools/docs/debugger-protocol)
     - LiveDevelopment/Inspector manages the connection to Chrome/Chromium's remote debugger. See [API Docs for `Inspector.js`](http://brackets.io/docs/current/modules/LiveDevelopment/Inspector/Inspector.html).
-    - [`Inspector.html`](https://github.com/adobe/brackets/blob/master/src/LiveDevelopment/Inspector/inspector.html) is a browser viewable version of [`Inspector.json`](https://github.com/adobe/brackets/blob/master/src/LiveDevelopment/Inspector/Inspector.json) (generated using [`jsdoc.rb`](https://github.com/adobe/brackets/blob/master/src/LiveDevelopment/Inspector/jsdoc.rb)).
+    - [`Inspector.html`](https://github.com/brackets-cont/brackets/blob/master/src/LiveDevelopment/Inspector/inspector.html) is a browser viewable version of [`Inspector.json`](https://github.com/brackets-cont/brackets/blob/master/src/LiveDevelopment/Inspector/Inspector.json) (generated using [`jsdoc.rb`](https://github.com/brackets-cont/brackets/blob/master/src/LiveDevelopment/Inspector/jsdoc.rb)).
 
 2. New Multibrowser implementation uses **Injected Scripts** to connect to browser
 
     - Currently disabled and can be switch to with a feature flag
     - Connects to default browser
     - URL can be pasted into any other browser
-    - See [Live Preview MultiBrowser](https://github.com/adobe/brackets/wiki/Live-Preview-Multibrowser) for details about this implementation.
+    - See [Live Preview MultiBrowser](https://github.com/brackets-cont/brackets/wiki/Live-Preview-Multibrowser) for details about this implementation.
 
-Implementation used in Brackets is set in [LiveDevelopment/main.js `_setImplementation()' method](https://github.com/adobe/brackets/blob/master/src/LiveDevelopment/main.js#L222).
+Implementation used in Brackets is set in [LiveDevelopment/main.js `_setImplementation()' method](https://github.com/brackets-cont/brackets/blob/master/src/LiveDevelopment/main.js#L222).
 
 #### Live Preview Server
 
@@ -27,7 +27,7 @@ Servers defined in LiveDevelopment/Servers:
 2. `UserServer`: Use local server - this is done by specifying Base URL in Project Settings... dialog.
 3. `FileServer`: Fallback is `file://` protocol.
 
-For more info see [Server API](https://github.com/adobe/brackets/wiki/Live-Preview-API) and [URL Mapping](https://github.com/adobe/brackets/wiki/Live-Preview-URL-Mapping) docs.
+For more info see [Server API](https://github.com/brackets-cont/brackets/wiki/Live-Preview-API) and [URL Mapping](https://github.com/brackets-cont/brackets/wiki/Live-Preview-URL-Mapping) docs.
 
 
 #### Interstitial page
@@ -37,11 +37,11 @@ Loaded to ensure a connection before starting agents and then navigating to docu
 
 #### **brackets-shell** Native Implementation
 
-`NativeApp.openLiveBrowser()` and `NativeApp.closeLiveBrowser()` defined in [appshell/appshell_extensions.js](https://github.com/adobe/brackets-shell/blob/master/appshell/appshell_extensions.js) calls operating system specific native `OpenLiveBrowser()` and `CloseLiveBrowser()` methods, respectively. Defined in:
+`NativeApp.openLiveBrowser()` and `NativeApp.closeLiveBrowser()` defined in [appshell/appshell_extensions.js](https://github.com/brackets-cont/brackets-shell/blob/master/appshell/appshell_extensions.js) calls operating system specific native `OpenLiveBrowser()` and `CloseLiveBrowser()` methods, respectively. Defined in:
 
-- [appshell/appshell_extensions_win.cpp on Windows](https://github.com/adobe/brackets-shell/blob/master/appshell/appshell_extensions_win.cpp)
-- [appshell/appshell_extensions_mac.mm on Mac](https://github.com/adobe/brackets-shell/blob/master/appshell/appshell_extensions_mac.mm)
-- [appshell/appshell_extensions_gtk.cpp on Linux](https://github.com/adobe/brackets-shell/blob/master/appshell/appshell_extensions_gtk.cpp)
+- [appshell/appshell_extensions_win.cpp on Windows](https://github.com/brackets-cont/brackets-shell/blob/master/appshell/appshell_extensions_win.cpp)
+- [appshell/appshell_extensions_mac.mm on Mac](https://github.com/brackets-cont/brackets-shell/blob/master/appshell/appshell_extensions_mac.mm)
+- [appshell/appshell_extensions_gtk.cpp on Linux](https://github.com/brackets-cont/brackets-shell/blob/master/appshell/appshell_extensions_gtk.cpp)
 
 
 #### Toolbar Icon
@@ -84,19 +84,19 @@ Currently only supported with nodejs server
 - Highlighting current element
 
 - [Kevin's talk at JSConfEU](http://youtu.be/Axpi1_OVSdo) - first ~17 minutes
-- [Research: HTML DOM Data Structure](https://github.com/adobe/brackets/wiki/Research:-HTML-DOM-Data-Structure)
+- [Research: HTML DOM Data Structure](https://github.com/brackets-cont/brackets/wiki/Research:-HTML-DOM-Data-Structure)
 
 ### All Other File Types
 
-Live Preview is reloaded on File Save in LiveDevelopment.js function [`_onDocumentSaved()`](https://github.com/adobe/brackets/blob/master/src/LiveDevelopment/LiveDevelopment.js#L1415).
+Live Preview is reloaded on File Save in LiveDevelopment.js function [`_onDocumentSaved()`](https://github.com/brackets-cont/brackets/blob/master/src/LiveDevelopment/LiveDevelopment.js#L1415).
 
-[Live JavaScript has been researched](https://github.com/adobe/brackets/wiki/Live-Development:-Research-for-live-JavaScript), but has not yet been implemented.
+[Live JavaScript has been researched](https://github.com/brackets-cont/brackets/wiki/Live-Development:-Research-for-live-JavaScript), but has not yet been implemented.
 
 
 ### User Docs
 
-- [How to Use Brackets: Live Preview](https://github.com/adobe/brackets/wiki/How-to-Use-Brackets#live-preview)
-- [Troubleshooting Brackets: Live Preview](https://github.com/adobe/brackets/wiki/Troubleshooting#livedev)
+- [How to Use Brackets: Live Preview](https://github.com/brackets-cont/brackets/wiki/How-to-Use-Brackets#live-preview)
+- [Troubleshooting Brackets: Live Preview](https://github.com/brackets-cont/brackets/wiki/Troubleshooting#livedev)
 
 **Other Use Cases:**
 
@@ -116,7 +116,7 @@ Live Preview is reloaded on File Save in LiveDevelopment.js function [`_onDocume
 
 ### Misc.
 
-- [Live Development: lifecycle research and future directions](https://github.com/adobe/brackets/wiki/Live-Development:-lifecycle-research-and-future-directions)
+- [Live Development: lifecycle research and future directions](https://github.com/brackets-cont/brackets/wiki/Live-Development:-lifecycle-research-and-future-directions)
 - `experimental` flag: *very* old, so this code probably no longer works. Watch [this video](http://blog.brackets.io/2013/02/08/live-development-with-brackets-experimental/) to see a few of the original experimental features.
 
 

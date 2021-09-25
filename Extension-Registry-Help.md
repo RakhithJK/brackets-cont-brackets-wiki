@@ -2,11 +2,11 @@ Help for using the [Brackets Extension Registry](http://brackets-registry.aboutw
 
 ## Writing an extension ##
 
-See [How to Write Extensions](https://github.com/adobe/brackets/wiki/How-to-Write-Extensions).
+See [How to Write Extensions](https://github.com/brackets-cont/brackets/wiki/How-to-Write-Extensions).
 
 ## Publishing your extension in the Registry ##
 
-1. Add a [package.json file](https://github.com/adobe/brackets/wiki/Extension-package-format#packagejson-format) next to your main.js
+1. Add a [package.json file](https://github.com/brackets-cont/brackets/wiki/Extension-package-format#packagejson-format) next to your main.js
 2. ZIP up your entire extension folder (the GitHub "Download ZIP" button is handy for this -- or use the command `git archive --format zip -o yourextension.zip master` to generate a zip file).
     * Note: we've had difficulty with ZIP files created from Finder on the Mac. If you get an error when uploading your ZIP file, try creating it from the command line instead.
 3. Go to the [Brackets Extension Registry website](https://brackets-registry.aboutweb.com/)
@@ -27,7 +27,7 @@ No. Right now, the Registry requires a GitHub account in order to identify you t
 
 ## Is the Registry open source? ##
 
-Yes! It has [its own repository](https://github.com/adobe/brackets-registry) on GitHub.
+Yes! It has [its own repository](https://github.com/brackets-cont/brackets-registry) on GitHub.
 
 ## Removing an extension from the Registry ##
 

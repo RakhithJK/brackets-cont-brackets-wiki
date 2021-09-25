@@ -15,10 +15,10 @@ What's New in Sprint 20
     * Quick Open / Go to Definition results update even faster as you type incrementally (building on last sprint's improvements)
 * **Code Hinting**
     * CSS code hinting is less aggressive - it will pop up once you start typing a property name, but not before then (unless you explicitly press Ctrl+Space)
-    * Fixed many code hinting issues: CSS code hints now work in inline editors, [plus](https://github.com/adobe/brackets/issues/2775) [a](https://github.com/adobe/brackets/issues/2601) [whole](https://github.com/adobe/brackets/issues/2625) [bunch](https://github.com/adobe/brackets/issues/2682) [of](https://github.com/adobe/brackets/issues/2628) [other](https://github.com/adobe/brackets/issues/2626) [fixes](https://github.com/adobe/brackets/issues/2586).
+    * Fixed many code hinting issues: CSS code hints now work in inline editors, [plus](https://github.com/brackets-cont/brackets/issues/2775) [a](https://github.com/brackets-cont/brackets/issues/2601) [whole](https://github.com/brackets-cont/brackets/issues/2625) [bunch](https://github.com/brackets-cont/brackets/issues/2682) [of](https://github.com/brackets-cont/brackets/issues/2628) [other](https://github.com/brackets-cont/brackets/issues/2626) [fixes](https://github.com/brackets-cont/brackets/issues/2586).
 
 
-_Full change logs:_ [brackets](https://github.com/adobe/brackets/compare/sprint-19...sprint-20#commits_bucket) and [brackets-shell](https://github.com/adobe/brackets-shell/compare/sprint-19...sprint-20#commits_bucket)
+_Full change logs:_ [brackets](https://github.com/brackets-cont/brackets/compare/sprint-19...sprint-20#commits_bucket) and [brackets-shell](https://github.com/brackets-cont/brackets-shell/compare/sprint-19...sprint-20#commits_bucket)
 
 API Changes
 -----------
@@ -26,7 +26,7 @@ API Changes
 
 If you want your extension to work with both Brackets and Edge Code (please do!), you will need your code to handle _both_ the v2 and v3 APIs for now, because Edge Code hasn't been updated to CodeMirror v3 yet. (For example, in cases where you're passing x/y in an object today, you might need to make your code pass both x/y and left/top.) Again, this should only be an issue if you're using raw CodeMirror APIs; Brackets APIs like `Editor.setScrollPos()` haven't changed.
 
-**Editor `offsetTopChanged` event removed** - This was deprecated in [sprint 19](https://github.com/adobe/brackets/wiki/Release-Notes:-Sprint-19) and has been removed in sprint 20.
+**Editor `offsetTopChanged` event removed** - This was deprecated in [sprint 19](https://github.com/brackets-cont/brackets/wiki/Release-Notes:-Sprint-19) and has been removed in sprint 20.
 
 New/Improved Extensibility APIs
 -------------------------------
@@ -37,24 +37,24 @@ New/Improved Extensibility APIs
 
 Known Issues
 ------------
-* [#1551](https://github.com/adobe/brackets/issues/1551): Changes within an extension (or a unit test) are not reflected by a simple "Debug > Reload Brackets." Workarounds:
+* [#1551](https://github.com/brackets-cont/brackets/issues/1551): Changes within an extension (or a unit test) are not reflected by a simple "Debug > Reload Brackets." Workarounds:
     * Quit and re-launch Brackets to pick up the changes.
     * Open Developer Tools, click the gear icon in the lower-right, and select "Disable cache." This setting is remembered, but is only in effect so long as the Developer Tools browser tab remains open.
-* _Debug > Run Tests_ is disabled in the installer/DMG distributions of Brackets, because the unit test code is not included. To run unit tests, [pull Brackets from GitHub](https://github.com/adobe/brackets/wiki/How-to-Hack-on-Brackets#wiki-getcode) instead.
+* _Debug > Run Tests_ is disabled in the installer/DMG distributions of Brackets, because the unit test code is not included. To run unit tests, [pull Brackets from GitHub](https://github.com/brackets-cont/brackets/wiki/How-to-Hack-on-Brackets#wiki-getcode) instead.
 * Mountain Lion (OS X 10.8) by default will not allow Brackets to run since it's not digitally signed yet.  To work around this, right click the Brackets app and choose Open.  You only need to do that once -- afterward, launching Brackets the normal way will work also.
-* [#2272](https://github.com/adobe/brackets/issues/2272): Windows Vista may not allow the Brackets installer to run (you may not see _any_ error message). To work around this, right-click the installer file, choose Properties, and click the Unblock button.
+* [#2272](https://github.com/brackets-cont/brackets/issues/2272): Windows Vista may not allow the Brackets installer to run (you may not see _any_ error message). To work around this, right-click the installer file, choose Properties, and click the Unblock button.
 
 
 Community contributions to Brackets
 -----------------------------------
-* [Highlight results while Find bar open](https://github.com/adobe/brackets/pull/2662) largely by [Aleksandr Motsjonov](https://github.com/soswow)
-* [Fix #2085: Cannot create new file in collapsed, empty folder](https://github.com/adobe/brackets/pull/2592) by [Chema Balsas](https://github.com/jbalsas)
-* [Fix #2509: Double-clicking in rename input acts like double-clicking file normally](https://github.com/adobe/brackets/pull/2802) by [Bernhard Sirlinger](https://github.com/WebsiteDeveloper)
-* [Fix #2688: Status bar JSLint tooltip is incorrect when JSLint gives up mid-file](https://github.com/adobe/brackets/pull/2690) by [Kieran Gorman](https://github.com/kjgorman)
-* [Fix #850: Give a more useful NativeFileError code for encoding problems](https://github.com/adobe/brackets/pull/2639) by [connork09](https://github.com/connork09)
-* [Code cleanups: move away from Promise.then(), and remove unneeded additionalKeys arguments](https://github.com/adobe/brackets/pull/2685/files) by [Bernhard Sirlinger](https://github.com/WebsiteDeveloper)
-* [German translation update](https://github.com/adobe/brackets/pull/2789) ([and](https://github.com/adobe/brackets/pull/2800)) by [J.M.](https://github.com/mynetx)
-* [Contributor guidelines: add info on starter bugs/features](https://github.com/adobe/brackets/pull/2841) by [Julian Viereck](https://github.com/jviereck)
+* [Highlight results while Find bar open](https://github.com/brackets-cont/brackets/pull/2662) largely by [Aleksandr Motsjonov](https://github.com/soswow)
+* [Fix #2085: Cannot create new file in collapsed, empty folder](https://github.com/brackets-cont/brackets/pull/2592) by [Chema Balsas](https://github.com/jbalsas)
+* [Fix #2509: Double-clicking in rename input acts like double-clicking file normally](https://github.com/brackets-cont/brackets/pull/2802) by [Bernhard Sirlinger](https://github.com/WebsiteDeveloper)
+* [Fix #2688: Status bar JSLint tooltip is incorrect when JSLint gives up mid-file](https://github.com/brackets-cont/brackets/pull/2690) by [Kieran Gorman](https://github.com/kjgorman)
+* [Fix #850: Give a more useful NativeFileError code for encoding problems](https://github.com/brackets-cont/brackets/pull/2639) by [connork09](https://github.com/connork09)
+* [Code cleanups: move away from Promise.then(), and remove unneeded additionalKeys arguments](https://github.com/brackets-cont/brackets/pull/2685/files) by [Bernhard Sirlinger](https://github.com/WebsiteDeveloper)
+* [German translation update](https://github.com/brackets-cont/brackets/pull/2789) ([and](https://github.com/brackets-cont/brackets/pull/2800)) by [J.M.](https://github.com/mynetx)
+* [Contributor guidelines: add info on starter bugs/features](https://github.com/brackets-cont/brackets/pull/2841) by [Julian Viereck](https://github.com/jviereck)
 
 
 Contributions _from_ Brackets
@@ -73,4 +73,4 @@ Contributions _from_ Brackets
 
 Bugs fixed in Sprint 20
 -----------------------
-For details on the bugs addressed, please refer to [closed sprint 20 bugs](https://github.com/adobe/brackets/issues?labels=&milestone=7&state=closed). A few of the fixed bugs might not be caught by this search query, however.
+For details on the bugs addressed, please refer to [closed sprint 20 bugs](https://github.com/brackets-cont/brackets/issues?labels=&milestone=7&state=closed). A few of the fixed bugs might not be caught by this search query, however.

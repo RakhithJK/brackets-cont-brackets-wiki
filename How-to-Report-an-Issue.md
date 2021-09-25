@@ -1,10 +1,10 @@
 Whether you've found an issue with Brackets, the Brackets Registry or the Brackets Shell, here's how to report the problem...
 
-First, check our **[Troubleshooting page](https://github.com/adobe/brackets/wiki/Troubleshooting)** for solutions to common problems.
+First, check our **[Troubleshooting page](https://github.com/brackets-cont/brackets/wiki/Troubleshooting)** for solutions to common problems.
 
 ### How to file a bug
 
-1. Go to our **[issue tracker on GitHub](https://github.com/adobe/brackets/issues)**
+1. Go to our **[issue tracker on GitHub](https://github.com/brackets-cont/brackets/issues)**
 2. Search for existing issues using the search field at the top of the page
 3. File a new issue _including the info listed below_
 4. Thanks a ton for helping make Brackets higher quality!
@@ -24,7 +24,7 @@ _**When filing a new bug, please include:**_
 
 Bugs can be caused by Brackets extensions you've added. Before you file an issue, use **Debug > Reload Without Extensions** to see if the problem still occurs without any extensions.
 
-If that fixes the problem, then please file an issue in the extension's repo instead, so it can be addressed by the extension author.  See [Troubleshooting extension bugs](https://github.com/adobe/brackets/wiki/Troubleshooting#wiki-disable-all-extensions) for tips on identifying which extension is causing the problem.
+If that fixes the problem, then please file an issue in the extension's repo instead, so it can be addressed by the extension author.  See [Troubleshooting extension bugs](https://github.com/brackets-cont/brackets/wiki/Troubleshooting#wiki-disable-all-extensions) for tips on identifying which extension is causing the problem.
 
 ### Requesting a feature
 
@@ -49,7 +49,7 @@ Feel free to file new feature requests as an issue on GitHub, just like a bug. W
 We review _all_ new issues on a regular basis. Several things typically happen as part of review:
 
 * Ping the filer for clarification if needed.
-* If the issue is a feature request, we'll tag it [_'move to backlog'_](https://github.com/adobe/brackets/issues?labels=move+to+backlog&state=open); the issue will be migrated to our [feature backlog](http://bit.ly/BracketsBacklog) at a later date.
+* If the issue is a feature request, we'll tag it [_'move to backlog'_](https://github.com/brackets-cont/brackets/issues?labels=move+to+backlog&state=open); the issue will be migrated to our [feature backlog](http://bit.ly/BracketsBacklog) at a later date.
 * Add priority labels (high, medium, low, or none - [read more below](#wiki-bug-priority)).
 * Add release milestone - typically only if a bug is a "release blocker" or related to features still in progress.
 * Add feature area label, and possibly other category labels like _'starter bug'_ or _'Mac only.'_ See ["Understanding issue labels" below](#understanding-issue-labels).
@@ -77,7 +77,7 @@ If you disagree with a bug being closed, feel free to post a comment asking for 
 Yes please! But first...
 
 * Make sure no one else is already working on it -- if the bug has a milestone assigned or is tagged _'fix in progress'_, then it's already under way. Otherwise, post a comment on the bug to let others know you're starting to work on it.
-* Read the [guidelines for contributing code](https://github.com/adobe/brackets/blob/master/CONTRIBUTING.md#contributing-code), [pull request guidelines](Pull Request Checklist), and [coding conventions](Brackets Coding Conventions).
+* Read the [guidelines for contributing code](https://github.com/brackets-cont/brackets/blob/master/CONTRIBUTING.md#contributing-code), [pull request guidelines](Pull Request Checklist), and [coding conventions](Brackets Coding Conventions).
 
 
 # Understanding issue labels
@@ -132,7 +132,7 @@ We use labels/tags for a number of purposes:
   <tr>
     <td rowspan="2">Suggestions </td>
     <td>starter bug</td>
-    <td>Recommended for <a href="https://github.com/adobe/brackets/blob/master/CONTRIBUTING.md">new contributors</a> as a good intro to the Brackets source code.</td>
+    <td>Recommended for <a href="https://github.com/brackets-cont/brackets/blob/master/CONTRIBUTING.md">new contributors</a> as a good intro to the Brackets source code.</td>
   </tr>
   <tr>
     <td>Extension Idea</td>
@@ -170,7 +170,7 @@ We use labels/tags for a number of purposes:
   </tr>
   <tr>
     <td>native shell</td>
-    <td>Needs code changes in <a href="https://github.com/adobe/brackets-shell">brackets-shell</a>, our desktop native wrapper</td>
+    <td>Needs code changes in <a href="https://github.com/brackets-cont/brackets-shell">brackets-shell</a>, our desktop native wrapper</td>
   </tr>
 </table>
 

@@ -32,9 +32,9 @@ Currently we do not hint string literals.
 
 **Interaction:**
 
-As the user types, the lists of choices in the hints pop-up is narrowed. All the character matches are case-insensitive. Character matching and sorting is handled by the [StringMatcher](https://github.com/adobe/brackets/blob/master/src/utils/StringMatch.js) utility. It has an advanced character matching algorithm and sorts the best matches to the top.
+As the user types, the lists of choices in the hints pop-up is narrowed. All the character matches are case-insensitive. Character matching and sorting is handled by the [StringMatcher](https://github.com/brackets-cont/brackets/blob/master/src/utils/StringMatch.js) utility. It has an advanced character matching algorithm and sorts the best matches to the top.
 
-The code that filters and sorts the hints is in the getHints() method in [Session.js](https://github.com/adobe/brackets/blob/master/src/extensions/default/JavaScriptCodeHints/Session.js). The results are returned to the getHints() in [main.js](https://github.com/adobe/brackets/blob/master/src/extensions/default/JavaScriptCodeHints/main.js) where they are formatted. Formatting is done by adding CSS class names to hint objects. The CSS classes are defined in [brackets-js-hints.css](https://github.com/adobe/brackets/blob/master/src/extensions/default/JavaScriptCodeHints/styles/brackets-js-hints.css)
+The code that filters and sorts the hints is in the getHints() method in [Session.js](https://github.com/brackets-cont/brackets/blob/master/src/extensions/default/JavaScriptCodeHints/Session.js). The results are returned to the getHints() in [main.js](https://github.com/brackets-cont/brackets/blob/master/src/extensions/default/JavaScriptCodeHints/main.js) where they are formatted. Formatting is done by adding CSS class names to hint objects. The CSS classes are defined in [brackets-js-hints.css](https://github.com/brackets-cont/brackets/blob/master/src/extensions/default/JavaScriptCodeHints/styles/brackets-js-hints.css)
 
 ## Jump-To-Definition (of current identifier)
 Jump-To-Definition allows the user to have the cursor move to the definition of the variable or function to which the cursor currently points.  This works for definitions within the current file and within all other open files.  Definitions are selected/highlighted when found, with the cursor positioned at the end of the selection.
@@ -129,26 +129,26 @@ Two significant features with an impact on JS Code Hints shipped in Brackets 36:
 
 ### Crashes
 
-* [Brackets grey screens and crashes when editing JS files](https://github.com/adobe/brackets/issues/7514)
-* [Mac OSX - Freeze - Grey Screen](https://github.com/adobe/brackets/issues/7308)
-* [Entire window goes blank](https://github.com/adobe/brackets/issues/7262)
-* [Brackets crashes](https://github.com/adobe/brackets/issues/7025)
-* [CPU stays at 100% with specific project](https://github.com/adobe/brackets/issues/7245)
+* [Brackets grey screens and crashes when editing JS files](https://github.com/brackets-cont/brackets/issues/7514)
+* [Mac OSX - Freeze - Grey Screen](https://github.com/brackets-cont/brackets/issues/7308)
+* [Entire window goes blank](https://github.com/brackets-cont/brackets/issues/7262)
+* [Brackets crashes](https://github.com/brackets-cont/brackets/issues/7025)
+* [CPU stays at 100% with specific project](https://github.com/brackets-cont/brackets/issues/7245)
 
 ### Hints not behaving as expected
 
-* [Suboptimal behaviour of Quick Edit](https://github.com/adobe/brackets/issues/7003)
-* [Missing intellisense on too big file](https://github.com/adobe/brackets/issues/6986)
-* [No code hints for "this" when superclass is unknown](https://github.com/adobe/brackets/issues/6929)
-* [Requires don't work if extension missing in filename (node)](https://github.com/adobe/brackets/issues/5993)
-* [Display redefined variables hints as guesses](https://github.com/adobe/brackets/issues/5729)
-* [JS code hints aren't picking up new items added to exports](https://github.com/adobe/brackets/issues/4991)
-* [code hints are affected by a javascript loading a module with require](https://github.com/adobe/brackets/issues/4192)
-* [jump to definition inside quick editor on a function not working](https://github.com/adobe/brackets/issues/3951)
-* [quick editor not open when function name has non ascii chars](https://github.com/adobe/brackets/issues/3941)
-* [Support require() calls not in an AMD wrapper](https://github.com/adobe/brackets/issues/3801)
-* [Incorrect jQuery hints when switching to a $. from $(something)](https://github.com/adobe/brackets/issues/3685)
-* [Should not show hints after typing a dot with no function call before it](https://github.com/adobe/brackets/issues/3682)
+* [Suboptimal behaviour of Quick Edit](https://github.com/brackets-cont/brackets/issues/7003)
+* [Missing intellisense on too big file](https://github.com/brackets-cont/brackets/issues/6986)
+* [No code hints for "this" when superclass is unknown](https://github.com/brackets-cont/brackets/issues/6929)
+* [Requires don't work if extension missing in filename (node)](https://github.com/brackets-cont/brackets/issues/5993)
+* [Display redefined variables hints as guesses](https://github.com/brackets-cont/brackets/issues/5729)
+* [JS code hints aren't picking up new items added to exports](https://github.com/brackets-cont/brackets/issues/4991)
+* [code hints are affected by a javascript loading a module with require](https://github.com/brackets-cont/brackets/issues/4192)
+* [jump to definition inside quick editor on a function not working](https://github.com/brackets-cont/brackets/issues/3951)
+* [quick editor not open when function name has non ascii chars](https://github.com/brackets-cont/brackets/issues/3941)
+* [Support require() calls not in an AMD wrapper](https://github.com/brackets-cont/brackets/issues/3801)
+* [Incorrect jQuery hints when switching to a $. from $(something)](https://github.com/brackets-cont/brackets/issues/3685)
+* [Should not show hints after typing a dot with no function call before it](https://github.com/brackets-cont/brackets/issues/3682)
 * [include JSLint-defined globals story](https://trello.com/c/AOEjxuDl/1011-js-code-hints-should-include-jslint-defined-globals)
 * [Code hints for require() path strings story](https://trello.com/c/0HWEDXGE/997-code-hints-for-require-path-strings)
 * [Improved code hints for extension authors story](https://trello.com/c/xBlcCYju/990-improved-code-hints-for-extension-authors)
@@ -156,49 +156,49 @@ Two significant features with an impact on JS Code Hints shipped in Brackets 36:
 
 **Problems in Tern**
 
-* [Inconsistent JS hints depending on whitespace](https://github.com/adobe/brackets/issues/5263)
-* [Object .toString / toJson / toValue](https://github.com/adobe/brackets/issues/4183)
-* [no code hint for jQuery.Event in on( events, handler(eventObject))](https://github.com/adobe/brackets/issues/4181)
-* [parameter type later becomes variable name when passing object as param to a function](https://github.com/adobe/brackets/issues/3838)
-* [Incorrect function return type for jQuery setter functions](https://github.com/adobe/brackets/issues/3684)
-* [code hints in inherited class by Class.create not showing, later use guess hint causes existing hint changed](https://github.com/adobe/brackets/issues/3660) – this appears to be Prototype library specific. I would probably call this "no priority" or even just close it.
-* [console.assert() missing from code hints](https://github.com/adobe/brackets/issues/3655)
+* [Inconsistent JS hints depending on whitespace](https://github.com/brackets-cont/brackets/issues/5263)
+* [Object .toString / toJson / toValue](https://github.com/brackets-cont/brackets/issues/4183)
+* [no code hint for jQuery.Event in on( events, handler(eventObject))](https://github.com/brackets-cont/brackets/issues/4181)
+* [parameter type later becomes variable name when passing object as param to a function](https://github.com/brackets-cont/brackets/issues/3838)
+* [Incorrect function return type for jQuery setter functions](https://github.com/brackets-cont/brackets/issues/3684)
+* [code hints in inherited class by Class.create not showing, later use guess hint causes existing hint changed](https://github.com/brackets-cont/brackets/issues/3660) – this appears to be Prototype library specific. I would probably call this "no priority" or even just close it.
+* [console.assert() missing from code hints](https://github.com/brackets-cont/brackets/issues/3655)
 
 ### Performance
 
-* [make jump to definition response faster (on large JS framework file)](https://github.com/adobe/brackets/issues/4066)
-* [Apparent performance test regression in JS Quick Edit when Tern doesn't find results](https://github.com/adobe/brackets/issues/3961)
+* [make jump to definition response faster (on large JS framework file)](https://github.com/brackets-cont/brackets/issues/4066)
+* [Apparent performance test regression in JS Quick Edit when Tern doesn't find results](https://github.com/brackets-cont/brackets/issues/3961)
 * [JS Code Hints File Handling Revamp story](https://trello.com/c/VjAiuH31/1070-js-code-hints-file-handling-revamp)
 
 ### StringMatch
 
-* [Code hints should filter out unlikely matches](https://github.com/adobe/brackets/issues/5993)
-* [Prefer results that match case of the query string](https://github.com/adobe/brackets/issues/3971)
+* [Code hints should filter out unlikely matches](https://github.com/brackets-cont/brackets/issues/5993)
+* [Prefer results that match case of the query string](https://github.com/brackets-cont/brackets/issues/3971)
 
 ### Code Cleanup
 
-* [ScopeManager is inconsistent about path endings](https://github.com/adobe/brackets/issues/5529)
+* [ScopeManager is inconsistent about path endings](https://github.com/brackets-cont/brackets/issues/5529)
 
 ### Unit tests
 
-* [Unit tests for 6931, referencing members of a class](https://github.com/adobe/brackets/issues/7152)
-* [Console errors when running unit tests](https://github.com/adobe/brackets/issues/6937)
-* [Intermittent test failure](https://github.com/adobe/brackets/issues/7646)
+* [Unit tests for 6931, referencing members of a class](https://github.com/brackets-cont/brackets/issues/7152)
+* [Console errors when running unit tests](https://github.com/brackets-cont/brackets/issues/6937)
+* [Intermittent test failure](https://github.com/brackets-cont/brackets/issues/7646)
 * [Automated testing for JS code hinting with various frameworks/projects](https://trello.com/c/gqdpxfM2/937-automated-testing-for-js-code-hinting-with-various-frameworks-projects)
 
 ### Preferences Handling
 
-* [JS code hint exclusions ignored sometimes](https://github.com/adobe/brackets/issues/7342)
-* [Ability to turn off code hinting](https://github.com/adobe/brackets/issues/4716)
-* [max-file-count takes less files to be processed for hints](https://github.com/adobe/brackets/issues/4195)
-* [excluded-files preference does not support directory names in file path](https://github.com/adobe/brackets/issues/4191)
-* [when open an excluded file is opened methods and properties not excluded](https://github.com/adobe/brackets/issues/4190)
+* [JS code hint exclusions ignored sometimes](https://github.com/brackets-cont/brackets/issues/7342)
+* [Ability to turn off code hinting](https://github.com/brackets-cont/brackets/issues/4716)
+* [max-file-count takes less files to be processed for hints](https://github.com/brackets-cont/brackets/issues/4195)
+* [excluded-files preference does not support directory names in file path](https://github.com/brackets-cont/brackets/issues/4191)
+* [when open an excluded file is opened methods and properties not excluded](https://github.com/brackets-cont/brackets/issues/4190)
 * [Understand require configuration story](https://trello.com/c/mq7dZnlv/1049-js-code-hints-understand-require-configuration)
 * [JS Code Hint preferences story](https://trello.com/c/BOgGIzWW/1046-js-code-hint-preferences)
 
 ### Other
 
-* [JavaScript Jump To Definition Ctrl+J/Cmd+J not mentioned in Right-Click Menu](https://github.com/adobe/brackets/issues/3860)
+* [JavaScript Jump To Definition Ctrl+J/Cmd+J not mentioned in Right-Click Menu](https://github.com/brackets-cont/brackets/issues/3860)
 
 # The Rework
 

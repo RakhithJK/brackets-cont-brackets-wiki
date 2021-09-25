@@ -6,7 +6,7 @@
 
 #### Commits & files
 
-* **Number of commits** - use a link of the form https://github.com/adobe/brackets/compare/release-0.XX...release-0.YY (use just `release` as the endpoint if we haven't tagged the build yet). Then do the same for brackets-shell and sum together the number of commits.
+* **Number of commits** - use a link of the form https://github.com/brackets-cont/brackets/compare/release-0.XX...release-0.YY (use just `release` as the endpoint if we haven't tagged the build yet). Then do the same for brackets-shell and sum together the number of commits.
 * **Number of files touched** - same as above
 
 #### Pull requests
@@ -55,7 +55,7 @@ Use the [Lines of Code Counter for JavaScript](https://github.com/peterflynn/sim
 
 We normally don't report the number of issues fixed, because (a) it's hard to distinguish legacy bugs vs. bugs that were both opened _and_ closed within the one sprint's lifecycle, and (b) we often forget to tag every bug with a sprint milestone, leading to varying degrees of undercount.
 
-But you can get a _rough_ number via a "closed issues" milestone query on GitHub -- something of the form https://github.com/adobe/brackets/issues?q=is%3Aclosed+milestone%3A%22Release+0.44%22.
+But you can get a _rough_ number via a "closed issues" milestone query on GitHub -- something of the form https://github.com/brackets-cont/brackets/issues?q=is%3Aclosed+milestone%3A%22Release+0.44%22.
 
 
 ## Stats for the release about to be obsoleted
@@ -103,6 +103,6 @@ Scroll to the bottom of the report for these totals:
 
 ## Other Stats
 
-* **[GitHub traffic report](https://github.com/adobe/brackets/graphs/traffic)**
+* **[GitHub traffic report](https://github.com/brackets-cont/brackets/graphs/traffic)**
 * **[Top-starred repos](https://github.com/search?l=&q=stars%3A%3E10000&type=Repositories)** (Brackets is #13 as of November 2014)
 * **[Top-starred JS repos](https://github.com/search?l=JavaScript&q=stars%3A%3E10000&type=Repositories)** (Brackets is #8 as of November 2014)

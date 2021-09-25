@@ -1,9 +1,9 @@
 This document explores the ramifications of four ideas, ranked by disruptiveness:
-* [Modal dialog with image](https://github.com/adobe/brackets/wiki/Preview-Images-Research#show-modal-dialog-with-image)
+* [Modal dialog with image](https://github.com/brackets-cont/brackets/wiki/Preview-Images-Research#show-modal-dialog-with-image)
 * Non modal image viewer in place of the text editor
-  * backed by a [standard document](https://github.com/adobe/brackets/wiki/Preview-Images-Research#non-modal-image-viewer-in-place-of-the-text-editor-backed-by-a-standard-document)
-  * backed by a [custom document](https://github.com/adobe/brackets/wiki/Preview-Images-Research#non-modal-image-viewer-in-place-of-the-text-editor-backed-by-a-custom-document)
-* [backed by a generic image document, here Document and Editor have base classes](https://github.com/adobe/brackets/wiki/Preview-Images-Research#generic-model-where-document-and-editor-have-base-classes)
+  * backed by a [standard document](https://github.com/brackets-cont/brackets/wiki/Preview-Images-Research#non-modal-image-viewer-in-place-of-the-text-editor-backed-by-a-standard-document)
+  * backed by a [custom document](https://github.com/brackets-cont/brackets/wiki/Preview-Images-Research#non-modal-image-viewer-in-place-of-the-text-editor-backed-by-a-custom-document)
+* [backed by a generic image document, here Document and Editor have base classes](https://github.com/brackets-cont/brackets/wiki/Preview-Images-Research#generic-model-where-document-and-editor-have-base-classes)
 
 ###  Show modal dialog with image
 * add logic to DocumentCommandHandlers.doOpen() to detect file type to open modal dialog.
@@ -79,7 +79,7 @@ Disadvantage:
 * Not clean enough to enable editable binary content, i.e. to enable an image editor
 
 ####  Non modal image viewer in place of the text editor backed by a custom document
-_Also known as the original proposal_ - based on the discussion and outline [here](https://github.com/adobe/brackets/pull/4492) 
+_Also known as the original proposal_ - based on the discussion and outline [here](https://github.com/brackets-cont/brackets/pull/4492) 
 * A HTML document with the image is placed in place of the editor. A document for an image is a new type of immutable document. 
 * ImageDocument asserts / throws errors when any text-related APIs are called.
 * DocumentManager.getDocumentForPath(fullPath) on path to image returns ImageDocument.

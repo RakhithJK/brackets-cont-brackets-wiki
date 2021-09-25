@@ -1,4 +1,4 @@
-The front-end client-facing `FileSystem` API is decoupled from the back-end filesystem _implementation_ in order to accommodate different kinds of filesystems without changing Brackets core code. For example, accessing remote files stored on Dropbox or SkyDrive. When [running Brackets in-browser](https://github.com/adobe/brackets/wiki/Brackets-in-Browser), the implementation acts as the bridge between Brackets and your server backend -- Brackets calls the impl (running client-side in the user's browser), and in turn the impl talks to the server on Bracket's behalf.
+The front-end client-facing `FileSystem` API is decoupled from the back-end filesystem _implementation_ in order to accommodate different kinds of filesystems without changing Brackets core code. For example, accessing remote files stored on Dropbox or SkyDrive. When [running Brackets in-browser](https://github.com/brackets-cont/brackets/wiki/Brackets-in-Browser), the implementation acts as the bridge between Brackets and your server backend -- Brackets calls the impl (running client-side in the user's browser), and in turn the impl talks to the server on Bracket's behalf.
 
 This page describes the requirements for implementing a filesystem back-end implementation.
 
@@ -103,9 +103,9 @@ The client-facing filesystem API is provided by a singleton `FileSystem` object.
 
 
 ## `FileSystemStats` and `FileSystemError`
-The stats objects passed to callbacks above are instances of the [`FileSystemStats` class](https://github.com/adobe/brackets/blob/glenn/file-system/src/filesystem/FileSystemStats.js), and the possibly null error parameters are constants defined in the [`FileSystemError` class](https://github.com/adobe/brackets/blob/glenn/file-system/src/filesystem/FileSystemError.js).
+The stats objects passed to callbacks above are instances of the [`FileSystemStats` class](https://github.com/brackets-cont/brackets/blob/glenn/file-system/src/filesystem/FileSystemStats.js), and the possibly null error parameters are constants defined in the [`FileSystemError` class](https://github.com/brackets-cont/brackets/blob/glenn/file-system/src/filesystem/FileSystemError.js).
 
 
 ## Designating the Implementation to Use
 
-FileSystem expects to be able to load its impl via `require("fileSystemImpl")`, so the RequireJS config that loads FileSystem must define a mapping from this identifier to the impl's full module path. See the [root main.js in Brackets](https://github.com/adobe/brackets/blob/master/src/main.js) for an example.
+FileSystem expects to be able to load its impl via `require("fileSystemImpl")`, so the RequireJS config that loads FileSystem must define a mapping from this identifier to the impl's full module path. See the [root main.js in Brackets](https://github.com/brackets-cont/brackets/blob/master/src/main.js) for an example.

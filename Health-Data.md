@@ -1,1 +1,1 @@
-This wiki page has been moved to a new location, [click here.](https://github.com/adobe/brackets/wiki/Project-Health-Data)
+This wiki page has been moved to a new location, [click here.](https://github.com/brackets-cont/brackets/wiki/Project-Health-Data)

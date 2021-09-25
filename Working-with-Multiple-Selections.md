@@ -1,6 +1,6 @@
 This document describes how to use the multiple cursor/multiple selection functionality in Brackets.
 
-If you're an extension developer looking for tips on how to make your extension with multiple selections, see the [Brackets CodeMirror v4 Migration Guide](https://github.com/adobe/brackets/wiki/Brackets-CodeMirror-v4-Migration-Guide).
+If you're an extension developer looking for tips on how to make your extension with multiple selections, see the [Brackets CodeMirror v4 Migration Guide](https://github.com/brackets-cont/brackets/wiki/Brackets-CodeMirror-v4-Migration-Guide).
 
 ## Basic usage
 

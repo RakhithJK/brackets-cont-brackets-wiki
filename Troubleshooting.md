@@ -53,7 +53,7 @@ There may be a long delay at the start of the installation process as Windows ch
 ## <a name="launching"> </a>Can't Launch Brackets
 
 ### <a name="clear-cache"> </a>Clear The Cache
-If you had previously used Brackets, your cache may have information that is conflicting with the most recent version. [Find your cache folder](https://github.com/adobe/brackets/wiki/Cache-Folder) and delete the cache. _Warning: this will reset all of your Brackets preferences._
+If you had previously used Brackets, your cache may have information that is conflicting with the most recent version. [Find your cache folder](https://github.com/brackets-cont/brackets/wiki/Cache-Folder) and delete the cache. _Warning: this will reset all of your Brackets preferences._
 
 ### Check the File Permissions
 
@@ -71,7 +71,7 @@ Next, try running Brackets from the command line. Open up a Terminal (or Command
 This may happen when trying to run 32-bit Brackets on 64-bit Linux. Please verify that you've downloaded the correct build.
 
 ### Linux: GLIBC_2.14 Error
-This occurs when trying to run Brackets on Debian 7 (Wheezy). Brackets currently requires Debian 8 (Jessie). (But for some _potential_ workarounds, [see issue #4816](https://github.com/adobe/brackets/issues/4816)).
+This occurs when trying to run Brackets on Debian 7 (Wheezy). Brackets currently requires Debian 8 (Jessie). (But for some _potential_ workarounds, [see issue #4816](https://github.com/brackets-cont/brackets/issues/4816)).
 
 
 ## <a name="livedev"> </a>Live Preview Isn't Working
@@ -87,14 +87,14 @@ Currently, Live Development works differently for different types of files:
    * HTML live updating is disabled if you've specified a custom server URL in Project Settings.
 * For JavaScript and other _external_ file types, when you save your changes, the page is reloaded to reflect your changes. For _embedded_ JS, you will need to reload browser.
 
-See **[How to Use Brackets](https://github.com/adobe/brackets/wiki/How-to-Use-Brackets#wiki-live-preview)** for more details.
+See **[How to Use Brackets](https://github.com/brackets-cont/brackets/wiki/How-to-Use-Brackets#wiki-live-preview)** for more details.
 
 #### Files should be in Current Project
 You can use `File > Open` to open any file on your computer, but Brackets' definition of a _project_ are the files in the folder opened using `File > Open Folder...`. Some (but not all) Live Development features require a node server, which means being in the current project, so make sure the files that you want to use with Live Development are in the current project.
 
 #### HTML File should be in Working Set
 
-There is a [known issue](https://github.com/adobe/brackets/issues/7886) (which is fixed in release 0.43) that if HTML file is in project tree (i.e. not in Working Set), then element highlighting stops working after switching to a CSS (or other?) file and then back to the HTML file. The workaround is to double-click HTML file so it's added to the Working Set.
+There is a [known issue](https://github.com/brackets-cont/brackets/issues/7886) (which is fixed in release 0.43) that if HTML file is in project tree (i.e. not in Working Set), then element highlighting stops working after switching to a CSS (or other?) file and then back to the HTML file. The workaround is to double-click HTML file so it's added to the Working Set.
 
 #### Live CSS is not working
 
@@ -102,18 +102,18 @@ Updating CSS in Live Preview does not seem to work if &lt;link&gt; has __type="t
 
 Known issues:
 
-* [Bug #7935](https://github.com/adobe/brackets/issues/7935): Live CSS does not update if page contains an iframe (including injected iframes such as ads or social media buttons).
+* [Bug #7935](https://github.com/brackets-cont/brackets/issues/7935): Live CSS does not update if page contains an iframe (including injected iframes such as ads or social media buttons).
 
 #### HTML Page is not Updating in Browser as you Type
-If you are using your own local server, HTML will not update live ([see documentation](https://github.com/adobe/brackets/wiki/How-to-Use-Brackets#wiki-live-preview)).
+If you are using your own local server, HTML will not update live ([see documentation](https://github.com/brackets-cont/brackets/wiki/How-to-Use-Brackets#wiki-live-preview)).
 
 Brackets pauses sending updates to browser when it detects an HTML Syntax Error. In this case, it should color the line number in red (but this can be scrolled out of view) so scroll through entire page to verify that there are no highlighted line numbers.
 
-The Live Preview lightning bolt icon should be also colored red and have a tooltip of "Live Preview (not updating due to syntax error)" in this case, but there's a known bug being tracked as [issue #7126](https://github.com/adobe/brackets/issues/7126) where this sometimes doesn't happen. See [issue #7126](https://github.com/adobe/brackets/issues/7126) for an illustrated description including the line number and icon coloring.
+The Live Preview lightning bolt icon should be also colored red and have a tooltip of "Live Preview (not updating due to syntax error)" in this case, but there's a known bug being tracked as [issue #7126](https://github.com/brackets-cont/brackets/issues/7126) where this sometimes doesn't happen. See [issue #7126](https://github.com/brackets-cont/brackets/issues/7126) for an illustrated description including the line number and icon coloring.
 
 Other known issues:
 
-* [Bug #5338](https://github.com/adobe/brackets/issues/5338): Live Preview can never update if initially launched with syntax error - after fixing a syntax error, try stopping and restarting Live Preview.
+* [Bug #5338](https://github.com/brackets-cont/brackets/issues/5338): Live Preview can never update if initially launched with syntax error - after fixing a syntax error, try stopping and restarting Live Preview.
 
 ### <a name="livedev-not-loading"> </a>Live Preview Page not loading
 
@@ -123,7 +123,7 @@ Other known issues:
 * Try shutting down background apps in Chrome. In Chrome, go to Settings > Advanced Settings and then uncheck the "Continue running background apps when Google Chrome is closed" setting.
 
 ### <a name="local-server"> </a>Using a Local Server with Live Preview
-To use a local server, you need to specify a Base URL in the `File > Project Settings...` dialog (see [How to Use Brackets](https://github.com/adobe/brackets/wiki/How-to-Use-Brackets#wiki-live-preview) for details).
+To use a local server, you need to specify a Base URL in the `File > Project Settings...` dialog (see [How to Use Brackets](https://github.com/brackets-cont/brackets/wiki/How-to-Use-Brackets#wiki-live-preview) for details).
 
 If you're using a local server and are seeing these messages such as "Oops! Google Chrome could not connect to localhost:[port]" (in Chrome) or "Unable to load Live Development page" (in Brackets), verify that your local server has been started.
 
@@ -166,7 +166,7 @@ If you keep getting errors when trying to launch Chrome, or if you keep getting 
 On Windows, you may run into issues starting Live Preview if you installed Chrome after installing Brackets. In that case, re-installing Brackets should fix the problem.
 
 ### <a name="livedev-multibrowser"> </a>Issues with multi-browser experimental implementation
-This section describes known issues and work-arounds specific to [Multi-Browser Live Preview](https://github.com/adobe/brackets/wiki/Live-Preview-Multibrowser).
+This section describes known issues and work-arounds specific to [Multi-Browser Live Preview](https://github.com/brackets-cont/brackets/wiki/Live-Preview-Multibrowser).
 
 #### Multi-browser Live Preview does not work with Internet Explorer 11
 In order to make it work with Internet Explorer 11, disable all the options that IE uses to include sites in the local intranet (unchecked all the items at `Internet Options > Security > Local Intranet > Sites`). This will allow Live Preview to establish connection to the editor.
@@ -185,7 +185,7 @@ Choose _Help > Show Extensions Folder_, go up one level to the parent folder, an
 This section discusses some of the features that can affect performance and possible solutions.
 
 ### Activity Monitor
-On Mac OS 10.9 (Mavericks), Activity Monitor will say the Brackets Helper process is "Not Responding" even when it is working normally ([bug #5794](https://github.com/adobe/brackets/issues/5794)). You can safely ignore this unless Brackets is actually failing to respond when you click or type text.
+On Mac OS 10.9 (Mavericks), Activity Monitor will say the Brackets Helper process is "Not Responding" even when it is working normally ([bug #5794](https://github.com/brackets-cont/brackets/issues/5794)). You can safely ignore this unless Brackets is actually failing to respond when you click or type text.
 
 ### Extensions
 Most Brackets extensions don't impact performance, but some may slow down Brackets (for example Show Whitespace can cause slow typing performance). Try [`Debug > Reload Without Extensions`](#wiki-disable-all-extensions) to quickly check if the problem is being caused by an extension.
@@ -197,7 +197,7 @@ Using "Find in Files" and "JS Code Hinting" can be slow because of the number of
 This feature can negatively impact scrolling performance, so try turning it off with: View > Highlight Active Line
 
 ### JavaScript Code Hinting
-Collecting the information required to build the JS code hint lists can slow down Brackets. Start by reading the [Configuration section of the JavaScript Code Hints guide](https://github.com/adobe/brackets/wiki/JavaScript-Code-Hints#configuration).
+Collecting the information required to build the JS code hint lists can slow down Brackets. Start by reading the [Configuration section of the JavaScript Code Hints guide](https://github.com/brackets-cont/brackets/wiki/JavaScript-Code-Hints#configuration).
 
 You can disable the hints by moving the JavaScriptCodeHints folder out of www/extensions/default (installed version) or src/extensions/default (Git source) folder and into the extensions/disabled folder, and restarting Brackets.
 
@@ -205,7 +205,7 @@ You can disable the hints by moving the JavaScriptCodeHints folder out of www/ex
 
 ### Working behind proxy
 
-If your computer needs to use a proxy to get to the web, you'll need to configure Brackets to use it. Use Debug > Open Preferences File and then add a `"proxy"` property to the JSON file. The value should be the URL of your proxy server. [Read more about configuring Preferences](https://github.com/adobe/brackets/wiki/How-to-Use-Brackets#preferences).
+If your computer needs to use a proxy to get to the web, you'll need to configure Brackets to use it. Use Debug > Open Preferences File and then add a `"proxy"` property to the JSON file. The value should be the URL of your proxy server. [Read more about configuring Preferences](https://github.com/brackets-cont/brackets/wiki/How-to-Use-Brackets#preferences).
 
 You can also install extensions manually:
 
@@ -228,7 +228,7 @@ Make sure your `localhost` address resolves correctly, normally it should resolv
 
 ### Preferences are Not Saved
 
-Your preferences may have become corrupt. Follow these instructions to delete your preferences and cache folder: https://github.com/adobe/brackets/wiki/Cache-Folder#resetting-cache--preferences.
+Your preferences may have become corrupt. Follow these instructions to delete your preferences and cache folder: https://github.com/brackets-cont/brackets/wiki/Cache-Folder#resetting-cache--preferences.
 
 ### Disable All Extensions
 Use `Debug > Reload Without Extensions` to quickly check whether the problem is being caused by an extension. To re-enable your extensions, just quit and relaunch Brackets, or choose `Debug > Reload With Extensions`.
@@ -258,28 +258,28 @@ Once you have identified the problematic extension, move all extensions from "di
 Choose `Debug > Show Developer Tools` to open an instance of the Developer Tools for Brackets. If you've used the Developer Tools in Chrome this will look familiar. Check the Console tab for errors.
 
 ### Can't Paste Text Into Brackets
-There's a [known issue](https://github.com/adobe/brackets/issues/2531) with the Webroot Identity Shield software blocking Paste in Brackets. If you're running Webroot, try the [workarounds on their support page](https://community.webroot.com/t5/Webroot-SecureAnywhere-Antivirus/Cut-Copy-or-Paste-Problems-Character-Entry-Issues-Scripting/ta-p/18396#.UhKfpmR4b9F). (Fully up-to-date Webroot should no longer treat Brackets as "unknown"; try [reinstalling](https://github.com/adobe/brackets/issues/2531#issuecomment-23747772) to update your copy).
+There's a [known issue](https://github.com/brackets-cont/brackets/issues/2531) with the Webroot Identity Shield software blocking Paste in Brackets. If you're running Webroot, try the [workarounds on their support page](https://community.webroot.com/t5/Webroot-SecureAnywhere-Antivirus/Cut-Copy-or-Paste-Problems-Character-Entry-Issues-Scripting/ta-p/18396#.UhKfpmR4b9F). (Fully up-to-date Webroot should no longer treat Brackets as "unknown"; try [reinstalling](https://github.com/brackets-cont/brackets/issues/2531#issuecomment-23747772) to update your copy).
 
 ## <a name="fileassoc"> </a>How do I associate an extension with a type of file?
 
 Let's say you want ".inc" files to be treated like ".php" files. To do this, open an ".inc" file and click the dropdown in the lower-right (for unrecognized files it will say "Text"). Choose the desired file type (e.g. "PHP"), then open the dropdown again and choose "Set as Default for .inc Files."
 
-You can also [edit the `language.fileExtensions` preference directly](https://github.com/adobe/brackets/wiki/Language-Support#preferences).
+You can also [edit the `language.fileExtensions` preference directly](https://github.com/brackets-cont/brackets/wiki/Language-Support#preferences).
 
 ## <a name="prefs37"> </a>Error reading preferences file (release 37)
 
-In Brackets release 37, there's a known issue in which [an empty preferences file could cause Brackets to display an error message on startup](https://github.com/adobe/brackets/issues/7220). If you see this error, Brackets will still start and will open the (empty) preferences file into the editor. Follow these steps, and you'll be all set:
+In Brackets release 37, there's a known issue in which [an empty preferences file could cause Brackets to display an error message on startup](https://github.com/brackets-cont/brackets/issues/7220). If you see this error, Brackets will still start and will open the (empty) preferences file into the editor. Follow these steps, and you'll be all set:
 
 1. Type this into the editor:
     ```{}```
 2. Save
 3. Quit and restart Brackets
 
-Starting with Brackets 36, we've added a bunch of preferences that let you tailor how Brackets works for you. Read more on the [How To Use Brackets](https://github.com/adobe/brackets/wiki/How-to-Use-Brackets#preferences) page.
+Starting with Brackets 36, we've added a bunch of preferences that let you tailor how Brackets works for you. Read more on the [How To Use Brackets](https://github.com/brackets-cont/brackets/wiki/How-to-Use-Brackets#preferences) page.
 
 The bug described here is fixed in Brackets 38.
 
 ## <a name="notsolved"> </a>Still Having a Problem?
 
-* **[File an issue](https://github.com/adobe/brackets/wiki/How-to-Report-an-Issue)** - be sure to include as many details as possible (see link for specific guidelines)
-* **Contact us** on [Slack](https://brackets.slack.com) ([request an invite](https://brackets-slack.herokuapp.com) first) or via one of the other channels mentioned in the [README](https://github.com/adobe/brackets/blob/master/README.md#i-want-to-keep-track-of-how-brackets-is-doing)
+* **[File an issue](https://github.com/brackets-cont/brackets/wiki/How-to-Report-an-Issue)** - be sure to include as many details as possible (see link for specific guidelines)
+* **Contact us** on [Slack](https://brackets.slack.com) ([request an invite](https://brackets-slack.herokuapp.com) first) or via one of the other channels mentioned in the [README](https://github.com/brackets-cont/brackets/blob/master/README.md#i-want-to-keep-track-of-how-brackets-is-doing)

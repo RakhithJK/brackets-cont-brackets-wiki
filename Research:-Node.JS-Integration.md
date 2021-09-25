@@ -115,7 +115,7 @@ If the user's computer were running malicious code, this malicious code could al
 
 ## Prototype code
 
-A prototype implementation is checked into the `node-proxy` branches in [adobe/brackets](https://github.com/adobe/brackets/tree/node-proxy) and [adobe/brackets-app](https://github.com/adobe/brackets-app/tree/node-proxy) repos. This prototype only provides Node file i/o and websocket implementation. It does not contain any native ui implementation.
+A prototype implementation is checked into the `node-proxy` branches in [brackets-cont/brackets](https://github.com/brackets-cont/brackets/tree/node-proxy) and [brackets-cont/brackets-app](https://github.com/brackets-cont/brackets-app/tree/node-proxy) repos. This prototype only provides Node file i/o and websocket implementation. It does not contain any native ui implementation.
 
 To run this code prototype:
 

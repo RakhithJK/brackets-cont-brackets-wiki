@@ -6,7 +6,7 @@ Research task to determine the set of work required to enhance and standardize t
 
 
 #Working prototype of Topcoat design applied
-[Topcoat Parity Branch](https://github.com/adobe/brackets/tree/garthdb/topcoat-parity)
+[Topcoat Parity Branch](https://github.com/brackets-cont/brackets/tree/garthdb/topcoat-parity)
 
 I did minimal changes to js - here are the remain changes that need to be made.
 

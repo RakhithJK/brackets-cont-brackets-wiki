@@ -34,7 +34,7 @@ A `*` matches _within_ a path segment (that is, it doesn't match "/" characters)
 
 Brackets automatically ignores all binary files.
 
-If you have huge numbers of binary files in a project, ensure those file extensions are registered with LanguageManager using `isBinary: true` ([see languages.json](https://github.com/adobe/brackets/blob/master/src/language/languages.json#L236,L260) for defaults) or excluded by your filter - this will be slightly faster than the auto-detection.
+If you have huge numbers of binary files in a project, ensure those file extensions are registered with LanguageManager using `isBinary: true` ([see languages.json](https://github.com/brackets-cont/brackets/blob/master/src/language/languages.json#L236,L260) for defaults) or excluded by your filter - this will be slightly faster than the auto-detection.
 
 ## Details
 

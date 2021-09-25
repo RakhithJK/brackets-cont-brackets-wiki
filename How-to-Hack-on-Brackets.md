@@ -1,9 +1,9 @@
 This page is mainly about modifying core Brackets code. If you're adding a new feature, consider **[writing an extension](How to write extensions)** instead.
 
-If you're interested in **submitting a pull request**, review the [guidelines for contributing code](https://github.com/adobe/brackets/blob/master/CONTRIBUTING.md#contributing-code). Most importantly:
+If you're interested in **submitting a pull request**, review the [guidelines for contributing code](https://github.com/brackets-cont/brackets/blob/master/CONTRIBUTING.md#contributing-code). Most importantly:
 
 1. Discuss any major changes or questions beforehand in the [brackets-dev newsgroup](http://groups.google.com/group/brackets-dev).
-2. Follow the [Pull Request Checklist](https://github.com/adobe/brackets/wiki/Pull-Request-Checklist) to ensure a good-quality pull request.
+2. Follow the [Pull Request Checklist](https://github.com/brackets-cont/brackets/wiki/Pull-Request-Checklist) to ensure a good-quality pull request.
 3. Sign the [Brackets Contributor License Agreement (CLA)](http://dev.brackets.io/brackets-contributor-license-agreement.html) — we can't merge your code otherwise. You only need to do this once.
 
 
@@ -20,11 +20,11 @@ If you're interested in **submitting a pull request**, review the [guidelines fo
 ### Setting up your dev environment ###
 
 1. Install the latest Brackets build (this gives you the native shell binaries which you'll use in step 6)
-2. Fork the [brackets repo](https://github.com/adobe/brackets)
+2. Fork the [brackets repo](https://github.com/brackets-cont/brackets)
 3. Clone your fork of the repo: `git clone https://github.com/<username>/brackets.git`
 4. Fetch submodules: `cd brackets` and `git submodule update --init`
 5. Install `npm` dependencies: `npm install`
-6. Add an "upstream" remote: `git remote add upstream https://github.com/adobe/brackets.git`
+6. Add an "upstream" remote: `git remote add upstream https://github.com/brackets-cont/brackets.git`
 7. Run `setup_for_hacking` script:
 
     |  |  |
@@ -47,9 +47,9 @@ Now, when you launch the Brackets app it will load your git copy of the source c
 ### Learning the Brackets code ###
 
 * **API docs:** http://brackets.io/docs/current (also inline in the code as JSDoc comments)
-* [Use **Dev Tools** to debug Brackets](https://github.com/adobe/brackets/wiki/Debugging-Brackets)
-* [Core APIs & architecture overview](https://github.com/adobe/brackets/wiki/Brackets-Development-How-Tos)
-* [How to use common APIs](https://github.com/adobe/brackets/wiki/How-to-write-extensions#common-how-tos)
+* [Use **Dev Tools** to debug Brackets](https://github.com/brackets-cont/brackets/wiki/Debugging-Brackets)
+* [Core APIs & architecture overview](https://github.com/brackets-cont/brackets/wiki/Brackets-Development-How-Tos)
+* [How to use common APIs](https://github.com/brackets-cont/brackets/wiki/How-to-write-extensions#common-how-tos)
 
 ### Submitting a pull request ###
 
@@ -60,7 +60,7 @@ Now, when you launch the Brackets app it will load your git copy of the source c
 5. Commit your changes: `git commit -am "Your commit message here"`
 6. Run unit tests
 7. Push changes to your fork of the repo: `git push origin <branchname>`
-8. Make sure you've reviewed the [Pull Request Checklist](https://github.com/adobe/brackets/wiki/Pull-Request-Checklist) and signed the [Contributor Licence Agreement (CLA)](http://dev.brackets.io/brackets-contributor-license-agreement.html). (See also overall [guidelines for contributing code](https://github.com/adobe/brackets/blob/master/CONTRIBUTING.md#contributing-code)).
+8. Make sure you've reviewed the [Pull Request Checklist](https://github.com/brackets-cont/brackets/wiki/Pull-Request-Checklist) and signed the [Contributor Licence Agreement (CLA)](http://dev.brackets.io/brackets-contributor-license-agreement.html). (See also overall [guidelines for contributing code](https://github.com/brackets-cont/brackets/blob/master/CONTRIBUTING.md#contributing-code)).
 9. Submit pull request on GitHub, including a descriptive title and links to any relevant bugs you're fixing.
 
 
@@ -68,7 +68,7 @@ Now, when you launch the Brackets app it will load your git copy of the source c
 
 ### How Brackets is Organized ###
 Brackets is primarily built in HTML/JS/CSS, but it currently runs as a desktop
-app inside a thin native app shell called [brackets-shell](https://github.com/adobe/brackets-shell),
+app inside a thin native app shell called [brackets-shell](https://github.com/brackets-cont/brackets-shell),
 based on [CEF](http://code.google.com/p/chromiumembedded/),
 that lets it access local files. (It doesn't run in the browser yet, but we're hoping to work on an in-browser version soon.)
 
@@ -77,7 +77,7 @@ The HTML/JS/CSS files are installed along with brackets-shell, but you can set u
 For details on working with Brackets's architecture and APIs, see [[Brackets Development How-Tos]].
 
 ### What should I hack on? ###
-Whatever you want, of course! Check out the [CONTRIBUTING guide](https://github.com/adobe/brackets/blob/master/CONTRIBUTING.md#where-do-i-start) for some ideas.
+Whatever you want, of course! Check out the [CONTRIBUTING guide](https://github.com/brackets-cont/brackets/blob/master/CONTRIBUTING.md#where-do-i-start) for some ideas.
 
 If you're planning to do something other than a small bugfix, please start a discussion on the [brackets-dev Google group](http://groups.google.com/group/brackets-dev) or the [#brackets IRC channel on freenode](http://webchat.freenode.net/?channels=brackets) to get feedback. There might already be some prior thinking on what you're working on, or some reason that it hasn't already been done. We don't want you to do tons of work and then have to rewrite half of it.
 
@@ -90,9 +90,9 @@ but it works for us). We'll try to review small pull requests quickly
 in the current sprint. Larger submissions may take longer — but discussing them
 in advance will smooth the process!
 
-Before you submit your pull request, please make sure it's merged with master and fully tested as described in the [Pull Request Checklist](https://github.com/adobe/brackets/wiki/Pull-Request-Checklist).
+Before you submit your pull request, please make sure it's merged with master and fully tested as described in the [Pull Request Checklist](https://github.com/brackets-cont/brackets/wiki/Pull-Request-Checklist).
 
-[Read more on how pull requests are reviewed...](https://github.com/adobe/brackets/blob/master/CONTRIBUTING.md#the-code-review-process)
+[Read more on how pull requests are reviewed...](https://github.com/brackets-cont/brackets/blob/master/CONTRIBUTING.md#the-code-review-process)
 
 
 ### <a name="getcode"></a> Getting a Copy of the Code ###
@@ -100,7 +100,7 @@ Before you submit your pull request, please make sure it's merged with master an
 
 **New to git?** If all this git stuff seems scary, check out [GitHub's git tutorial](http://try.github.io) or the [Pro Git book](http://git-scm.com/book).
 
-The first step is to fork the repo on GitHub so you can start making changes in your local repository. For the HTML/JS/CSS code that comprises the bulk of Brackets, you only need to fork the [brackets repo](https://github.com/adobe/brackets). (See ["Hacking on brackets-shell" below](#nativeshell) if you want to work on the native code as well). To fork a repo, simply click the "Fork" button at the top of the page.
+The first step is to fork the repo on GitHub so you can start making changes in your local repository. For the HTML/JS/CSS code that comprises the bulk of Brackets, you only need to fork the [brackets repo](https://github.com/brackets-cont/brackets). (See ["Hacking on brackets-shell" below](#nativeshell) if you want to work on the native code as well). To fork a repo, simply click the "Fork" button at the top of the page.
 
 Next pull the repositories down to your local machine. 
 
@@ -139,7 +139,7 @@ If you're only hacking on HTML/JS/CSS files, you can have the installed Brackets
 
 You can revert back to running the installed version of the Brackets source at any time by running `tools/restore_installed_build.sh` (Mac) or `tools\restore_installed_build.bat` (Windows) from your Brackets repo.
 
-Once you are set up, Brackets will pick up the latest changes to the code every time it starts — _no build step is needed._ (The Grunt scripts are used only to [generate a final release build](https://github.com/adobe/brackets/wiki/Building-Brackets-Releases)).
+Once you are set up, Brackets will pick up the latest changes to the code every time it starts — _no build step is needed._ (The Grunt scripts are used only to [generate a final release build](https://github.com/brackets-cont/brackets/wiki/Building-Brackets-Releases)).
 
 
 ### Getting Updates from the Main Repository ###
@@ -147,7 +147,7 @@ It's important to keep up to date with the main Brackets repository to make sure
 
 ```bash
 cd brackets
-git remote add upstream https://github.com/adobe/brackets.git
+git remote add upstream https://github.com/brackets-cont/brackets.git
 ```
 
 Your repo will now have two "remotes": `origin` refers to your fork on GitHub, while `upstream` refers to the original, official Brackets repo.
@@ -209,7 +209,7 @@ git checkout mynewfeature
 
 That creates a new branch called `mynewfeature` and sets it as your working branch. Any changes you make now will be linked to that branch. While you work on it, you should still keep your branch in sync with Brackets master following the "Getting Updates from the Main Repository" steps above. 
 
-Now go ahead and modify some code, make your fix, and be sure that it works in your copy of Brackets. As always, please follow the [guidelines for contributing code](https://github.com/adobe/brackets/blob/master/CONTRIBUTING.md#contributing-code) to ensure your code matches what's expected for Brackets contributions.
+Now go ahead and modify some code, make your fix, and be sure that it works in your copy of Brackets. As always, please follow the [guidelines for contributing code](https://github.com/brackets-cont/brackets/blob/master/CONTRIBUTING.md#contributing-code) to ensure your code matches what's expected for Brackets contributions.
 
 Next it's time to _commit_ your changes to your local git repo. Use `git add <filename>` to stage any modified files for committing, then use `git commit -m "COMMIT MESSAGE"` to commit those files. (Or just use use `git commit -am "COMMIT MESSAGE"` to commit all modified files). Be sure to write a thorough commit message that describes the changes you're making and why. 
 
@@ -227,11 +227,11 @@ This is a good time to review the **[[Pull Request Checklist]]** — make sure y
 ### Submitting a Pull Request ###
 Now you're ready to submit a pull request. Go to the GitHub page for your fork of Brackets and choose your branch from the dropdown near the upper left (it says `master` by default). Now you're looking at the code for that branch. 
 
-Click the Pull Request button in the top right and you'll be brought to a page that describes the pull request. Make sure you're submitting _to_ the `adobe/brackets` repository, _from_ the branch you've been working on. 
+Click the Pull Request button in the top right and you'll be brought to a page that describes the pull request. Make sure you're submitting _to_ the `brackets-cont/brackets` repository, _from_ the branch you've been working on. 
 
 Review the "Commits" and "Files Changed" tabs to make sure you're submitting only the changes you intend. Write a detailed description of what your pull request does, and include links to any relevant bugs ("#1234" is automatically turned into a link — though avoid writing "fixes #1234", since GitHub will auto-close the bug too soon if it sees a string like that). Then click "Send pull request."
 
-Congratulations on submitting your pull request — you're helping make Brackets even better! Read about [the pull request review process](https://github.com/adobe/brackets/blob/master/CONTRIBUTING.md#the-code-review-process) for what happens next.
+Congratulations on submitting your pull request — you're helping make Brackets even better! Read about [the pull request review process](https://github.com/brackets-cont/brackets/blob/master/CONTRIBUTING.md#the-code-review-process) for what happens next.
 
 #### Updating an Existing Pull Request
 During code review, you will probably be asked to make some changes to your code. First, make sure you're working on the correct branch:
@@ -252,5 +252,5 @@ However, you may want to set up a dev environment for brackets-shell if:
 * You want to hack on the native code.
 * You want to pull the latest from the brackets repo `master` and it requires a new brackets-shell build that hasn't been released as a binary yet. (This is uncommon, but it can happen).
 
-1. Similar to the steps above, fork the [brackets-shell repo](https://github.com/adobe/brackets-shell) and `git clone` it.
-2. Follow the [build instructions on the brackets-shell wiki](https://github.com/adobe/brackets-shell/wiki/Building-Brackets-Shell).
+1. Similar to the steps above, fork the [brackets-shell repo](https://github.com/brackets-cont/brackets-shell) and `git clone` it.
+2. Follow the [build instructions on the brackets-shell wiki](https://github.com/brackets-cont/brackets-shell/wiki/Building-Brackets-Shell).

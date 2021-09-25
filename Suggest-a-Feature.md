@@ -50,4 +50,4 @@ For example, if you type `SASS` into the filter box, Trello will show all of the
 
 ## Don't see the feature you're interested in?
 
-Feel free to put a request in [via GitHub issues](https://github.com/adobe/brackets/issues/new). The team will periodically review these and move them into Trello.
+Feel free to put a request in [via GitHub issues](https://github.com/brackets-cont/brackets/issues/new). The team will periodically review these and move them into Trello.

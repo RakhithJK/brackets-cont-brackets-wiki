@@ -70,14 +70,14 @@ Arrow key (multiple selections) | Collapse selection in direction of arrow | Not
 Shift-arrow key | Default (extend each selection in direction of arrow; merge selections that collide) |
 Shift-Cmd-Right/Left (Mac)/Shift-Alt-Right/Left key, Shift-Home/End (Win) | Default (extend each selection to end of its line) | Note: on Win, Sublime maps Alt-arrow to move by word, not end of line
 Shift-Alt-Right/Left (Mac)/Shift-Ctrl-Right/Left (Win) | Default (extend each selection by word; merge selections that collide) |
-Page up/down | Do page up/down and collapse selection to single cursor | Note: on Win, CMv4 currently collapses selection only, but this is true for single select as well. This also happens in CMv3 -- introduced in Sprint 36. [See issue #6811](https://github.com/adobe/brackets/issues/6811).
+Page up/down | Do page up/down and collapse selection to single cursor | Note: on Win, CMv4 currently collapses selection only, but this is true for single select as well. This also happens in CMv3 -- introduced in Sprint 36. [See issue #6811](https://github.com/brackets-cont/brackets/issues/6811).
 **Edits** | |
 Typing: multiple cursors/selections | Default (delete selection if any, then insert typed char) |
 Typing: combination of cursors and selections | Default |
 Delete: multiple cursors | Default (delete char before each cursor) | Edge cases occur when deletions can cause cursors to collide. Should test to make sure there's no bad behavior.
 Delete: multiple selections | Default (delete content and collapse each selection to cursor) | Edge cases occur when deletions can cause cursors to collide. Should test to make sure there's no bad behavior.
 Delete: combination of cursors and selections | Only delete selections - no operation on cursors. |
-Tab | See description in [#7022](https://github.com/adobe/brackets/issues/7022) | 
+Tab | See description in [#7022](https://github.com/brackets-cont/brackets/issues/7022) | 
 Shift-Tab | Default (unindent all lines) |
 Indent/Unindent | Default |
 Copy | Concatenate each selection, separated by newlines, and copy to clipboard. Cursors count as empty selections, so add an extra newline. | This is the current cmv4 behavior. Sublime ignores cursors in this case (extra newlines are not generated). Ace's behavior is like CM's.

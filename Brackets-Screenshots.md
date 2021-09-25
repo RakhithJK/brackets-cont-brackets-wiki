@@ -4,8 +4,8 @@ _Note:_ these screenshots show Brackets with a number of optional extensions ins
 
 **Overall Brackets UI**
 
-[![Brackets UI screenshot](https://github.com/adobe/brackets/wiki/screenshots/brackets-ui-thumb.jpg)](https://github.com/adobe/brackets/wiki/screenshots/brackets-ui.png)
+[![Brackets UI screenshot](https://github.com/brackets-cont/brackets/wiki/screenshots/brackets-ui-thumb.jpg)](https://github.com/brackets-cont/brackets/wiki/screenshots/brackets-ui.png)
 
 **Quick Edit UI**
 
-[![Quick Edit UI](https://github.com/adobe/brackets/wiki/screenshots/brackets-quick-edit-thumb.jpg)](https://github.com/adobe/brackets/wiki/screenshots/brackets-quick-edit.png)
+[![Quick Edit UI](https://github.com/brackets-cont/brackets/wiki/screenshots/brackets-quick-edit-thumb.jpg)](https://github.com/brackets-cont/brackets/wiki/screenshots/brackets-quick-edit.png)

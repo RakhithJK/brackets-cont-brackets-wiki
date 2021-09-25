@@ -5,15 +5,15 @@ What's New in Sprint 23
 * **Overall UI**
     * [Toolbar redesign](https://trello.com/card/2-ux-implement-toolbar/4f90a6d98f77505d7940ce88/785): The horizontal top toolbar has been replaced with a vertical side toolbar to make better use of precious vertical real estate. See below for details.
 * **Code Editing**
-    * [Code hints for HTML entities](https://github.com/adobe/brackets/pull/3237) (for example `&nbsp;`)
-    * [.sh code coloring](https://github.com/adobe/brackets/pull/3348/files)
+    * [Code hints for HTML entities](https://github.com/brackets-cont/brackets/pull/3237) (for example `&nbsp;`)
+    * [.sh code coloring](https://github.com/brackets-cont/brackets/pull/3348/files)
 * **Search**
-    * [Quick Open performance](https://github.com/adobe/brackets/pull/3184): now more responsive on large projects
+    * [Quick Open performance](https://github.com/brackets-cont/brackets/pull/3184): now more responsive on large projects
 * **Localization**
-    * [Czech translation](https://github.com/adobe/brackets/pull/3150)
-    * [Polish translation](https://github.com/adobe/brackets/pull/3235)
+    * [Czech translation](https://github.com/brackets-cont/brackets/pull/3150)
+    * [Polish translation](https://github.com/brackets-cont/brackets/pull/3235)
 
-_Full change logs:_ [brackets](https://github.com/adobe/brackets/compare/sprint-22...sprint-23#commits_bucket) and [brackets-shell](https://github.com/adobe/brackets-shell/compare/sprint-22...sprint-23#commits_bucket)
+_Full change logs:_ [brackets](https://github.com/brackets-cont/brackets/compare/sprint-22...sprint-23#commits_bucket) and [brackets-shell](https://github.com/brackets-cont/brackets-shell/compare/sprint-22...sprint-23#commits_bucket)
 
 
 UI Changes
@@ -40,32 +40,32 @@ New/Improved Extensibility APIs
 
 Known Issues
 ------------
-* [#3207](https://github.com/adobe/brackets/issues/3207): If you use a Sprint 21 or earlier build after using this build at least once, a few preferences such as Recent Projects may get reset. (You can back up your [[cache folder]] if you're concerned about this).
+* [#3207](https://github.com/brackets-cont/brackets/issues/3207): If you use a Sprint 21 or earlier build after using this build at least once, a few preferences such as Recent Projects may get reset. (You can back up your [[cache folder]] if you're concerned about this).
 * Mountain Lion (OS X 10.8) by default will not allow Brackets to run since it's not digitally signed yet.  To work around this, right click the Brackets app and choose Open.  You only need to do that once -- afterward, launching Brackets the normal way will work also.
-* [#2272](https://github.com/adobe/brackets/issues/2272): Windows Vista may not allow the Brackets installer to run (you may not see _any_ error message). To work around this, right-click the installer file, choose Properties, and click the Unblock button.
-* _Debug > Run Tests_ is disabled in the installer/DMG distributions of Brackets, because the unit test code is not included. To run unit tests, [pull Brackets from GitHub](https://github.com/adobe/brackets/wiki/How-to-Hack-on-Brackets#wiki-getcode) instead.
+* [#2272](https://github.com/brackets-cont/brackets/issues/2272): Windows Vista may not allow the Brackets installer to run (you may not see _any_ error message). To work around this, right-click the installer file, choose Properties, and click the Unblock button.
+* _Debug > Run Tests_ is disabled in the installer/DMG distributions of Brackets, because the unit test code is not included. To run unit tests, [pull Brackets from GitHub](https://github.com/brackets-cont/brackets/wiki/How-to-Hack-on-Brackets#wiki-getcode) instead.
 
 Community contributions to Brackets
 -----------------------------------
-* [Code hints for HTML entities](https://github.com/adobe/brackets/pull/3237) ([and](https://github.com/adobe/brackets/pull/3340)) by [Bernhard Sirlinger](https://github.com/WebsiteDeveloper)
-* [Polish translation](https://github.com/adobe/brackets/pull/3235) by [Rafal Borowski](https://github.com/rafalborowski) ([plus](https://github.com/adobe/brackets/pull/3360) [fixes](https://github.com/adobe/brackets/pull/3361) by [niu tech](https://github.com/niutech))
-* [Czech translation](https://github.com/adobe/brackets/pull/3150) by [kvarel](https://github.com/kvarel)
-* [Migrate QuickOpen APIs and CSS inline editor implementation to new LangugeManager APIs](https://github.com/adobe/brackets/pull/3301) by [Bernhard Sirlinger](https://github.com/WebsiteDeveloper)
-* [Migrate CodeHintManager APIs to new LanguageManager APIs](https://github.com/adobe/brackets/pull/3270) by [Bernhard Sirlinger](https://github.com/WebsiteDeveloper)
-* [Fix #3253: Active line highlight doesn't disappear in unfocused editor](https://github.com/adobe/brackets/pull/3274) by [Tomás Malbrán](https://github.com/TomMalbran)
-* [Fix #3228: Code hints popup positioned wrong with non-default font size](https://github.com/adobe/brackets/pull/3232) by [Tomás Malbrán](https://github.com/TomMalbran)
-* [Maintain scroll position when adjusting font size](https://github.com/adobe/brackets/pull/3300) by [Tomás Malbrán](https://github.com/TomMalbran)
-* [Use more standard way to open Finder on Mac](https://github.com/adobe/brackets-shell/pull/225) by [Alex Zielenski](https://github.com/alexzielenski)
-* [Cleanup: refactor JSLint into a default extension](https://github.com/adobe/brackets/pull/3143) ([and](https://github.com/adobe/brackets/pull/3315)) by [Tomás Malbrán](https://github.com/TomMalbran)
-* [Cleanup: Recent Projects code](https://github.com/adobe/brackets/pull/3213) by [Tomás Malbrán](https://github.com/TomMalbran)
-* [Cleanup: only Live Preview server provider should check file extension](https://github.com/adobe/brackets/pull/3218) by [Jonathan Rowny](https://github.com/jrowny)
-* [Fix #3271: Expose constants for Resizer APIs](https://github.com/adobe/brackets/pull/3290) by [Bernhard Sirlinger](https://github.com/WebsiteDeveloper)
-* [Unit tests for editor options: highlight active line, word wrap, auto-close braces, hide line numbers](https://github.com/adobe/brackets/pull/3231) by [Tomás Malbrán](https://github.com/TomMalbran)
-* [German translation update](https://github.com/adobe/brackets/pull/3236) by [Ben Schley](https://github.com/bschley)
-* [Spanish translation update](https://github.com/adobe/brackets/pull/3393) by [Chema Balsas](https://github.com/jbalsas)
-* [Chinese translation update](https://github.com/adobe/brackets/pull/3287) by [yodfz](https://github.com/yodfz)
-* [Fix elipses char in strings](https://github.com/adobe/brackets/pull/3282) by [Bernhard Sirlinger](https://github.com/WebsiteDeveloper)
-* [Add Brackets license to package.json](https://github.com/adobe/brackets/pull/3258) by [Lee Leathers](https://github.com/theoreticaLee)
+* [Code hints for HTML entities](https://github.com/brackets-cont/brackets/pull/3237) ([and](https://github.com/brackets-cont/brackets/pull/3340)) by [Bernhard Sirlinger](https://github.com/WebsiteDeveloper)
+* [Polish translation](https://github.com/brackets-cont/brackets/pull/3235) by [Rafal Borowski](https://github.com/rafalborowski) ([plus](https://github.com/brackets-cont/brackets/pull/3360) [fixes](https://github.com/brackets-cont/brackets/pull/3361) by [niu tech](https://github.com/niutech))
+* [Czech translation](https://github.com/brackets-cont/brackets/pull/3150) by [kvarel](https://github.com/kvarel)
+* [Migrate QuickOpen APIs and CSS inline editor implementation to new LangugeManager APIs](https://github.com/brackets-cont/brackets/pull/3301) by [Bernhard Sirlinger](https://github.com/WebsiteDeveloper)
+* [Migrate CodeHintManager APIs to new LanguageManager APIs](https://github.com/brackets-cont/brackets/pull/3270) by [Bernhard Sirlinger](https://github.com/WebsiteDeveloper)
+* [Fix #3253: Active line highlight doesn't disappear in unfocused editor](https://github.com/brackets-cont/brackets/pull/3274) by [Tomás Malbrán](https://github.com/TomMalbran)
+* [Fix #3228: Code hints popup positioned wrong with non-default font size](https://github.com/brackets-cont/brackets/pull/3232) by [Tomás Malbrán](https://github.com/TomMalbran)
+* [Maintain scroll position when adjusting font size](https://github.com/brackets-cont/brackets/pull/3300) by [Tomás Malbrán](https://github.com/TomMalbran)
+* [Use more standard way to open Finder on Mac](https://github.com/brackets-cont/brackets-shell/pull/225) by [Alex Zielenski](https://github.com/alexzielenski)
+* [Cleanup: refactor JSLint into a default extension](https://github.com/brackets-cont/brackets/pull/3143) ([and](https://github.com/brackets-cont/brackets/pull/3315)) by [Tomás Malbrán](https://github.com/TomMalbran)
+* [Cleanup: Recent Projects code](https://github.com/brackets-cont/brackets/pull/3213) by [Tomás Malbrán](https://github.com/TomMalbran)
+* [Cleanup: only Live Preview server provider should check file extension](https://github.com/brackets-cont/brackets/pull/3218) by [Jonathan Rowny](https://github.com/jrowny)
+* [Fix #3271: Expose constants for Resizer APIs](https://github.com/brackets-cont/brackets/pull/3290) by [Bernhard Sirlinger](https://github.com/WebsiteDeveloper)
+* [Unit tests for editor options: highlight active line, word wrap, auto-close braces, hide line numbers](https://github.com/brackets-cont/brackets/pull/3231) by [Tomás Malbrán](https://github.com/TomMalbran)
+* [German translation update](https://github.com/brackets-cont/brackets/pull/3236) by [Ben Schley](https://github.com/bschley)
+* [Spanish translation update](https://github.com/brackets-cont/brackets/pull/3393) by [Chema Balsas](https://github.com/jbalsas)
+* [Chinese translation update](https://github.com/brackets-cont/brackets/pull/3287) by [yodfz](https://github.com/yodfz)
+* [Fix elipses char in strings](https://github.com/brackets-cont/brackets/pull/3282) by [Bernhard Sirlinger](https://github.com/WebsiteDeveloper)
+* [Add Brackets license to package.json](https://github.com/brackets-cont/brackets/pull/3258) by [Lee Leathers](https://github.com/theoreticaLee)
 
 
 Contributions _from_ the Brackets community
@@ -78,4 +78,4 @@ Contributions _from_ the Brackets community
 
 Bugs fixed in Sprint 23
 -----------------------
-For details on the bugs addressed, please refer to [closed sprint 23 bugs](https://github.com/adobe/brackets/issues?labels=&milestone=10&state=closed). A few of the fixed bugs might not be caught by this search query, however.
+For details on the bugs addressed, please refer to [closed sprint 23 bugs](https://github.com/brackets-cont/brackets/issues?labels=&milestone=10&state=closed). A few of the fixed bugs might not be caught by this search query, however.

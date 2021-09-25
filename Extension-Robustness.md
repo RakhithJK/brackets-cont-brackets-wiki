@@ -43,7 +43,7 @@ _Note: Ian pointed out that jQuery Promises have the same problem_ -- if one don
 
 The idea behind sandboxing of extensions is that extensions run in some separate context from the Brackets core and only have access to the APIs that we explicitly provide. Because they run in a separate context, the amount of damage that an extension can cause is minimized. The biggest problem with sandboxing is that sandboxed extensions would not be able to directly manipulate the DOM, something that some extensions do to provide custom UI. Additionally, there is a performance cost to crossing the line between the sandbox and the main process.
 
-As our thinking progressed on [extension APIs](https://github.com/adobe/brackets/wiki/Extension-API-Research), we realized that it would be possible to maintain quite a bit of backwards compatibility even when moving to a sandbox. It may also be possible to allow an extension to provide a bit of code that runs outside of the sandbox (though such extensions would not work if we ever have a context in which the sandbox is also used for security reasons).
+As our thinking progressed on [extension APIs](https://github.com/brackets-cont/brackets/wiki/Extension-API-Research), we realized that it would be possible to maintain quite a bit of backwards compatibility even when moving to a sandbox. It may also be possible to allow an extension to provide a bit of code that runs outside of the sandbox (though such extensions would not work if we ever have a context in which the sandbox is also used for security reasons).
 
 Sandboxing may be worthwhile, but would require considerable effort and some further design and feasibility thinking would need to be done.
 
@@ -61,7 +61,7 @@ Additionally, we can try to ensure that our public APIs validate their arguments
 
 Through the Extension Manager and Extension Registry, we can make it easier for Brackets users to keep their Brackets running well, identify the extensions that are causing issues and report problems to the extension author and other users.
 
-* [Reload without user extensions](https://github.com/adobe/brackets/pull/6334)
+* [Reload without user extensions](https://github.com/brackets-cont/brackets/pull/6334)
 * "Safe Mode" (disable all extensions and restart)
 * Selectively disable extensions (possibly a feature like "bisect" to identify the problem extension)
 * Rating, flagging and commenting

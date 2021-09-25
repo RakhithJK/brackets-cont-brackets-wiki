@@ -5,17 +5,17 @@ What's New in Sprint 25
 * **Extensions**
     * [Extension manager](https://trello.com/card/2-extension-listing-remove-manage/4f90a6d98f77505d7940ce88/815): Listing of your currently installed extensions. Easier to uninstall extensions.
 * **File Management**
-    * [Refresh file tree](https://github.com/adobe/brackets/pull/3370): Right-click on the file tree and choose Refresh to update the file list from disk &ndash; no need to restart Brackets. (This is a stopgap along the way to [fully automatic refresh](https://trello.com/card/8-file-directory-watching/4f90a6d98f77505d7940ce88/292), which will come further down the road).
-    * [Delete file/folder](https://github.com/adobe/brackets/pull/3879): Right-click in the file tree an choose Delete to move a file or entire folder to the trash.
-    * [Show file/folder in OS](https://github.com/adobe/brackets/pull/2128): Right-click in the file tree or working files list and choose Show in OS to show a file or folder in Windows Explorer or Mac Finder.
+    * [Refresh file tree](https://github.com/brackets-cont/brackets/pull/3370): Right-click on the file tree and choose Refresh to update the file list from disk &ndash; no need to restart Brackets. (This is a stopgap along the way to [fully automatic refresh](https://trello.com/card/8-file-directory-watching/4f90a6d98f77505d7940ce88/292), which will come further down the road).
+    * [Delete file/folder](https://github.com/brackets-cont/brackets/pull/3879): Right-click in the file tree an choose Delete to move a file or entire folder to the trash.
+    * [Show file/folder in OS](https://github.com/brackets-cont/brackets/pull/2128): Right-click in the file tree or working files list and choose Show in OS to show a file or folder in Windows Explorer or Mac Finder.
 * **Search**
-    * [Faster, more accurate Quick Edit for JavaScript](https://github.com/adobe/brackets/pull/3847): Now using the [Tern code intelligence engine](http://ternjs.net/) that powers code hints and Jump to Definition.
+    * [Faster, more accurate Quick Edit for JavaScript](https://github.com/brackets-cont/brackets/pull/3847): Now using the [Tern code intelligence engine](http://ternjs.net/) that powers code hints and Jump to Definition.
 * **Code Editing**
     * Many bug fixes in JavaScript code hinting
     * [Improved typing performance](https://trello.com/card/3-research-rendering-typing-performance/4f90a6d98f77505d7940ce88/860): Brackets responds to keypresses 21% faster in JavaScript code and 13% faster in general (fixed [unneeded repaints](https://github.com/marijnh/CodeMirror/issues/1514) and optimized code hint popup creation).
 
 
-_Full change logs:_ [brackets](https://github.com/adobe/brackets/compare/sprint-24...sprint-25#commits_bucket) and [brackets-shell](https://github.com/adobe/brackets-shell/compare/sprint-24...sprint-25#commits_bucket)
+_Full change logs:_ [brackets](https://github.com/brackets-cont/brackets/compare/sprint-24...sprint-25#commits_bucket) and [brackets-shell](https://github.com/brackets-cont/brackets-shell/compare/sprint-24...sprint-25#commits_bucket)
 
 
 UI Changes
@@ -49,42 +49,42 @@ New/Improved Extensibility APIs
 Known Issues
 ------------
 * Mountain Lion (OS X 10.8) by default will not allow Brackets to run since it's not digitally signed yet. To work around this, right click the Brackets app and choose Open. You only need to do that once -- afterward, launching Brackets the normal way will work also.
-* [#2272](https://github.com/adobe/brackets/issues/2272): Windows Vista may not allow the Brackets installer to run (you may not see _any_ error message). To work around this, right-click the installer file, choose Properties, and click the Unblock button.
-* [#3458](https://github.com/adobe/brackets/issues/3458): Quick View does not yet support the latest CSS gradient syntax (using `to` keyword, unprefixed `radial-gradient`, `repeating-linear-gradient` or `repeating-radial-gradient`).
-* [#3570](https://github.com/adobe/brackets/issues/3570): Mac only - Quick View popover may not appear after resizing window or going fullscreen. Move the mouse to the top of the screen to fix.
-* [#3207](https://github.com/adobe/brackets/issues/3207): If you use a Sprint 21 or earlier build after using this build at least once, a few preferences such as Recent Projects may get reset. (You can back up your [[cache folder]] if you're concerned about this).
-* _Debug > Run Tests_ is disabled in the installer/DMG distributions of Brackets, because the unit test code is not included. To run unit tests, [pull Brackets from GitHub](https://github.com/adobe/brackets/wiki/How-to-Hack-on-Brackets#wiki-getcode) instead.
+* [#2272](https://github.com/brackets-cont/brackets/issues/2272): Windows Vista may not allow the Brackets installer to run (you may not see _any_ error message). To work around this, right-click the installer file, choose Properties, and click the Unblock button.
+* [#3458](https://github.com/brackets-cont/brackets/issues/3458): Quick View does not yet support the latest CSS gradient syntax (using `to` keyword, unprefixed `radial-gradient`, `repeating-linear-gradient` or `repeating-radial-gradient`).
+* [#3570](https://github.com/brackets-cont/brackets/issues/3570): Mac only - Quick View popover may not appear after resizing window or going fullscreen. Move the mouse to the top of the screen to fix.
+* [#3207](https://github.com/brackets-cont/brackets/issues/3207): If you use a Sprint 21 or earlier build after using this build at least once, a few preferences such as Recent Projects may get reset. (You can back up your [[cache folder]] if you're concerned about this).
+* _Debug > Run Tests_ is disabled in the installer/DMG distributions of Brackets, because the unit test code is not included. To run unit tests, [pull Brackets from GitHub](https://github.com/brackets-cont/brackets/wiki/How-to-Hack-on-Brackets#wiki-getcode) instead.
 
 
 Community contributions to Brackets
 -----------------------------------
-* [Make JSLint error messages selectable in JSLint panel](https://github.com/adobe/brackets/pull/3688) by [Jeffrey Fisher](https://github.com/jeffslofish)
-* [Color-code Handlebars .hbs files as HTML](https://github.com/adobe/brackets/pull/3699) by [Thomas Carlsen](https://github.com/tcarlsen)
-* [Color-code Kit .kit files as HTML](https://github.com/adobe/brackets/pull/3809) by [Tucker Whitehouse](https://github.com/TuckerWhitehouse)
-* [Color-code Embedded JS .ejs & Java .jsp files as HTML](https://github.com/adobe/brackets/pull/3809) by [Tucker Whitehouse](https://github.com/TuckerWhitehouse)
-* [Fix #3723: Allow replacing non-multi-line selection with Tab character](https://github.com/adobe/brackets/pull/3759) by [Jeffrey Fisher](https://github.com/jeffslofish)
-* [Fix #3679: File extension isn't color-coded if created via File > New](https://github.com/adobe/brackets/pull/3690) by [Rajesh Segu](https://github.com/rajeshsegu)
-* [Restore useful error messages when addMenuItem() is passed bad arguments](https://github.com/adobe/brackets/pull/3611) by [Tomás Malbrán](https://github.com/TomMalbran)
-* [Fix #3637: Incorrect selection indicator after loading Brackets with sidebar hidden](https://github.com/adobe/brackets/pull/3719) by [Jeffrey Fisher](https://github.com/jeffslofish)
-* [Partial fix for #3478: 1px top border sometimes appears on search result highlight](https://github.com/adobe/brackets/pull/3568) by [Tomás Malbrán](https://github.com/TomMalbran)
-* [Fix #3773: Only show '"The maximum number of files have been indexed' error once per project (per session)](https://github.com/adobe/brackets/pull/3783) by [dschaffe](https://github.com/dschaffe)
-* [Fix incorrect plural in statusbar for 1-line files](https://github.com/adobe/brackets/pull/3584) by [Tomás Malbrán](https://github.com/TomMalbran)
-* [Speed improvement to CollectionUtils.hasOwnProperty()](https://github.com/adobe/brackets/pull/3687) by [Rajesh Segu](https://github.com/rajeshsegu)
-* [Add ViewCommandHandlers "fontSizeChange" event](https://github.com/adobe/brackets/pull/3787) by [Lance Campbell](https://github.com/lkcampbell)
-* [Add cleaner APIs for sidebar panel: isVisibile(), show(), hide()](https://github.com/adobe/brackets/pull/3297) ([and](https://github.com/adobe/brackets/pull/3876)) by [Lance Campbell](https://github.com/lkcampbell)
-* [Cleanup: Use Mustache templates for some of the Debug commands' UI](https://github.com/adobe/brackets/pull/3336) by [Tomás Malbrán](https://github.com/TomMalbran)
-* [Cleanup: Upgrade Mustache version](https://github.com/adobe/brackets/pull/3693) by [Bernhard Sirlinger](https://github.com/WebsiteDeveloper)
-* [Cleanup: Use submodules for RequireJS text & i18n plugins](https://github.com/adobe/brackets/pull/3680) by [Tucker Whitehouse](https://github.com/TuckerWhitehouse)
-* [Cleanup: Stop using jQuery.toggleClass() due to argument type bug-proneness](https://github.com/adobe/brackets/pull/3689) by [Bernhard Sirlinger](https://github.com/WebsiteDeveloper)
-* [Cleanup: Stop using deprecated Promise.isResolved()/isRejected()](https://github.com/adobe/brackets/pull/3665) by [Tucker Whitehouse](https://github.com/TuckerWhitehouse)
-* [Cleanup: Stop using deprecated CodeMirror token.className](https://github.com/adobe/brackets/pull/3697) by [Jeffrey Fisher](https://github.com/jeffslofish)
-* [Cleanup: Group strings used by default extensions](https://github.com/adobe/brackets/pull/3575) by [Tomás Malbrán](https://github.com/TomMalbran)
-* [Cleanup: Remove unused string](https://github.com/adobe/brackets/pull/3586) by [Tomás Malbrán](https://github.com/TomMalbran)
-* [Unit tests for HTML entity code hints](https://github.com/adobe/brackets/pull/3524) ([and](https://github.com/adobe/brackets/pull/3710)) by [Bernhard Sirlinger](https://github.com/WebsiteDeveloper)
-* [Localize language names in Debug > Switch Language dropdown](https://github.com/adobe/brackets/pull/3704) by [Tammo Pape](https://github.com/tammo)
-* [Fix unlocalized string "pixels" in Quick View popup](https://github.com/adobe/brackets/pull/3811) by [Kieran Gorman](https://github.com/kjgorman)
-* [German translation update](https://github.com/adobe/brackets/pull/3641) by [mynetx](https://github.com/mynetx)
-* [Spanish translation update](https://github.com/adobe/brackets/pull/3929) by [Chema Balsas](https://github.com/jbalsas)
+* [Make JSLint error messages selectable in JSLint panel](https://github.com/brackets-cont/brackets/pull/3688) by [Jeffrey Fisher](https://github.com/jeffslofish)
+* [Color-code Handlebars .hbs files as HTML](https://github.com/brackets-cont/brackets/pull/3699) by [Thomas Carlsen](https://github.com/tcarlsen)
+* [Color-code Kit .kit files as HTML](https://github.com/brackets-cont/brackets/pull/3809) by [Tucker Whitehouse](https://github.com/TuckerWhitehouse)
+* [Color-code Embedded JS .ejs & Java .jsp files as HTML](https://github.com/brackets-cont/brackets/pull/3809) by [Tucker Whitehouse](https://github.com/TuckerWhitehouse)
+* [Fix #3723: Allow replacing non-multi-line selection with Tab character](https://github.com/brackets-cont/brackets/pull/3759) by [Jeffrey Fisher](https://github.com/jeffslofish)
+* [Fix #3679: File extension isn't color-coded if created via File > New](https://github.com/brackets-cont/brackets/pull/3690) by [Rajesh Segu](https://github.com/rajeshsegu)
+* [Restore useful error messages when addMenuItem() is passed bad arguments](https://github.com/brackets-cont/brackets/pull/3611) by [Tomás Malbrán](https://github.com/TomMalbran)
+* [Fix #3637: Incorrect selection indicator after loading Brackets with sidebar hidden](https://github.com/brackets-cont/brackets/pull/3719) by [Jeffrey Fisher](https://github.com/jeffslofish)
+* [Partial fix for #3478: 1px top border sometimes appears on search result highlight](https://github.com/brackets-cont/brackets/pull/3568) by [Tomás Malbrán](https://github.com/TomMalbran)
+* [Fix #3773: Only show '"The maximum number of files have been indexed' error once per project (per session)](https://github.com/brackets-cont/brackets/pull/3783) by [dschaffe](https://github.com/dschaffe)
+* [Fix incorrect plural in statusbar for 1-line files](https://github.com/brackets-cont/brackets/pull/3584) by [Tomás Malbrán](https://github.com/TomMalbran)
+* [Speed improvement to CollectionUtils.hasOwnProperty()](https://github.com/brackets-cont/brackets/pull/3687) by [Rajesh Segu](https://github.com/rajeshsegu)
+* [Add ViewCommandHandlers "fontSizeChange" event](https://github.com/brackets-cont/brackets/pull/3787) by [Lance Campbell](https://github.com/lkcampbell)
+* [Add cleaner APIs for sidebar panel: isVisibile(), show(), hide()](https://github.com/brackets-cont/brackets/pull/3297) ([and](https://github.com/brackets-cont/brackets/pull/3876)) by [Lance Campbell](https://github.com/lkcampbell)
+* [Cleanup: Use Mustache templates for some of the Debug commands' UI](https://github.com/brackets-cont/brackets/pull/3336) by [Tomás Malbrán](https://github.com/TomMalbran)
+* [Cleanup: Upgrade Mustache version](https://github.com/brackets-cont/brackets/pull/3693) by [Bernhard Sirlinger](https://github.com/WebsiteDeveloper)
+* [Cleanup: Use submodules for RequireJS text & i18n plugins](https://github.com/brackets-cont/brackets/pull/3680) by [Tucker Whitehouse](https://github.com/TuckerWhitehouse)
+* [Cleanup: Stop using jQuery.toggleClass() due to argument type bug-proneness](https://github.com/brackets-cont/brackets/pull/3689) by [Bernhard Sirlinger](https://github.com/WebsiteDeveloper)
+* [Cleanup: Stop using deprecated Promise.isResolved()/isRejected()](https://github.com/brackets-cont/brackets/pull/3665) by [Tucker Whitehouse](https://github.com/TuckerWhitehouse)
+* [Cleanup: Stop using deprecated CodeMirror token.className](https://github.com/brackets-cont/brackets/pull/3697) by [Jeffrey Fisher](https://github.com/jeffslofish)
+* [Cleanup: Group strings used by default extensions](https://github.com/brackets-cont/brackets/pull/3575) by [Tomás Malbrán](https://github.com/TomMalbran)
+* [Cleanup: Remove unused string](https://github.com/brackets-cont/brackets/pull/3586) by [Tomás Malbrán](https://github.com/TomMalbran)
+* [Unit tests for HTML entity code hints](https://github.com/brackets-cont/brackets/pull/3524) ([and](https://github.com/brackets-cont/brackets/pull/3710)) by [Bernhard Sirlinger](https://github.com/WebsiteDeveloper)
+* [Localize language names in Debug > Switch Language dropdown](https://github.com/brackets-cont/brackets/pull/3704) by [Tammo Pape](https://github.com/tammo)
+* [Fix unlocalized string "pixels" in Quick View popup](https://github.com/brackets-cont/brackets/pull/3811) by [Kieran Gorman](https://github.com/kjgorman)
+* [German translation update](https://github.com/brackets-cont/brackets/pull/3641) by [mynetx](https://github.com/mynetx)
+* [Spanish translation update](https://github.com/brackets-cont/brackets/pull/3929) by [Chema Balsas](https://github.com/jbalsas)
 
 
 Contributions _from_ the Brackets community
@@ -99,4 +99,4 @@ Contributions _from_ the Brackets community
 
 Bugs fixed in Sprint 25
 -----------------------
-For details on the bugs addressed, please refer to [closed sprint 25 bugs](https://github.com/adobe/brackets/issues?labels=&milestone=12&state=closed). A few of the fixed bugs might not be caught by this search query, however.
+For details on the bugs addressed, please refer to [closed sprint 25 bugs](https://github.com/brackets-cont/brackets/issues?labels=&milestone=12&state=closed). A few of the fixed bugs might not be caught by this search query, however.

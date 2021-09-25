@@ -1,6 +1,6 @@
 Although Brackets is packaged as a desktop application, it's built almost entirely in HTML/CSS/JS - and most of that code will run in a browser with no modifications.  The functionality provided by Brackets's native desktop shell (brackets-shell) needs to be replaced or disabled, however.
 
-Some basic parts of this work have been done by the core team in the **[pflynn/in-browser-file-system branch](https://github.com/adobe/brackets/tree/pflynn/in-browser-file-system)** ([diff](https://github.com/adobe/brackets/compare/master...pflynn/in-browser-file-system)). However, **the core Brackets project does not provide a complete turnkey solution for running in browser.**
+Some basic parts of this work have been done by the core team in the **[pflynn/in-browser-file-system branch](https://github.com/brackets-cont/brackets/tree/pflynn/in-browser-file-system)** ([diff](https://github.com/brackets-cont/brackets/compare/master...pflynn/in-browser-file-system)). However, **the core Brackets project does not provide a complete turnkey solution for running in browser.**
 
 
 ## Pieces You Must Provide
@@ -8,16 +8,16 @@ Some basic parts of this work have been done by the core team in the **[pflynn/i
 Some aspects of running Brackets in a browser are very use-case dependent, so each implementor must provide their own code:
 
 - **Server** - We do not provide code for serving up the Brackets app files. Any web server should do, though.
-- **Backend storage** - You must implement your own backend storage layer to store the text the user is editing. Provide a [File System Implementation](https://github.com/adobe/brackets/wiki/File-System-Implementations) module that talks to this backend on Bracket's behalf, allowing Brackets to save and load files (among other operations). The impl acts as a bridge between the Brackets core code and your backend.
+- **Backend storage** - You must implement your own backend storage layer to store the text the user is editing. Provide a [File System Implementation](https://github.com/brackets-cont/brackets/wiki/File-System-Implementations) module that talks to this backend on Bracket's behalf, allowing Brackets to save and load files (among other operations). The impl acts as a bridge between the Brackets core code and your backend.
 - **Authentication** - Presumably, your users must log in to determine which set of files in the backend storage they have access to. Brackets does not provide any code for authentication & authorization.
-- **Deploying builds** - [Use Grunt to generate a minified build of Brackets](https://github.com/adobe/brackets/wiki/Building-Brackets-Releases). How you deploy to your webserver is up to you, though.
+- **Deploying builds** - [Use Grunt to generate a minified build of Brackets](https://github.com/brackets-cont/brackets/wiki/Building-Brackets-Releases). How you deploy to your webserver is up to you, though.
 
 
 ## Missing Pieces
 
 Major Brackets features that do not work in-browser yet:
 
-* **Live Preview** - Live Preview currently requires connecting to the Chrome Remote Debugging API, which is only accessible when Chrome is launched with a special command-line argument. [We hope to avoid this requirement in the future](https://github.com/adobe/brackets/wiki/Live-Development:-lifecycle-research-and-future-directions#live-development-managed-with-unprivileged-scripts). Live Preview also needs to run a small web server to serve up instrumented copies of the user's files; doing this from a remote server is likely trickier than the simple local Node server that Brackets uses on the desktop.
+* **Live Preview** - Live Preview currently requires connecting to the Chrome Remote Debugging API, which is only accessible when Chrome is launched with a special command-line argument. [We hope to avoid this requirement in the future](https://github.com/brackets-cont/brackets/wiki/Live-Development:-lifecycle-research-and-future-directions#live-development-managed-with-unprivileged-scripts). Live Preview also needs to run a small web server to serve up instrumented copies of the user's files; doing this from a remote server is likely trickier than the simple local Node server that Brackets uses on the desktop.
 * **Extensions** - Implementing user-installable extensions in-browser requires several considerations:
     * Security - Extensions are loaded in the same domain as Brackets, so they can take any action on your website with your user's auth credentials.
     - Storage - `ExtensonLoader` must be modified to load extensions from your server instead of fixed file:// URLs. To allow each user to install different extensions, your server would need to store a separate extensions folder for each user.

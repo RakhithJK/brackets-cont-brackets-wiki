@@ -6,7 +6,7 @@ All help from community is welcome, so we provide builds on all platforms.
 
 ## Builds
 
-Installer builds will be provided as a [Github Release](https://github.com/adobe/brackets/releases)
+Installer builds will be provided as a [Github Release](https://github.com/brackets-cont/brackets/releases)
 using prerelease flag. First set of builds are made from release branch.
 Additional builds will be made as necessary (i.e. may not need a new build
 if only update are string changes). _Always uninstall prerelease builds_ before installing the next build - otherwise the later build may not install correctly (since it will have the same version number).
@@ -17,7 +17,7 @@ To extract a Windows build without installing it, run:<br>
 
 This will extract the files without actually running a "real" install ([see this info](http://superuser.com/questions/307678/how-to-extract-files-from-msi-package)) - ignore the smaller .msi file that it extracts and look in the 'Brackets' folder next to it.
 
-You can also [clone the Brackets source from git](https://github.com/adobe/brackets/wiki/How-to-Hack-on-Brackets) and checkout the `release` branch for testing.
+You can also [clone the Brackets source from git](https://github.com/brackets-cont/brackets/wiki/How-to-Hack-on-Brackets) and checkout the `release` branch for testing.
 
 
 ## Testing Instructions
@@ -25,8 +25,8 @@ You can also [clone the Brackets source from git](https://github.com/adobe/brack
 Community will have a week for testing. Brackets Team will post to Brackets-Dev Forum with links to builds, testing dates, and other details.
 
 Basic testing instructions are:
-- [Client Smoke Tests](https://github.com/adobe/brackets/wiki/Brackets-Smoke-Tests)
-- [Server Smokes Tests](https://github.com/adobe/brackets/wiki/Brackets-Server-Smoke-Tests)
+- [Client Smoke Tests](https://github.com/brackets-cont/brackets/wiki/Brackets-Smoke-Tests)
+- [Server Smokes Tests](https://github.com/brackets-cont/brackets/wiki/Brackets-Server-Smoke-Tests)
 
 A list of new features for release will also be provided
 with specific testing instructions, as necessary.
@@ -34,13 +34,13 @@ with specific testing instructions, as necessary.
 Any other testing is also welcome. Be sure to test new features
 in conjunction with your usual workflow.
 
-For testing with a cloned version, please [run all unit tests](https://github.com/adobe/brackets/wiki/Running-Brackets-Unit-Tests).
+For testing with a cloned version, please [run all unit tests](https://github.com/brackets-cont/brackets/wiki/Running-Brackets-Unit-Tests).
 
 
 ## Issues
 
-Issues should be created in [github](https://github.com/adobe/brackets/issues) same as any other bug.
-See [How to Report an Issue](https://github.com/adobe/brackets/wiki/How-to-Report-an-Issue)
+Issues should be created in [github](https://github.com/brackets-cont/brackets/issues) same as any other bug.
+See [How to Report an Issue](https://github.com/brackets-cont/brackets/wiki/How-to-Report-an-Issue)
 for more details.
 
 Extensions should also be tested. Issues with extensions should be opened

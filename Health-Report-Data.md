@@ -1,18 +1,18 @@
-In Brackets 1.3 the Brackets team rolled out the [Health Report](https://github.com/adobe/brackets/wiki/Health-Data) which collects data on how people are using Brackets. Until the team is able to create a live dashboard, we are going to keep this page updated with the most recent data. 
+In Brackets 1.3 the Brackets team rolled out the [Health Report](https://github.com/brackets-cont/brackets/wiki/Health-Data) which collects data on how people are using Brackets. Until the team is able to create a live dashboard, we are going to keep this page updated with the most recent data. 
 
 This data is from **September 26th to October 26th**. 
 
-- [Unique Users](https://github.com/adobe/brackets/wiki/Health-Report-Data#unique-users-1)
-- [OS Distribution](https://github.com/adobe/brackets/wiki/Health-Report-Data#os-distribution)
-- [Languages](https://github.com/adobe/brackets/wiki/Health-Report-Data#languages)
-- [Extension Usage](https://github.com/adobe/brackets/wiki/Health-Report-Data#extension-usage-1)
+- [Unique Users](https://github.com/brackets-cont/brackets/wiki/Health-Report-Data#unique-users-1)
+- [OS Distribution](https://github.com/brackets-cont/brackets/wiki/Health-Report-Data#os-distribution)
+- [Languages](https://github.com/brackets-cont/brackets/wiki/Health-Report-Data#languages)
+- [Extension Usage](https://github.com/brackets-cont/brackets/wiki/Health-Report-Data#extension-usage-1)
 
 ***
 ## Previous reports
 
 | 2015     | |
 |----------|----------|
-| [june-jul](https://github.com/adobe/brackets/wiki/%5Barchives%5D-Health-report-data-jul-2015) | [Aug-sep](https://github.com/adobe/brackets/wiki/%5Barchives%5D-Health-report-data-aug-2015) |
+| [june-jul](https://github.com/brackets-cont/brackets/wiki/%5Barchives%5D-Health-report-data-jul-2015) | [Aug-sep](https://github.com/brackets-cont/brackets/wiki/%5Barchives%5D-Health-report-data-aug-2015) |
 
 ## Unique Users
 

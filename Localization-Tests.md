@@ -22,8 +22,8 @@ $ ln -s strings.js ~/path/to/forked/project/brackets/src/nls/lang/strings.js
 ### Notes for testing
 
 * Clone the brackets git repository to your local machine. The repo contains test used for these localization tests.
-* ``citrus completed`` test project: https://github.com/adobe/brackets/tree/master/test/smokes/citrus%20completed
-* ``server-smokes`` test project: https://github.com/adobe/brackets/tree/master/test/smokes/server-smokes
+* ``citrus completed`` test project: https://github.com/brackets-cont/brackets/tree/master/test/smokes/citrus%20completed
+* ``server-smokes`` test project: https://github.com/brackets-cont/brackets/tree/master/test/smokes/server-smokes
 * To setup each test, load the ``citrus completed`` project via ``File > Open folder...``
 * Placeholders for screenshots are written as ``<image_filename_placeholder>``
 * To open files from the project panel (i.e. to add them to the working set), double-click on the file.
@@ -364,7 +364,7 @@ The following tests configure fake updates for testing ``Help > Check for Update
 5. Confirm update information dialog appears ``<dialog_update_notification_up_to_date>``
 6. In the console window, enter:
 ```
-require("utils/UpdateNotification").checkForUpdate(true, {_buildNumber: 0, _lastNotifiedBuildNumber: 0, _versionInfoURL: "https://raw.github.com/adobe/brackets/master/test/spec/UpdateNotification-test-files/versionInfo.json"})
+require("utils/UpdateNotification").checkForUpdate(true, {_buildNumber: 0, _lastNotifiedBuildNumber: 0, _versionInfoURL: "https://raw.github.com/brackets-cont/brackets/master/test/spec/UpdateNotification-test-files/versionInfo.json"})
 ```
 7. Confirm update information dialog appears ``<dialog_update_notification_update_available>`` (Note that the actual notes of each release are not translated in this test file)
 8. Press Cancel
@@ -375,7 +375,7 @@ require("utils/UpdateNotification").checkForUpdate(true, {_buildNumber: 0, _last
 
 1. ``File > Extension Manager...``  Confirm Extension Manager dialog appears.
 2. From the Available tab, click ``Install from URL...``.  Confirm Install Extension dialog appears.
-3. Paste this URL https://github.com/adobe/brackets/raw/master/test/spec/extension-test-files/incompatible-version.zip and press Install
+3. Paste this URL https://github.com/brackets-cont/brackets/raw/master/test/spec/extension-test-files/incompatible-version.zip and press Install
 3. Confirm error message appears in dialog ``<install_extension_incompatible_version>``.  Click ``Close``.
 4. Click Installed tab.  Confirm either ``No extensions installed yet.`` message appears in the dialog, or, if you've previously installed one or more extensions, that they are listed.
 5. Click ``Close``

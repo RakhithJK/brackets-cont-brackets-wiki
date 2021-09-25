@@ -6,7 +6,7 @@ This section describes where Brackets stores data.
 
 #### Client
 
-Brackets Client is the code in [brackets repo](https://github.com/adobe/brackets).
+Brackets Client is the code in [brackets repo](https://github.com/brackets-cont/brackets).
 Data stored in client is classified as "preferences" and "states"
 where preferences are settings user would explicity specify such as Tab Size,
 and state information is settings implicitly set by app such as last file edited.
@@ -20,12 +20,12 @@ Client information is stored in JSON files:
 | State information | *user-dir*/state.json
 
 Where:
-* *user-dir* is the operating system specific user folder. See [this article](https://github.com/adobe/brackets/wiki/Cache-Folder).
+* *user-dir* is the operating system specific user folder. See [this article](https://github.com/brackets-cont/brackets/wiki/Cache-Folder).
 * *project-dir* is the folder currently opened in Brackets using File > Open Folder..., or by dragging a folder and dropping it on Brackets.
 
 #### Native
 
-Brackets Native code is in the [brackets-shell](https://github.com/adobe/brackets-shell repo).
+Brackets Native code is in the [brackets-shell](https://github.com/brackets-cont/brackets-shell repo).
 On Windows, brackets-shell stores data such as app window size and position
 in the Windows Registry at `HKEY_CURRENT_USER/Software/Brackets`.
 This is automatically handled by Mac OS and not yet implemented on Linux.
@@ -82,7 +82,7 @@ State info is stored for things such as:
 ### Updating Other Preferences
 
 Preferences that cannot be set via GUI have to be set manually.
-See [Preferences section of How To Use Brackets](https://github.com/adobe/brackets/wiki/How-to-Use-Brackets#preferences)
+See [Preferences section of How To Use Brackets](https://github.com/brackets-cont/brackets/wiki/How-to-Use-Brackets#preferences)
 wiki page for more info on editing brackets.json file and a list of preferences defined in Brackets.
 
 Saving preference file to disk automatically updates in Brackets,
@@ -98,7 +98,7 @@ Extensions have full access to Preference System so can get or set Brackets pref
 
 ### Preference System Code
 
-For detailed info see [Preference System documentation](https://github.com/adobe/brackets/wiki/Preferences-System) in wiki. Also see
+For detailed info see [Preference System documentation](https://github.com/brackets-cont/brackets/wiki/Preferences-System) in wiki. Also see
 [PreferencesBase module](http://brackets.io/docs/current/modules/preferences/PreferencesBase.html)
 in API Docs.
 

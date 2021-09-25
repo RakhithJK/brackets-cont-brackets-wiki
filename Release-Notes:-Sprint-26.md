@@ -12,7 +12,7 @@ What's New in Sprint 26
     * CSS URL Hints - In `url()` notation of an @import or property value, code hints will show relative paths to files in your project.
 
 
-_Full change logs:_ [brackets](https://github.com/adobe/brackets/compare/sprint-25...sprint-26#commits_bucket) and [brackets-shell](https://github.com/adobe/brackets-shell/compare/sprint-25...sprint-26#commits_bucket)
+_Full change logs:_ [brackets](https://github.com/brackets-cont/brackets/compare/sprint-25...sprint-26#commits_bucket) and [brackets-shell](https://github.com/brackets-cont/brackets-shell/compare/sprint-25...sprint-26#commits_bucket)
 
 
 UI Changes
@@ -52,26 +52,26 @@ New/Improved Extensibility APIs
 Known Issues
 ------------
 * Mountain Lion (OS X 10.8) by default will not allow Brackets to run since it's not digitally signed yet. To work around this, right click the Brackets app and choose Open. You only need to do that once -- afterward, launching Brackets the normal way will work also.
-* [#2272](https://github.com/adobe/brackets/issues/2272): Windows Vista may not allow the Brackets installer to run (you may not see _any_ error message). To work around this, right-click the installer file, choose Properties, and click the Unblock button.
-* [#3458](https://github.com/adobe/brackets/issues/3458): Quick View does not yet support the latest CSS gradient syntax (using `to` keyword, unprefixed `radial-gradient`, `repeating-linear-gradient` or `repeating-radial-gradient`).
-* [#3570](https://github.com/adobe/brackets/issues/3570): Mac only - Quick View popover may not appear after resizing window or going fullscreen. Move the mouse to the top of the screen to fix.
-(https://github.com/adobe/brackets/wiki/How-to-Hack-on-Brackets#wiki-getcode) instead.
-* [#3207](https://github.com/adobe/brackets/issues/3207): If you use a Sprint 21 or earlier build after using this build at least once, a few preferences such as Recent Projects may get reset. (You can back up your [[cache folder]] if you're concerned about this).
-* _Debug > Run Tests_ is disabled in the installer/DMG distributions of Brackets, because the unit test code is not included. To run unit tests, [pull Brackets from GitHub](https://github.com/adobe/brackets/wiki/How-to-Hack-on-Brackets#wiki-getcode) instead.
+* [#2272](https://github.com/brackets-cont/brackets/issues/2272): Windows Vista may not allow the Brackets installer to run (you may not see _any_ error message). To work around this, right-click the installer file, choose Properties, and click the Unblock button.
+* [#3458](https://github.com/brackets-cont/brackets/issues/3458): Quick View does not yet support the latest CSS gradient syntax (using `to` keyword, unprefixed `radial-gradient`, `repeating-linear-gradient` or `repeating-radial-gradient`).
+* [#3570](https://github.com/brackets-cont/brackets/issues/3570): Mac only - Quick View popover may not appear after resizing window or going fullscreen. Move the mouse to the top of the screen to fix.
+(https://github.com/brackets-cont/brackets/wiki/How-to-Hack-on-Brackets#wiki-getcode) instead.
+* [#3207](https://github.com/brackets-cont/brackets/issues/3207): If you use a Sprint 21 or earlier build after using this build at least once, a few preferences such as Recent Projects may get reset. (You can back up your [[cache folder]] if you're concerned about this).
+* _Debug > Run Tests_ is disabled in the installer/DMG distributions of Brackets, because the unit test code is not included. To run unit tests, [pull Brackets from GitHub](https://github.com/brackets-cont/brackets/wiki/How-to-Hack-on-Brackets#wiki-getcode) instead.
 
 
 Community contributions to Brackets
 -----------------------------------
-* [Improving the Dialog API](https://github.com/adobe/brackets/pull/3086) by [Tomás Malbrán](https://github.com/TomMalbran)
-* [Added support for closing files on middle click](https://github.com/adobe/brackets/pull/3901) by [Bernhard Sirlinger](https://github.com/WebsiteDeveloper)
-* [Update to jQuery 2.0.1, LESS 1.3.3 and Bootstrap 2.3.1](https://github.com/adobe/brackets/pull/4054) by [Bernhard Sirlinger](https://github.com/WebsiteDeveloper) and [Tucker Whitehouse](https://github.com/TuckerWhitehouse)
-* [Replace deferred.pipe with deferred.then (jQuery 1.8 Deprecation)](https://github.com/adobe/brackets/pull/4028) by [Tucker Whitehouse](https://github.com/TuckerWhitehouse)
-* [Resolves #3974 -- Inconsistent header capitalisation](https://github.com/adobe/brackets/pull/4069) by [kieran gorman](https://github.com/kjgorman)
-* [Consolidate color matching regex and share across extensions](https://github.com/adobe/brackets/pull/4079) by [Razvan Caliman](https://github.com/oslego)
-* [Fixed language manager unit test. Issue #3957](https://github.com/adobe/brackets/pull/4106) by [Daniel Seymour](https://github.com/DaBungalow)
-* [Fix #4023: MenuSection object is out of sync with current Brackets Menus](https://github.com/adobe/brackets/pull/4112) by [Tomás Malbrán](https://github.com/TomMalbran)
-* [Fix #4091: Order of OK and Cancel buttons is reversed](https://github.com/adobe/brackets/pull/4113) by [Tomás Malbrán](https://github.com/TomMalbran)
-* [Remove welcome project duplicate fix](https://github.com/adobe/brackets/pull/3317) by [Albert Xing](https://github.com/albertxing)
+* [Improving the Dialog API](https://github.com/brackets-cont/brackets/pull/3086) by [Tomás Malbrán](https://github.com/TomMalbran)
+* [Added support for closing files on middle click](https://github.com/brackets-cont/brackets/pull/3901) by [Bernhard Sirlinger](https://github.com/WebsiteDeveloper)
+* [Update to jQuery 2.0.1, LESS 1.3.3 and Bootstrap 2.3.1](https://github.com/brackets-cont/brackets/pull/4054) by [Bernhard Sirlinger](https://github.com/WebsiteDeveloper) and [Tucker Whitehouse](https://github.com/TuckerWhitehouse)
+* [Replace deferred.pipe with deferred.then (jQuery 1.8 Deprecation)](https://github.com/brackets-cont/brackets/pull/4028) by [Tucker Whitehouse](https://github.com/TuckerWhitehouse)
+* [Resolves #3974 -- Inconsistent header capitalisation](https://github.com/brackets-cont/brackets/pull/4069) by [kieran gorman](https://github.com/kjgorman)
+* [Consolidate color matching regex and share across extensions](https://github.com/brackets-cont/brackets/pull/4079) by [Razvan Caliman](https://github.com/oslego)
+* [Fixed language manager unit test. Issue #3957](https://github.com/brackets-cont/brackets/pull/4106) by [Daniel Seymour](https://github.com/DaBungalow)
+* [Fix #4023: MenuSection object is out of sync with current Brackets Menus](https://github.com/brackets-cont/brackets/pull/4112) by [Tomás Malbrán](https://github.com/TomMalbran)
+* [Fix #4091: Order of OK and Cancel buttons is reversed](https://github.com/brackets-cont/brackets/pull/4113) by [Tomás Malbrán](https://github.com/TomMalbran)
+* [Remove welcome project duplicate fix](https://github.com/brackets-cont/brackets/pull/3317) by [Albert Xing](https://github.com/albertxing)
 
 Contributions _from_ the Brackets community
 -------------------------------------------
@@ -80,4 +80,4 @@ Contributions _from_ the Brackets community
 
 Bugs fixed in Sprint 26
 -----------------------
-For details on the bugs addressed, please refer to [closed sprint 26 bugs](https://github.com/adobe/brackets/issues?labels=&milestone=13&state=closed). A few of the fixed bugs might not be caught by this search query, however.
+For details on the bugs addressed, please refer to [closed sprint 26 bugs](https://github.com/brackets-cont/brackets/issues?labels=&milestone=13&state=closed). A few of the fixed bugs might not be caught by this search query, however.

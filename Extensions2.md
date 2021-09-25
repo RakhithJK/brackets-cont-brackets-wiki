@@ -324,7 +324,7 @@ Major separate parts of the Brackets client core would use the `ServiceRegistry`
 
 ## Availability and Limitations of the Prototype ##
 
-The prototype is available in the [dangoor/extensions3 branch](https://github.com/adobe/brackets/tree/dangoor/extensions3) of the Brackets repository. The current code is actually the second iteration of this particular design and likely does not need to be thrown away to build out the "real" implementation. It was, however, built quickly and needs work. Here's a list of limitations that comes to mind:
+The prototype is available in the [dangoor/extensions3 branch](https://github.com/brackets-cont/brackets/tree/dangoor/extensions3) of the Brackets repository. The current code is actually the second iteration of this particular design and likely does not need to be thrown away to build out the "real" implementation. It was, however, built quickly and needs work. Here's a list of limitations that comes to mind:
 
 1. Clean up/comment/more tests. A chunk of the code in `extensibility/ExtensionData` was built using TDD, but more tests would be good.
 2. Implement return values when Node calls the client. The prototype "cheats" by using the features of the existing Node support when some extension of the protocol is likely in order.

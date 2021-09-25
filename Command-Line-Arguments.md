@@ -42,7 +42,7 @@ Open a specific folder as a project in Brackets:<br>
 
 ## Troubleshooting
 
-If the automatic setup described at the top of this page doesn't work, please [file a bug](https://github.com/adobe/brackets/issues/new) with details so we can improve Brackets.
+If the automatic setup described at the top of this page doesn't work, please [file a bug](https://github.com/brackets-cont/brackets/issues/new) with details so we can improve Brackets.
 
 You can also manually create shortcuts to launch Brackets from the command line.
 

@@ -156,7 +156,7 @@ What follows is discussion that was contained within the original document. This
 > features for now--I don't feel like adding sharing will significantly affect the overall UI design
 > (it would probably just be another button associated with the extension, perhaps in the "More..."
 > section). I've added this to the list of desirable features in 
-> [Extension Package Manager Research](https://github.com/adobe/brackets/wiki/Extension-Package-Manager-Research).
+> [Extension Package Manager Research](https://github.com/brackets-cont/brackets/wiki/Extension-Package-Manager-Research).
 
 > **DEFERRED**: (don't need to decide form factor now, doesn't significantly affect overall workflow)
 >
@@ -189,7 +189,7 @@ What follows is discussion that was contained within the original document. This
 
 > (nj) Agreed, though I don't think those need to be called out in this workflow.
 > I've added this to the list of desirable features in 
-> [Extension Package Manager Research](https://github.com/adobe/brackets/wiki/Extension-Package-Manager-Research).
+> [Extension Package Manager Research](https://github.com/brackets-cont/brackets/wiki/Extension-Package-Manager-Research).
 
 > **RESOLVED**:
 > (kd) is it limited to just the popular extensions, or will it put the popular/highly rated on top
@@ -234,7 +234,7 @@ What follows is discussion that was contained within the original document. This
 > eventually, that might affect how we write the code for the in-Brackets version
 > (i.e., make sure as much of it as possible is reusable for a browser version). I'll
 > add it to the list of desirable features in
-> [Extension Package Manager Research](https://github.com/adobe/brackets/wiki/Extension-Package-Manager-Research).
+> [Extension Package Manager Research](https://github.com/brackets-cont/brackets/wiki/Extension-Package-Manager-Research).
 
 > **RESOLVED**:
 > (kd) has there been a change in which tab he's on to see disable/uninstall?

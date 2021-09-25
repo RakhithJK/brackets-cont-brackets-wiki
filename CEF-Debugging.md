@@ -3,7 +3,7 @@
 CEF keeps several stable branches going in parallel. In a CEF version number like `3.1547.1459`, `1547` is the branch number and `1459` is the SVN revision number (which increments when _any_ branch is updated). These numbers are not connected to the Chromium version number.
 
 #### What CEF version is Brackets using?
-Look in [brackets-shell/Gruntfile.js](https://github.com/adobe/brackets-shell/blob/master/Gruntfile.js#L221-L224) and find the `"cef": { "version" : "...." }` declaration (near bottom).
+Look in [brackets-shell/Gruntfile.js](https://github.com/brackets-cont/brackets-shell/blob/master/Gruntfile.js#L221-L224) and find the `"cef": { "version" : "...." }` declaration (near bottom).
 
 #### What Chromium version is Brackets using?
 * For a running copy of Brackets -- Type `navigator.userAgent` in Brackets dev tools. The section like `Chrome/39.0.2171.36` is the Chromium version.

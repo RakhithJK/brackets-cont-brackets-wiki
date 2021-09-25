@@ -1,6 +1,6 @@
 You'll need to install the build you want to test (e.g. Release 0.44 beta)
 
-for the full instructions see [Running tests on Linux](https://github.com/adobe/brackets-shell/wiki/Running-tests-on-Linux)
+for the full instructions see [Running tests on Linux](https://github.com/brackets-cont/brackets-shell/wiki/Running-tests-on-Linux)
 ```text
 cd ~/brackets
 git checkout fetch

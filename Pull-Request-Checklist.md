@@ -7,20 +7,20 @@ Note: you must sign the **[Brackets Contributor License Agreement](http://dev.br
 
 1. Discuss any major architectural or UI changes in the [brackets-dev newsgroup](http://groups.google.com/group/brackets-dev)
 2. Does this change belong in Brackets core? Some features would be better as an extension — which may require factoring out a generic set of core API changes to enable writing the extension. When in doubt discuss in the newsgroup
-3. Code follows our [JS coding style guidelines](https://github.com/adobe/brackets/wiki/Brackets-Coding-Conventions)
+3. Code follows our [JS coding style guidelines](https://github.com/brackets-cont/brackets/wiki/Brackets-Coding-Conventions)
 4. Code is well documented, including Closure-style [type annotations](https://developers.google.com/closure/compiler/docs/js-for-compiler#types)
 5. Code passes JSLint
 6. Testing
     * Code has been tested — in your pull request, describe the cases you tested
     * No known bugs
-    * All [unit tests pass](https://github.com/adobe/brackets/wiki/Running-Brackets-Unit-Tests) ... (<i>Debug > Run Tests</i>)
+    * All [unit tests pass](https://github.com/brackets-cont/brackets/wiki/Running-Brackets-Unit-Tests) ... (<i>Debug > Run Tests</i>)
     * [Smoke tests](Brackets Smoke Tests) pass (for larger, cross-cutting changes)
 7. Include unit tests for new functionality
 8. Avoid breaking API changes — existing public APIs are not strictly frozen, but you'll need a good reason for breaking backwards compatibility. The more commonly-used the API, the stronger the reason needed
 9. All user-visible strings are [externalized](Localization)
     * Note: there's a "string freeze" near the end of each sprint. Pending pull requests with string changes must wait until the start of the next sprint.
 10. UI is reasonably polished
-11. After merging, all new & changed APIs should be documented in the [Release Notes](https://github.com/adobe/brackets/wiki/Release-Notes)
+11. After merging, all new & changed APIs should be documented in the [Release Notes](https://github.com/brackets-cont/brackets/wiki/Release-Notes)
 
 (See also the [Pull Request _Review_ Checklist](Pull-Request-Review-Checklist) that committers follow when doing the code review)
 

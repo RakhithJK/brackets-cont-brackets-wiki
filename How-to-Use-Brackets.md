@@ -28,7 +28,7 @@ In addition to the core features built into Brackets, there is a large and growi
 You can also [browse the available extensions online](https://brackets-registry.aboutweb.com) without installing Brackets first.
 
 ### Themes
-You can change the color scheme of the editor by downloading a theme from via the Extension Manager (search for "theme" in the Extension Manager to find them). You can even [create your own custom theme](https://github.com/adobe/brackets/wiki/Creating+Themes) to get editor colors that suit your personal taste.
+You can change the color scheme of the editor by downloading a theme from via the Extension Manager (search for "theme" in the Extension Manager to find them). You can even [create your own custom theme](https://github.com/brackets-cont/brackets/wiki/Creating+Themes) to get editor colors that suit your personal taste.
 
 
 Brackets Highlights
@@ -78,7 +78,7 @@ _However_, Live Preview has the following limitations when using your own backen
 
 > Why do these limitations exist? To enable HTML live editing, Brackets needs to inject some annotations into your HTML code before the browser loads it. Normally, the built-in Brackets server does this. When using your own server instead, Brackets can't inject those annotations. Without the annotations, Brackets can't map edits and cursor positions from your source file onto the corresponding DOM nodes in the browser.
 
-_Note:_ The "Experimental Live Preview" mode (aka multi-browser Live Preview) does not support using a custom server. The reasons are similar to the explanation above (additional detail [here](https://github.com/adobe/brackets/issues/10374#issuecomment-78398635)).
+_Note:_ The "Experimental Live Preview" mode (aka multi-browser Live Preview) does not support using a custom server. The reasons are similar to the explanation above (additional detail [here](https://github.com/brackets-cont/brackets/issues/10374#issuecomment-78398635)).
 
 ##### Live Preview with SCSS/LESS
 
@@ -94,7 +94,7 @@ Live Preview currently has a few other important limitations:
 * Only one HTML file can be previewed at a time. If you switch to a different HTML file in Brackets, the browser preview will switch to that new page as well.
 * Updating pauses when the HTML is syntactically invalid (e.g. after you type '<' for a new tag but before you type the closing '>'). The line number and Live Preview icon turn red in this case. Brackets will resume pushing changes to the browser when syntax becomes valid again.
 
-See **[Live Preview troubleshooting](https://github.com/adobe/brackets/wiki/Troubleshooting#livedev
+See **[Live Preview troubleshooting](https://github.com/brackets-cont/brackets/wiki/Troubleshooting#livedev
 )** for additional help.
 
 ##### Experimental Live Preview
@@ -164,8 +164,8 @@ Anonymous data to help improve Brackets. You can preview the data that will be s
 Keyboard Shortcut Cheat Sheet
 -----------------------------
 Here are some keyboard shortcuts that are worth knowing. Also see the
-[Brackets Shortcut wiki page](https://github.com/adobe/brackets/wiki/Brackets-Shortcuts)
-for a more complete list of shortcuts and the [User Key Bindings Wiki](https://github.com/adobe/brackets/wiki/User-Key-Bindings) to learn how to setup Brackets to use your preferred keyboard shortcuts.
+[Brackets Shortcut wiki page](https://github.com/brackets-cont/brackets/wiki/Brackets-Shortcuts)
+for a more complete list of shortcuts and the [User Key Bindings Wiki](https://github.com/brackets-cont/brackets/wiki/User-Key-Bindings) to learn how to setup Brackets to use your preferred keyboard shortcuts.
 
 | Windows | Mac | Description |
 |---------|-----|-------------|
@@ -228,8 +228,8 @@ These are all the settings that are currently supported:
 | `highlightMatches` | `false` | Enables automatic highlighting of matching strings throughout the document:<ul><li>`true` — highlight all strings that match the current selection (nothing is highlighted when no selection)</li><li>`{"showToken": true}` — highlight all strings that match the token the cursor is currently in (no selection needed)</li><li>`{"wordsOnly": true}` — highlight only when selection is a complete token</li></ul> |
 | `insertHintOnTab` | `false` | True to insert the currently selected code hint on tab |
 | `jscodehints.noHintsOnDot` | `false` | If true, do not automatically show JS code hints when `.` is typed. |
-| `language.fileExtensions` | `undefined` | Additional mappings from file extension to language name (see [Language Support#Preferences](https://github.com/adobe/brackets/wiki/Language-Support#preferences)) |
-| `language.fileNames` | `undefined` | Additional mappings from file name to language name (see [Language Support#Preferences](https://github.com/adobe/brackets/wiki/Language-Support#preferences)) |
+| `language.fileExtensions` | `undefined` | Additional mappings from file extension to language name (see [Language Support#Preferences](https://github.com/brackets-cont/brackets/wiki/Language-Support#preferences)) |
+| `language.fileNames` | `undefined` | Additional mappings from file name to language name (see [Language Support#Preferences](https://github.com/brackets-cont/brackets/wiki/Language-Support#preferences)) |
 | `linting.enabled` | `true` | Determines if Code Inspection is on |
 | `linting.prefer` | `undefined` | *Since 1.1.* Array of linters (`CodeInspection` providers) to run first. For example: `["ESLint", "SassLint"]`. If provider on the list is not installed, it will be silently ignored. By default, all the linters will be run. |
 | `livedev.enableReverseInspect` | `true` | False to disable live preview reverse inspect. |
@@ -295,12 +295,12 @@ What's Next?
 ------------
 
 For more info on Brackets, check out these resources:
-* [How to contribute to the Brackets project](https://github.com/adobe/brackets/blob/master/CONTRIBUTING.md), including filing bugs and editing the source code
-* [How to write an extension](https://github.com/adobe/brackets/wiki/How-to-write-extensions)
+* [How to contribute to the Brackets project](https://github.com/brackets-cont/brackets/blob/master/CONTRIBUTING.md), including filing bugs and editing the source code
+* [How to write an extension](https://github.com/brackets-cont/brackets/wiki/How-to-write-extensions)
 * Join the community!
     * [@brackets on Twitter](https://twitter.com/brackets)
     * [#brackets on Freenode IRC](http://webchat.freenode.net/?channels=brackets)
     * [Discussion forum](http://groups.google.com/group/brackets-dev)
 * [Brackets blog](http://blog.brackets.io/)
 * [Troubleshooting for common issues](Troubleshooting)
-* Watch our [GitHub activity stream](https://github.com/adobe/brackets/pulse) or [latest release notes](https://github.com/adobe/brackets/wiki/Release-Notes) to see what's in the works for the next update!
+* Watch our [GitHub activity stream](https://github.com/brackets-cont/brackets/pulse) or [latest release notes](https://github.com/brackets-cont/brackets/wiki/Release-Notes) to see what's in the works for the next update!

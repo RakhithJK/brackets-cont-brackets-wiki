@@ -6,7 +6,7 @@ To change the code editor font, choose _**View > Themes...**_, then change the "
 * The font must be installed on your OS (there's no way to load a web font)
 * One exception: `'SourceCodePro-Medium'`, the default code editor font, is a web font that's loaded automatically by Brackets (installing Brackets doesn't install any fonts globally on your system)
 
-Changing your font can be useful as a workaround for certain international text-display issues, such as [lack of Russian/Cyrillic support](https://github.com/adobe/brackets/issues/3465).
+Changing your font can be useful as a workaround for certain international text-display issues, such as [lack of Russian/Cyrillic support](https://github.com/brackets-cont/brackets/issues/3465).
 
 # Older Brackets & Adobe Edge Code
 
@@ -14,7 +14,7 @@ Here's a quick hack you can use to change your font in earlier releases:
 
 ### Approach A: Write an extension
 
-[Write a Brackets extension](https://github.com/adobe/brackets/wiki/How-to-write-extensions) using this code as the basis for your _main.js_:
+[Write a Brackets extension](https://github.com/brackets-cont/brackets/wiki/How-to-write-extensions) using this code as the basis for your _main.js_:
 
 ```
 define(function (require, exports, module) {
@@ -37,7 +37,7 @@ _Caveat: This approach only works for fonts installed on your OS._ If you want t
 
 ### Approach B: Edit Brackets source
 
-1. [Set up a Brackets dev environment](https://github.com/adobe/brackets/wiki/How-to-Hack-on-Brackets#setting-up-your-dev-environment) (you can omit the fork step and clone the official repo directly, however)
+1. [Set up a Brackets dev environment](https://github.com/brackets-cont/brackets/wiki/How-to-Hack-on-Brackets#setting-up-your-dev-environment) (you can omit the fork step and clone the official repo directly, however)
 2. In the cloned source, edit the file <i>src/styles/brackets_theme_default.less</i>
 3. Add your `@font-face` import directive if needed 
 4. Find the `.code-font()` rule and change the `font-family` as desired

@@ -11,9 +11,9 @@ Development Environment Setup
 Required Setup for brackets-shell and brackets
 ----
 
-These instructions will download the Git repositories for [brackets-shell](https://github.com/adobe/brackets-shell) and [brackets](https://github.com/adobe/brackets), download required dependencies, compile the native shell, create and install a debian package, then run Brackets ( `/usr/bin/brackets`).
+These instructions will download the Git repositories for [brackets-shell](https://github.com/brackets-cont/brackets-shell) and [brackets](https://github.com/brackets-cont/brackets), download required dependencies, compile the native shell, create and install a debian package, then run Brackets ( `/usr/bin/brackets`).
 
-1. [Fork brackets](https://github.com/adobe/brackets/fork) and [fork brackets-shell](https://github.com/adobe/brackets-shell/fork) 
+1. [Fork brackets](https://github.com/brackets-cont/brackets/fork) and [fork brackets-shell](https://github.com/brackets-cont/brackets-shell/fork) 
 2. Create a top level folder to contain the Brackets git repositories
 3. In a terminal window, ``cd`` to the folder from the previous step and run the following command as root
 ```shell
@@ -22,7 +22,7 @@ wget https://gist.githubusercontent.com/jasonsanjose/5514813/raw/6a522e292f37256
 4. You'll be prompted for your GitHub user name to clone your fork of the repositories
 5. Respond to ``sudo`` password prompts when requested
 
-*ATTENTION* This setup script will point your git ``origin`` to your own fork, then add a remote ``upstream``and point to the ``upstream/master`` branch in the main git repository. Assuming you're here to contribute to Brackets, you will want to point to your fork. This setup script automates the fork and upstream [setup instructions here](https://github.com/adobe/brackets/wiki/How-to-Hack-on-Brackets#setting-up-your-dev-environment).
+*ATTENTION* This setup script will point your git ``origin`` to your own fork, then add a remote ``upstream``and point to the ``upstream/master`` branch in the main git repository. Assuming you're here to contribute to Brackets, you will want to point to your fork. This setup script automates the fork and upstream [setup instructions here](https://github.com/brackets-cont/brackets/wiki/How-to-Hack-on-Brackets#setting-up-your-dev-environment).
 
 Cache Location
 ----
@@ -41,7 +41,7 @@ Cache Location
 Extension Development
 ----
 
-The extension development workflow is the same as Mac and Windows. Please refer to [How to hack on Brackets](https://github.com/adobe/brackets/wiki/How-to-Hack-on-Brackets) and [How to write extensions](https://github.com/adobe/brackets/wiki/How%20to%20write%20extensions). Please note that the extension location on Linux is ``~/.Brackets/extensions/user``.
+The extension development workflow is the same as Mac and Windows. Please refer to [How to hack on Brackets](https://github.com/brackets-cont/brackets/wiki/How-to-Hack-on-Brackets) and [How to write extensions](https://github.com/brackets-cont/brackets/wiki/How%20to%20write%20extensions). Please note that the extension location on Linux is ``~/.Brackets/extensions/user``.
 
 Tested Distributions
 ----
@@ -50,10 +50,10 @@ Contributors: If you are willing to test other Linux distributions please add yo
 
 | Distribution | Version | Issues |
 | ------------ | ------- | ----- |
-| Ubuntu | 13.04 64-bit | libudev workaround https://github.com/adobe/brackets/issues/4720 (Fix arrives in Sprint 30) |
+| Ubuntu | 13.04 64-bit | libudev workaround https://github.com/brackets-cont/brackets/issues/4720 (Fix arrives in Sprint 30) |
 | Ubuntu | 12.04 32-bit | None |
-| Ubuntu | 12.04 64-bit | libudev workaround https://github.com/adobe/brackets/issues/4720 (Fix arrives in Sprint 30) |
-| Mint 15 | 64-bit | libudev workaround https://github.com/adobe/brackets/issues/4720 (Fix arrives in Sprint 30) |
+| Ubuntu | 12.04 64-bit | libudev workaround https://github.com/brackets-cont/brackets/issues/4720 (Fix arrives in Sprint 30) |
+| Mint 15 | 64-bit | libudev workaround https://github.com/brackets-cont/brackets/issues/4720 (Fix arrives in Sprint 30) |
 | Mint 16 | 64-bit | No issues besides the close issue. Still Testing |
 |LMDE(*) | Debian Testing 32 bit |None|
 | Arch | 32/64-bit | Not tested / None - (Package: https://aur.archlinux.org/packages/brackets-git) |
@@ -94,7 +94,7 @@ Note that Debian packaging is based on the Chromium browser installer build scri
 
 References:
 * [Debian Binary Package Building HOWTO](http://tldp.org/HOWTO/html_single/Debian-Binary-Package-Building-HOWTO/)
-* [Pull Request](https://github.com/adobe/brackets-shell/pull/297)
+* [Pull Request](https://github.com/brackets-cont/brackets-shell/pull/297)
 * [Chromium trunk installer scripts](http://src.chromium.org/viewvc/chrome/trunk/src/chrome/installer/linux/)
 * [Chromium 29 installer scripts](http://src.chromium.org/viewvc/chrome/trunk/src/chrome/installer/linux/?pathrev=214890)
 * [Chromium trunk RPM packaging scripts](http://src.chromium.org/viewvc/chrome/trunk/src/chrome/installer/linux/rpm/)
@@ -103,7 +103,7 @@ References:
 
 To build a portable archive, use the `grunt build-linux-archive` task. This task generates a .tar.gz based off the current Linux build. Use `install.sh` and `uninstall.sh` from the `installer/linux/archive/` directory to install/uninstall desktop and command-line entries for Brackets.
 
-Reference: [Pull Request](https://github.com/adobe/brackets-shell/pull/433)
+Reference: [Pull Request](https://github.com/brackets-cont/brackets-shell/pull/433)
 
 User Stories
 ====
@@ -118,7 +118,7 @@ There are several user stories (feature work) to complete in brackets-shell befo
 Open Issues
 ====
 
-We tag Linux-specific bugs in our [GitHub issues](https://github.com/adobe/brackets/issues?labels=Linux+only&page=1&state=open).
+We tag Linux-specific bugs in our [GitHub issues](https://github.com/brackets-cont/brackets/issues?labels=Linux+only&page=1&state=open).
 
 Development Log
 ====

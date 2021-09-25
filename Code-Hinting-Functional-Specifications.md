@@ -21,7 +21,7 @@ At any point in time, this document should represent how we currently believe co
  * [Randy] _Preferred_ location is below user's cursor, but if there's not enough room then it should go above.
 * There should be a universal (i.e. the same in every mode) key command to accept a code hint. By default, this should be both "tab" and "enter", but should be user configurable.
  * <del>[Randy] Tab key is a valid and _very_ common user input in CSS and JavaScript, so it cannot be used for universal list selection.</del>
- * [Raymond] The real issue is not on using Tab key to select hint. It is the initial selection in the hint list that prevent users from inserting a tab or a new line in the editor. See issue [#2286](https://github.com/adobe/brackets/issues/2286) and the solution in pull request [#2279](https://github.com/adobe/brackets/pull/2279).
+ * [Raymond] The real issue is not on using Tab key to select hint. It is the initial selection in the hint list that prevent users from inserting a tab or a new line in the editor. See issue [#2286](https://github.com/brackets-cont/brackets/issues/2286) and the solution in pull request [#2279](https://github.com/brackets-cont/brackets/pull/2279).
  * **Open question:** should this be configurable? Raymond votes no. Joel doesn't see it as important. However, some providers might want to make completion happen automatically without the user needing to press tab or enter. For example, text expanders might automatically expand "ASAP" as soon as the user types enough letters to make it the unique completion.
  * [nj] That kind of auto-expansion seems to me like a different feature from code hints.
 * [Raymond] There should be a way to indicate whether the hint dialog should have initial default selection or not. This is necessary to allow users to insert a tab or a new line while the hint dialog is displayed. If the hint dialog does not have the initial selection, Tab or Enter key won't insert any hint into editor. User can use Down arrow key to select the first hint in the hint list before using Tab or Enter key to accept the selected hint.
@@ -109,7 +109,7 @@ At any point in time, this document should represent how we currently believe co
 
 In addition to providing the general language support above, extension authors may wish to provide more "targeted" code hinting for a specific part of a language. For example, the user might want to install a code hint plug in that provides color hints in CSS taken from their [Kuler](https://kuler.adobe.com/) profile.  So that we can better define our APIs to enable this, we detail a few functional specs here.
 
-## [Edge Web Fonts](https://github.com/adobe/brackets-edge-web-fonts) Code Hints
+## [Edge Web Fonts](https://github.com/brackets-cont/brackets-edge-web-fonts) Code Hints
 
 * When the user is typing font family values, this provider should override the default CSS hinter to provide Edge-Web-Fonts-specific suggestions.
  * **Open Question:** Should we merge the results from the specific and general providers? Joel votes "no" -- the specific provider should always win if it offers any suggestions. Ultimately, we could imagine allowing users to specify precedence of providers, but we should probably wait until this becomes a problem to design a solution.

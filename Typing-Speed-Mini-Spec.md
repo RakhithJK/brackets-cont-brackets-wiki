@@ -4,7 +4,7 @@ CodeMirror's approach to keyboard event handling uses a hidden textarea for text
 ### Profiling with Web Inspector
 Measuring typing performance manually is straightforward with Web Inspector's Timeline panel. The _input_ event appears nested under the _keypress_ event. This _input_ event marks the starting time.
 
-![Web Inspector Timeline](https://github.com/adobe/brackets/wiki/screenshots/performance-typing-webinspector-thumb.png)
+![Web Inspector Timeline](https://github.com/brackets-cont/brackets/wiki/screenshots/performance-typing-webinspector-thumb.png)
 
 There are multiple milestones in CodeMirror's event handling. Line-patching related DOM changes happen early. Other DOM changes and inspection happen later such as scrolling, gutter updates, etc. Often the typed character(s) will get repainted by the browser quickly, however, related changes to the DOM cause following keyboard input processing to lag.
 ### Measurement

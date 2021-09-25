@@ -62,7 +62,7 @@ Recommended usage:
 > **Technical notes:**
 > * When adding a panel to the UI, be sure you add it _above_ the status bar.
 > * Whenever possible, make your panel resizable.
-> * See [developer documentation on adding a panel](https://github.com/adobe/brackets/wiki/How-to-write-extensions#wiki-addpanel) for details on how to easily accomplish both of these.
+> * See [developer documentation on adding a panel](https://github.com/brackets-cont/brackets/wiki/How-to-write-extensions#wiki-addpanel) for details on how to easily accomplish both of these.
 
 ##Status Bar
 *This feature is not fully implemented in Brackets.*

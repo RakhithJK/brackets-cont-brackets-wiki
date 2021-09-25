@@ -1,7 +1,7 @@
 # File System Evolution #
 
 ## Status ##
-[Landed](https://github.com/adobe/brackets/pull/5797) in Brackets Sprint 34!
+[Landed](https://github.com/brackets-cont/brackets/pull/5797) in Brackets Sprint 34!
 
 ## Motivation ##
 
@@ -47,24 +47,24 @@ For a guide to converting from current Brackets file APIs to these new APIs, see
 ### FileSystem ###
 The main module is `FileSystem`. This is the public API for getting files and directories, showing open/save dialogs, and getting notified about file system changes.
 
-[/src/filesystem/FileSystem.js](https://github.com/adobe/brackets/blob/master/src/filesystem/FileSystem.js)
+[/src/filesystem/FileSystem.js](https://github.com/brackets-cont/brackets/blob/master/src/filesystem/FileSystem.js)
 
 ###FileSystemEntry###
 This is an abstract representation of a FileSystem entry, and the base class for the `File` and `Directory` classes. FileSystemEntry objects are never created directly by client code. Use `FileSystem.getFileForPath()`, `FileSystem.getDirectoryForPath()`, or `Directory.getContents()` to create the entry.
 
-[/src/filesystem/FileSystemEntry.js](https://github.com/adobe/brackets/blob/master/src/filesystem/FileSystemEntry.js)
+[/src/filesystem/FileSystemEntry.js](https://github.com/brackets-cont/brackets/blob/master/src/filesystem/FileSystemEntry.js)
 
 
 ###File###
 This class represents a file on disk (this could be a local disk or cloud storage). This is a subclass of `FileSystemEntry`.
 
-[/src/filesystem/File.js](https://github.com/adobe/brackets/blob/master/src/filesystem/File.js)
+[/src/filesystem/File.js](https://github.com/brackets-cont/brackets/blob/master/src/filesystem/File.js)
 
 
 ###Directory###
 This class represents a directory on disk (this could be a local disk or cloud storage). This is a subclass of `FileSystemEntry`.
 
-[/src/filesystem/Directory.js](https://github.com/adobe/brackets/blob/master/src/filesystem/Directory.js)
+[/src/filesystem/Directory.js](https://github.com/brackets-cont/brackets/blob/master/src/filesystem/Directory.js)
 
 ##Performance & Caching##
 The main performance gains come from caching. The file system provides two caching levels:

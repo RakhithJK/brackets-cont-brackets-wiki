@@ -2,7 +2,7 @@
 
 As of Brackets 1.11. the Linux version is up-to-date with other platforms and this guide should not be needed anymore.
 
-If some of the issues persists, [do open an issue](https://github.com/adobe/brackets/issues/new)
+If some of the issues persists, [do open an issue](https://github.com/brackets-cont/brackets/issues/new)
 
 # Brackets Linux Guide
 
@@ -45,7 +45,7 @@ Ubuntu has a PPA for Brackets installs which will automatically import libcrypt1
 
 ## `Save all`-keyboard shortcut issue
 
-> Cause of issue and a workaround contributed by [@haslam22](https://github.com/adobe/brackets/issues/12954#issuecomment-268061096) and [@Pk13055](https://github.com/adobe/brackets/issues/12954#issuecomment-268253676)
+> Cause of issue and a workaround contributed by [@haslam22](https://github.com/brackets-cont/brackets/issues/12954#issuecomment-268061096) and [@Pk13055](https://github.com/brackets-cont/brackets/issues/12954#issuecomment-268253676)
 
 If you notice the `Save all`-keyboard shortcut `Ctrl + Alt + S` not working on some Desktop Environments such as Gnome 3, it might be overshadowed by a system shortcut to disable/enable “roll up” / “shade” on an active window.
 

@@ -9,14 +9,14 @@ What's New in Sprint 13
     * [First Launch Readme/Demo Project](https://trello.com/card/2-first-launch-project/4f90a6d98f77505d7940ce88/598)
     * Quick access to the extensions folder via _Debug > Show Extensions Folder_
 * **Native Shell**
-    * Brackets has officially migrated to the [new CEF3-based native shell](https://github.com/adobe/brackets-shell/)! CEF3 offers benefits such as: Retina (HiDPI) support, a newer version of the developer tools for debugging Brackets, slightly faster performance, and a stronger foundation moving forward. The installer/DMG distributions for Sprint 13 package this new shell.
+    * Brackets has officially migrated to the [new CEF3-based native shell](https://github.com/brackets-cont/brackets-shell/)! CEF3 offers benefits such as: Retina (HiDPI) support, a newer version of the developer tools for debugging Brackets, slightly faster performance, and a stronger foundation moving forward. The installer/DMG distributions for Sprint 13 package this new shell.
 * **Code Hinting**
     * [Code Completion for HTML Attribute Values](https://trello.com/card/2-code-complete-html-attribute-values/4f90a6d98f77505d7940ce88/583): Attributes with enumerated values (such as `<link rel>` or `<input type>`) show hints automatically after completing the attribute name. Hints can also be invoked manually with Ctrl+Space.
 * **Localization**
     * [French Localization](https://trello.com/card/3-localization-french/4f90a6d98f77505d7940ce88/374): Brackets detects the user's locale setting automatically. There are a few bugs where minor bits of the UI remain in English despite the locale.
     * Brackets unofficially also supports German in this sprint.
 * **Other Enhancements**
-    * [Recent projects dropdown](https://github.com/adobe/brackets/pull/1469): Click the project name in the left-hand to rapidly switch between recently opened project folders.
+    * [Recent projects dropdown](https://github.com/brackets-cont/brackets/pull/1469): Click the project name in the left-hand to rapidly switch between recently opened project folders.
 
 UI Changes
 ----------
@@ -30,7 +30,7 @@ API Changes
 * A new ``utils/Global`` module was added to handle the initialization of the ``brackets`` namespace
 * Most of the content of index.html has been moved into the Mustache template htmlContent/main-view.html.
 
-**Live development** - Now uses standard jQuery events, so the code required to add/remove listeners is slightly different and all listeners receive a new first parameter (the event). Event names have also changed. [See pull request for details](https://github.com/adobe/brackets/pull/1396).
+**Live development** - Now uses standard jQuery events, so the code required to add/remove listeners is slightly different and all listeners receive a new first parameter (the event). Event names have also changed. [See pull request for details](https://github.com/brackets-cont/brackets/pull/1396).
 
 
 New/Improved Extensibility APIs
@@ -44,23 +44,23 @@ New/Improved Extensibility APIs
 
 Known Issues
 ------------
-* _Debug > Run Tests_ is disabled in the installer/DMG distributions of Brackets, because the unit test code is not included. To run unit tests, [pull Brackets from GitHub](https://github.com/adobe/brackets/wiki/How-to-Hack-on-Brackets#wiki-getcode) instead.
+* _Debug > Run Tests_ is disabled in the installer/DMG distributions of Brackets, because the unit test code is not included. To run unit tests, [pull Brackets from GitHub](https://github.com/brackets-cont/brackets/wiki/How-to-Hack-on-Brackets#wiki-getcode) instead.
 * _Debug > Show Developer Tools_ now opens in a new tab in Chrome, rather than a new windows in Brackets. This is a temporary(ish) change due to CEF3. But on the upside, CEF3's developer tools include many updated features!
-* [#1551](https://github.com/adobe/brackets/issues/1551): Changes within an extension (or a unit test) are not reflected by a simple Debug > Reload Brackets. Workarounds:
+* [#1551](https://github.com/brackets-cont/brackets/issues/1551): Changes within an extension (or a unit test) are not reflected by a simple Debug > Reload Brackets. Workarounds:
     * Quit and re-launch Brackets to pick up the changes.
     * Open Developer Tools, click the gear icon in the lower-right, and select "Disable cache". This setting is remembered, but is only in effect so long as the Developer Tools browser tab remains open.
-* [#1283](https://github.com/adobe/brackets/issues/1283): Text selection highlight sometimes jiggles when horizontally resizing window.
-* [#1473](https://github.com/adobe/brackets/issues/1473): Uninstalling on Windows sometimes does not remove the Start menu shortcut for Brackets.
+* [#1283](https://github.com/brackets-cont/brackets/issues/1283): Text selection highlight sometimes jiggles when horizontally resizing window.
+* [#1473](https://github.com/brackets-cont/brackets/issues/1473): Uninstalling on Windows sometimes does not remove the Start menu shortcut for Brackets.
 * Mountain Lion (OS X 10.8) by default will not allow Brackets to run since it's not being digitally signed yet.  To work around this, right click the Brackets app and choose Open.  You only need to do that once -- afterward, launching Brackets the normal way will work also.
 
 Community contributions to Brackets
 -----------------------------------
-* [Localization infrastructure, basic language switcher UI, and first draft of German translation](https://github.com/adobe/brackets/pull/1358) by [Jonathan Diehl](https://github.com/jdiehl)
-* [Improvements to experimental (disabled) live development features](https://github.com/adobe/brackets/pull/1418) by [Jonathan Diehl](https://github.com/jdiehl) & [Dennis Kehrig](https://github.com/DennisKehrig). (Enable the `experimental` flag in LiveDevelopment/main.js to try out HTML and JS live editing!)
-* [Live development code cleanup](https://github.com/adobe/brackets/pull/1396) by [Jonathan Diehl](https://github.com/jdiehl)
+* [Localization infrastructure, basic language switcher UI, and first draft of German translation](https://github.com/brackets-cont/brackets/pull/1358) by [Jonathan Diehl](https://github.com/jdiehl)
+* [Improvements to experimental (disabled) live development features](https://github.com/brackets-cont/brackets/pull/1418) by [Jonathan Diehl](https://github.com/jdiehl) & [Dennis Kehrig](https://github.com/DennisKehrig). (Enable the `experimental` flag in LiveDevelopment/main.js to try out HTML and JS live editing!)
+* [Live development code cleanup](https://github.com/brackets-cont/brackets/pull/1396) by [Jonathan Diehl](https://github.com/jdiehl)
 * [Fix #1409: Exception when opening inline editor on blank line](https://github.com/adobe/CodeMirror2/pull/75) by [Tom Lieber](https://github.com/alltom)
-* [Code cleanup in SVG sprites](https://github.com/adobe/brackets/pull/1453) by [Dmitry Baranovskiy](https://github.com/DmitryBaranovskiy)
+* [Code cleanup in SVG sprites](https://github.com/brackets-cont/brackets/pull/1453) by [Dmitry Baranovskiy](https://github.com/DmitryBaranovskiy)
 
 Bugs fixed in Sprint 13
 -----------------------
-For details on the bugs addressed, please refer to [closed sprint 13 bugs](https://github.com/adobe/brackets/issues?labels=sprint+13&page=1&state=closed) and [closed sprint 13 brackets-shell bugs](https://github.com/adobe/brackets-shell/issues?labels=sprint+13&page=1&state=closed). A few of the fixed bugs might not be caught by this search query, however.
+For details on the bugs addressed, please refer to [closed sprint 13 bugs](https://github.com/brackets-cont/brackets/issues?labels=sprint+13&page=1&state=closed) and [closed sprint 13 brackets-shell bugs](https://github.com/brackets-cont/brackets-shell/issues?labels=sprint+13&page=1&state=closed). A few of the fixed bugs might not be caught by this search query, however.

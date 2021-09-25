@@ -1,6 +1,6 @@
 _**This page is no longer up to date.** The Preferences feature shipped in Brackets 0.36._
 
-**See [Preferences System documentation](https://github.com/adobe/brackets/wiki/Preferences-System) for current information.**
+**See [Preferences System documentation](https://github.com/brackets-cont/brackets/wiki/Preferences-System) for current information.**
 
 <br><br>
 

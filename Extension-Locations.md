@@ -16,7 +16,7 @@ Note: the `disabled` folder that sits next to `user` has no special meaning for 
 
 * `<brackets>/src/extensions/dev`
 
-Normally only used when [pulling source from Git](https://github.com/adobe/brackets/wiki/How-to-Hack-on-Brackets). This location has advantages over the user folder, for extension developers:
+Normally only used when [pulling source from Git](https://github.com/brackets-cont/brackets/wiki/How-to-Hack-on-Brackets). This location has advantages over the user folder, for extension developers:
 
 * Extension Manager will not let you delete any of the extensions in this location (though they still show up in the Installed list)
 * You can conveniently open the entire Brackets source tree along with your extensions, since this folder lies within the source tree. This makes it easier to refer to core Brackets APIs while developing, and gives you improved code hints etc.

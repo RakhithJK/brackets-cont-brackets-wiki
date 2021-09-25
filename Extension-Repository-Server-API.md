@@ -1,4 +1,4 @@
-Server API requirements to support [the workflows](https://github.com/adobe/brackets/wiki/Extension-Manager-Workflows). See also [the proposed server architecture](https://github.com/adobe/brackets/wiki/Extension-Registry-Architecture)
+Server API requirements to support [the workflows](https://github.com/brackets-cont/brackets/wiki/Extension-Manager-Workflows). See also [the proposed server architecture](https://github.com/brackets-cont/brackets/wiki/Extension-Registry-Architecture)
 
 # Requirements #
 
@@ -79,7 +79,7 @@ Server API requirements to support [the workflows](https://github.com/adobe/brac
 
 * Enables an extension developer to upload an extension
 * Can update an existing extension that the developer owns
-* Uploads [a package](https://github.com/adobe/brackets/wiki/Extension-package-format) with metadata
+* Uploads [a package](https://github.com/brackets-cont/brackets/wiki/Extension-package-format) with metadata
 * Registers the extension and computes any metadata that needs computing (such as converting "nls" directories into language support metadata)
 * **authenticated** and **authorized** only for the owner of the extension (or any user, if it's a new extension name)
 

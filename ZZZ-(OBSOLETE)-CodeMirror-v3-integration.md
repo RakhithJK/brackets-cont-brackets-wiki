@@ -1,6 +1,6 @@
-### NOTE: This page is now obsolete, as CodeMirror v3 has landed in Brackets master. See [Notes on CodeMirror](https://github.com/adobe/brackets/wiki/Notes-on-CodeMirror) for more info on how we're managing our CodeMirror fork going forward. ###
+### NOTE: This page is now obsolete, as CodeMirror v3 has landed in Brackets master. See [Notes on CodeMirror](https://github.com/brackets-cont/brackets/wiki/Notes-on-CodeMirror) for more info on how we're managing our CodeMirror fork going forward. ###
 
-We've started the official integration of CodeMirror v3 into Brackets. You can get this by pulling the [`cmv3`](https://github.com/adobe/brackets/tree/cmv3) branch from Brackets, then doing `git submodule update`, which will switch the CodeMirror2 submodule to use the [`upstream-master`](https://github.com/adobe/CodeMirror2/tree/upstream-master) branch (now that v3 has been officially merged into CodeMirror's master).
+We've started the official integration of CodeMirror v3 into Brackets. You can get this by pulling the [`cmv3`](https://github.com/brackets-cont/brackets/tree/cmv3) branch from Brackets, then doing `git submodule update`, which will switch the CodeMirror2 submodule to use the [`upstream-master`](https://github.com/adobe/CodeMirror2/tree/upstream-master) branch (now that v3 has been officially merged into CodeMirror's master).
 
 We will be submitting various small changes from the `v3-brackets` branch into the upstream CodeMirror repo. We are currently tracking these as separate feature branches in our repo. Currently, the feature branches are:
 
@@ -9,7 +9,7 @@ We will be submitting various small changes from the `v3-brackets` branch into t
 ## Current issues with the integration
 
 **General bugs:**
-These are now being tracked in the Brackets issue tracker under the [CodeMirror v3 label](https://github.com/adobe/brackets/issues?labels=codemirror+v3&page=1&state=open).
+These are now being tracked in the Brackets issue tracker under the [CodeMirror v3 label](https://github.com/brackets-cont/brackets/issues?labels=codemirror+v3&page=1&state=open).
 
 **Missing functionality:**
 * No way to turn off fixed gutter

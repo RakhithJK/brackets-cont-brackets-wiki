@@ -10,7 +10,7 @@ You can browse a list of available extensions in the **Available** tab of the Ex
 
 #### The extension listing
 
-The extension listing comes from the online [Brackets Extension Registry](https://registry.brackets.io). If you're an extension author, please [publish your extension to the registry](https://github.com/adobe/brackets/wiki/How-to-write-extensions#publishing-extensions) so it's available for others to find.
+The extension listing comes from the online [Brackets Extension Registry](https://registry.brackets.io). If you're an extension author, please [publish your extension to the registry](https://github.com/brackets-cont/brackets/wiki/How-to-write-extensions#publishing-extensions) so it's available for others to find.
 
 
 ### Removing Extensions
@@ -35,7 +35,7 @@ When an extension update is available, a green **Update** button will appear in 
 
 #### Directly on disk
 
-1. Choose _Help > Show Extensions Folder_ (or [open it manually](https://github.com/adobe/brackets/wiki/Extension-Locations#user-extensions-folder))
+1. Choose _Help > Show Extensions Folder_ (or [open it manually](https://github.com/brackets-cont/brackets/wiki/Extension-Locations#user-extensions-folder))
 2. Drill down to the `user` folder
 3. Add/remove or update the set of extension folders as needed
 4. Quit and re-launch Brackets
@@ -60,7 +60,7 @@ Some older Brackets extensions are not listed in Extension Manager. These extens
 * [Parent Dir] (https://github.com/katsh/brackets-parent-dir): Show parent directory of opened files in the Working Set.
 * [V8/Node Live Development](https://github.com/DennisKehrig/brackets-v8-node-live): Updates scripts running in Node.js as you type
 * [Evaluate Clojure Expressions](https://github.com/yehohanan7/clj-brackets): Select any expression and evaluate it in wrepl
-* [CSS Exclusion Shape Viewer](https://github.com/adobe/brackets-plugin-exclusions): Quick Edit on an exclusion shape definition in CSS displays the shape.
+* [CSS Exclusion Shape Viewer](https://github.com/brackets-cont/brackets-plugin-exclusions): Quick Edit on an exclusion shape definition in CSS displays the shape.
 * [BracketLESS] (https://github.com/olsgreen/BracketLESS): Compiles LESS files to CSS on save
 * [Open File from URL](https://github.com/deemeetar/OpenFileFromUrl): Opens any ```href``` and ```rel``` attribute urls in editor on ```ALT+0``` shortcut. Currently works only with existing files. 
 * [Grunt for Brackets](https://github.com/markrendle/brackets-grunt): Run any task in your Gruntfile.js. (Uses Node. Tested on Brackets Sprint 25.)

@@ -4,7 +4,7 @@ Brackets committers have read-write access to the Brackets repository through Gi
 
 Brackets is developed using Agile development methodologies and features are tracked as user stories on the public Brackets backlog. Communication between Brackets committers happens on the committer mailing list and in public via the [Brackets-Dev Google Group](https://groups.google.com/forum/?fromgroups#!forum/brackets-dev).
 
-You can find a full list of Brackets committers at [http://brackets.io/contribute.html](http://brackets.io/contribute.html). In addition, the [Contributing](https://github.com/adobe/brackets/blob/master/CONTRIBUTING.md) document will serve as a helpful guide for anyone who wants to get involved in the project. 
+You can find a full list of Brackets committers at [http://brackets.io/contribute.html](http://brackets.io/contribute.html). In addition, the [Contributing](https://github.com/brackets-cont/brackets/blob/master/CONTRIBUTING.md) document will serve as a helpful guide for anyone who wants to get involved in the project. 
 
 ##Becoming a Committer##
 
@@ -20,7 +20,7 @@ They will have provided good feedback to other contributors, filed and reviewed 
 
 They will have shown a pattern of communicating questions, issues, and suggestions to other Brackets committers in the public Google Group as well as via their pull requests. They should have a good understanding of the architecture of Brackets and be willing to work within that structure. 
 
-Details on how to submit pull requests including coding conventions for the project and process can be found on the [How to Hack on Brackets page](https://github.com/adobe/brackets/wiki/How-to-Hack-on-Brackets). 
+Details on how to submit pull requests including coding conventions for the project and process can be found on the [How to Hack on Brackets page](https://github.com/brackets-cont/brackets/wiki/How-to-Hack-on-Brackets). 
 
 ##Roles of a Committer##
 

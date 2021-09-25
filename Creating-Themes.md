@@ -36,7 +36,7 @@ The "theme" part is unique to themes and is the trigger that tells Brackets that
 
 Especially important for themes: **include the homepage field** in package.json to point to your GitHub repository. Ideally, the README for your theme will display a screenshot to show what your theme looks like.
 
-Read more about package.json on the [extension package format page](https://github.com/adobe/brackets/wiki/Extension-package-format#packagejson-format).
+Read more about package.json on the [extension package format page](https://github.com/brackets-cont/brackets/wiki/Extension-package-format#packagejson-format).
 
 ## Developing Your Theme
 
@@ -52,7 +52,7 @@ Now, when you save changes to your theme.less file, your changed theme is automa
 
 The base theme is the "Brackets Light" theme and all the styles you add will be added to the page after the base theme.
 
-For an up-to-date example of a complete theme, take a look [at the Brackets Dark theme](https://github.com/adobe/brackets/blob/master/src/extensions/default/DarkTheme/main.less).
+For an up-to-date example of a complete theme, take a look [at the Brackets Dark theme](https://github.com/brackets-cont/brackets/blob/master/src/extensions/default/DarkTheme/main.less).
 
 Your theme's stylesheet is processed as a LESS file that is wrapped with `#editor-holder {`. Setting the main foreground and background colors looks like this:
 
@@ -88,7 +88,7 @@ Common modes:
 
 Tips for creating your theme's CSS:
 
-* Starting with an [existing theme](https://github.com/adobe/brackets/blob/master/src/extensions/default/DarkTheme/main.less) is always easier
+* Starting with an [existing theme](https://github.com/brackets-cont/brackets/blob/master/src/extensions/default/DarkTheme/main.less) is always easier
 * Use the Dev Tools element inspector (`Debug > Show Developer Tools`) to view the elements in the editor
 * You can customize the styles within an inline code editor by adding `.inline-widget .CodeMirror` to your CSS selector. The inline code editor's background color should typically be slightly darker or lighter than your main editor background color, for contrast.
 * Watch out for these colors that aren't displayed all the time:
@@ -96,7 +96,7 @@ Tips for creating your theme's CSS:
     * matching tags in HTML - `.CodeMirror-matchingtag`
     * matches for the "Find" command
         * `.CodeMirror-searching` (all matches), `.CodeMirror-searching.searching-current-match` (current match)
-    * matches for the ["highlightMatches"](https://github.com/adobe/brackets/wiki/How-to-Use-Brackets#preferences) auto word highlighting - `.cm-matchhighlight`
+    * matches for the ["highlightMatches"](https://github.com/brackets-cont/brackets/wiki/How-to-Use-Brackets#preferences) auto word highlighting - `.cm-matchhighlight`
     * the highlight for the active line (`View > Highlight Active Line`) - `.CodeMirror-focused .CodeMirror-activeline-background` and `.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt` (line numbers shown) or `.show-line-padding .CodeMirror-focused .CodeMirror-activeline-background` (line numbers hidden).
     * the Quick View hover highlight - `.quick-view-highlight`
     * cursor in overwrite mode - `.CodeMirror-overwrite .CodeMirror-cursor`

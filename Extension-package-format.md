@@ -108,7 +108,7 @@ Keywords must be an array of keywords, not a simple list. For example:
 
 <font color="green">Status: Implemented</font>
 
-Brackets will automatically load the `main.js` module (RequireJS format) from the root of the package. Normally extensions are loaded during startup (see [application init order](https://github.com/adobe/brackets/wiki/Brackets-Development-How-Tos#application-init)). But when an extension is initially installed, the module is loaded immediately even though Brackets may have already been running for quite some time.
+Brackets will automatically load the `main.js` module (RequireJS format) from the root of the package. Normally extensions are loaded during startup (see [application init order](https://github.com/brackets-cont/brackets/wiki/Brackets-Development-How-Tos#application-init)). But when an extension is initially installed, the module is loaded immediately even though Brackets may have already been running for quite some time.
 
 Modules that an extension imports via `require()` are located relative to the root of the extension. For example, `require("foo/bar")` will look for `foo/bar.js` in the extension. To import Brackets core modules, use `brackets.getModule()` instead (with a path relative to the Brackets src root).
 
@@ -150,10 +150,10 @@ Examples of CHANGELOG.md files that follow this standard can be found at:
 
 <font color="green">Status: Implemented</font>
 
-A [Jasmine unit test](http://pivotal.github.io/jasmine/) module can be located at `unittests.js` at the root of the package. In a [developer build of Brackets](https://github.com/adobe/brackets/wiki/How-to-Hack-on-Brackets#wiki-setup_for_hacking), where the _Debug > Run Tests_ menu item is enabled, the extension's `unittests.js` is automatically loaded and included in the list of runnable tests.
+A [Jasmine unit test](http://pivotal.github.io/jasmine/) module can be located at `unittests.js` at the root of the package. In a [developer build of Brackets](https://github.com/brackets-cont/brackets/wiki/How-to-Hack-on-Brackets#wiki-setup_for_hacking), where the _Debug > Run Tests_ menu item is enabled, the extension's `unittests.js` is automatically loaded and included in the list of runnable tests.
 
 ## Localization ##
 
 <font color="green">Status: Implemented</font>
 
-The pattern for localizing extensions is to put an `nls` directory at the root, containing a `strings.js` module. Next to that module, there is a `root` directory with the baseline set of strings and a directory for each locale's specific strings. See the [Localization Example extension](https://github.com/adobe/brackets/tree/master/src/extensions/samples/LocalizationExample).
+The pattern for localizing extensions is to put an `nls` directory at the root, containing a `strings.js` module. Next to that module, there is a `root` directory with the baseline set of strings and a directory for each locale's specific strings. See the [Localization Example extension](https://github.com/brackets-cont/brackets/tree/master/src/extensions/samples/LocalizationExample).

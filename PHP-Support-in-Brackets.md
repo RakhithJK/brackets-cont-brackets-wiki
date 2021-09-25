@@ -1,6 +1,6 @@
 ### We've introduced the PHP support in Brackets 1.14, powered by the [PHP language server](https://github.com/felixfbecker/php-language-server).
 
-**Note:** The PHP features will only work if Brackets is able to find a valid PHP7 runtime in the system path, or if a valid PHP7 executable path configuration is set in `brackets.json`. Click [here](https://github.com/adobe/brackets/wiki/PHP-Support-in-Brackets#php-in-brackets-can-also-be-configured-using-custom-settings-in-bracketsjson) to understand about other PHP settings.
+**Note:** The PHP features will only work if Brackets is able to find a valid PHP7 runtime in the system path, or if a valid PHP7 executable path configuration is set in `brackets.json`. Click [here](https://github.com/brackets-cont/brackets/wiki/PHP-Support-in-Brackets#php-in-brackets-can-also-be-configured-using-custom-settings-in-bracketsjson) to understand about other PHP settings.
 
 
 ### PHP in Brackets can be configured using custom settings in `brackets.json`:

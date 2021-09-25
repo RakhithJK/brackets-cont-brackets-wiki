@@ -21,10 +21,10 @@ sudo npm install -g jsdocify
 
 ### Create branch in brackets.io repo
 
-Brackets API documents are posted to the https://github.com/adobe/brackets.io repo, so clone that repo (first time only):
+Brackets API documents are posted to the https://github.com/brackets-cont/brackets.io repo, so clone that repo (first time only):
 
 ```
-git clone https://github.com/adobe/brackets.io.git
+git clone https://github.com/brackets-cont/brackets.io.git
 cd brackets.io
 ```
 

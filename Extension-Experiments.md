@@ -18,12 +18,12 @@ This extension was possible without any changes to core Brackets code. It is che
 
 ###Issues:
 
-* CSSInlineEditor class is really just a generic inline editor that supports multiple text ranges. This class should be moved from the CSSInlineEditor module and given a generic name. Done: https://github.com/adobe/brackets/issues/768
+* CSSInlineEditor class is really just a generic inline editor that supports multiple text ranges. This class should be moved from the CSSInlineEditor module and given a generic name. Done: https://github.com/brackets-cont/brackets/issues/768
 
 * We need file watchers! This plugin scans all JavaScript files in your project and extracts all functions that are defined in the file. This function list is cached on a per-file basis in the FileIndexManager structures. In order to see if the cached data is still valid, the timestamp of the cached data is compared against the timestamp of the file on disk <sup><small>1</small></sup>. Simply checking the timestamp is virtually the same speed as reloading and rescanning the entire file. File watchers would significantly improve performance. This item is already in our backlog: https://trello.com/c/zldzEXmk
 <br><small>[1] If the file is in memory and dirty, it is always rescanned</small>
 
-* Needed to access the "private" `_codeMirror` property of Editor to determine the mode of the editor (`getOption("mode")`) and to call the `getTokenAt()` function. We need to decide if we want to simply expose the CodeMirror instance or if we want to add more methods to the Editor class. Filed: https://github.com/adobe/brackets/issues/804
+* Needed to access the "private" `_codeMirror` property of Editor to determine the mode of the editor (`getOption("mode")`) and to call the `getTokenAt()` function. We need to decide if we want to simply expose the CodeMirror instance or if we want to add more methods to the Editor class. Filed: https://github.com/brackets-cont/brackets/issues/804
 
 * There is no priority for inline editor providers. Let's say I wanted to add an inline editor that supports editing a particular css selector, but fall back to the default inline CSS editor for all other selectors. There is no way to say my editor takes precedence over the default editor. This probably isn't a big deal for now, but will become an issue if lots of inline editors are written. This should be added to the backlog, but I don't consider it a 1.0 requirement.
 
@@ -85,7 +85,7 @@ In Sprint 9, we started looking at how to run Unit Tests on Extensions. Here's t
 
 * Unit Tests are optional. Obviously, these are not required.
 
-* Need to provide a convenient way to lookup path to extension root folder for specifying test files, etc. ([Issue #831](https://github.com/adobe/brackets/issues/831)).
+* Need to provide a convenient way to lookup path to extension root folder for specifying test files, etc. ([Issue #831](https://github.com/brackets-cont/brackets/issues/831)).
 
 ## <a id='general'/>General Extensibility Issues
 

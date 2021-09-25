@@ -45,7 +45,7 @@ The selections are guaranteed to be sorted in document order and to be non-overl
 
 Another enhancement to selections is the ability to undo/redo selections using Ctrl/Cmd-U and Ctrl/Cmd-Shift-U. This is handy even without multiple selections; it provides an easy way to move backwards through your selection history. One new change is that like edits, you can specify that nearby selections of a similar type should be merged by specifying an `origin`. As mentioned above, if you have a set of edits that should be merged, and you do selection changes in between, you should now pass the same origin to your selection changes as well, or the edits will no longer be merged. (You can also wrap associated edits and selection changes in an operation in order to make sure the selection changes don't prevent merges.)
 
-For more detailed information on the changes to the selection APIs on Editor, see the table in [Research: Multiple cursors and selections](https://github.com/adobe/brackets/wiki/Research:-Multiple-cursors-and-selections#proposed-editor-api-changes).
+For more detailed information on the changes to the selection APIs on Editor, see the table in [Research: Multiple cursors and selections](https://github.com/brackets-cont/brackets/wiki/Research:-Multiple-cursors-and-selections#proposed-editor-api-changes).
 
 ### Performing edits on multiple selections
 
@@ -122,4 +122,4 @@ For examples of how to use these APIs, you can look at the line-oriented edits i
 
 One other technical note: if you depend on `Editor.getFirstVisibleLine()` or `Editor.getLastVisibleLine()` (because your edit has special requirements when performed at the boundaries of an inline editor), then you'll need to either use `Document.doMultipleEdits()`, or keep track of your edits and figure out how they will affect the number of visible lines. This is because the visible line information isn't updated till the end of a batch operation. In the future, we're planning to get rid of these entirely.
 
-For other details on the new multiple selection functionality, see [Research: Multiple cursors and selections](https://github.com/adobe/brackets/wiki/Research:-Multiple-cursors-and-selections).
+For other details on the new multiple selection functionality, see [Research: Multiple cursors and selections](https://github.com/brackets-cont/brackets/wiki/Research:-Multiple-cursors-and-selections).

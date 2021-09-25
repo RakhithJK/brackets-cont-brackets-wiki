@@ -8,7 +8,7 @@ In the interest of truly summarizing what we've come up with, this document will
 
 ## Finding and Installing Extensions ##
 
-The [Extension Manager Workflows](https://github.com/adobe/brackets/wiki/Extension-Manager-Workflows) document how users will interact with the extension manager in Brackets.
+The [Extension Manager Workflows](https://github.com/brackets-cont/brackets/wiki/Extension-Manager-Workflows) document how users will interact with the extension manager in Brackets.
 
 The wireframe below gives a couple of ideas of how the extensions may be presented (the first shows in a sidebar, the second in a full view).
 
@@ -45,9 +45,9 @@ This wireframe shows how the user can manage installed extensions:
 * In-development extensions will appear in the extension manager
 * When the extension developer is ready to publish their extension, they can do so from the extension manager with the click of a button (authentication is required for this)
 
-The [extension package format](https://github.com/adobe/brackets/wiki/Extension-Package-Format) will be familiar for anyone who has used npm, and easy for anyone who has not. All of the information about the extension is located in a `package.json` file, with optional information in some other files. This allows that information to be stored in a version control system and makes publishing a new version a one click step.
+The [extension package format](https://github.com/brackets-cont/brackets/wiki/Extension-Package-Format) will be familiar for anyone who has used npm, and easy for anyone who has not. All of the information about the extension is located in a `package.json` file, with optional information in some other files. This allows that information to be stored in a version control system and makes publishing a new version a one click step.
 
-Our goal is for [extensions to be as compatible with Brackets and one another as possible](https://github.com/adobe/brackets/wiki/Extension-Dependencies), even as changes are made. We'll do our best to minimize disruption for Brackets users while ensuring that their editor remains stable.
+Our goal is for [extensions to be as compatible with Brackets and one another as possible](https://github.com/brackets-cont/brackets/wiki/Extension-Dependencies), even as changes are made. We'll do our best to minimize disruption for Brackets users while ensuring that their editor remains stable.
 
 ## The Registry Server ##
 
@@ -59,13 +59,13 @@ There will also be a management API for ensuring that Brackets users get updates
 
 The preceding sections were intended as a quick overview of the results of our research. For background and additional details, you can dive in below:
 
-* [Package Manager research](https://github.com/adobe/brackets/wiki/Extension-Package-Manager-Research): a look into what other package managers do and the good ideas we can reuse.
-* [Dependency Management research](https://github.com/adobe/brackets/wiki/Extension-Dependencies)
-* [User workflow proposals](https://github.com/adobe/brackets/wiki/Extension-Manager-Workflows)
+* [Package Manager research](https://github.com/brackets-cont/brackets/wiki/Extension-Package-Manager-Research): a look into what other package managers do and the good ideas we can reuse.
+* [Dependency Management research](https://github.com/brackets-cont/brackets/wiki/Extension-Dependencies)
+* [User workflow proposals](https://github.com/brackets-cont/brackets/wiki/Extension-Manager-Workflows)
 * [Rough initial wireframes](http://www.behance.net/gallery/Brackets-Extension-Manager-rough-wireframes/7290337) (note that the extension manager will likely *not* be in a sidebar)
-* [Package Format](https://github.com/adobe/brackets/wiki/Extension-Package-Format)
-* [Server API to support user workflows](https://github.com/adobe/brackets/wiki/Extension-Repository-Server-API)
-* [Server architecture](https://github.com/adobe/brackets/wiki/Extension-Registry-Architecture)
+* [Package Format](https://github.com/brackets-cont/brackets/wiki/Extension-Package-Format)
+* [Server API to support user workflows](https://github.com/brackets-cont/brackets/wiki/Extension-Repository-Server-API)
+* [Server architecture](https://github.com/brackets-cont/brackets/wiki/Extension-Registry-Architecture)
 
 # Candidate Stories #
 
