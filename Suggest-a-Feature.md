@@ -4,20 +4,20 @@ We keep our backlog of feature ideas on our [Trello board](https://trello.com/b/
 
 ## Some of the most popular feature requests
 
-* [Automatic updates](https://trello.com/c/dCplDYlN/578-auto-update-mechanism-shell)
+* ~~[Automatic updates](https://trello.com/c/dCplDYlN/578-auto-update-mechanism-shell)~~
 * [FTP upload to server](https://trello.com/c/anjphhsw/610-ftp-upload-to-server)
 * [SASS advanced code intelligence](https://trello.com/c/8L4F4HAl/354-sass-advanced-code-intelligence)
-* [Split view with multiple documents](https://trello.com/c/8YAFyAZD/500-4m-1s-split-view-multiple-documents)
+* ~~[Split view with multiple documents](https://trello.com/c/8YAFyAZD/500-4m-1s-split-view-multiple-documents)~~
 * [Live Preview with LESS](https://trello.com/c/WkKpIVvd/468-5-live-development-less-support)
 * [Split view in the same document](https://trello.com/c/GezHZcCx/390-m-split-view-same-document)
-* [CSS code hinting for colors](https://trello.com/c/YEd0m9Il/755-3-css-code-hinting-colors)
-* [HTML code hinting for CSS class and ID](https://trello.com/c/doY5Dbpb/529-3-html-code-hinting-css-class-and-id)
-* [Code folding](https://trello.com/c/JXiiVluW/278-41-code-folding-collapse-expand-blocks-5) (expand/collapse blocks of code)
-* [JSHint support](https://trello.com/c/SQhvGHri/498-3-jshint-support)
-* [User specified keyboard shortcuts](https://trello.com/c/3mZwu1DE/352-2-user-specified-keyboard-shortcuts-for-commands-in-json)
-* [Extension enable/disable](https://trello.com/c/DtVjozXu/865-2-extension-enable-disable)
-* [Theme support](https://trello.com/c/y5ed9WKY/460-3-theme-support)
-* [Live Preview with browsers other than Chrome](https://trello.com/c/wdES3HqH/1008-5-research-live-development-w-open-protocol)
+* ~~[CSS code hinting for colors](https://trello.com/c/YEd0m9Il/755-3-css-code-hinting-colors)~~
+* ~~[HTML code hinting for CSS class and ID](https://trello.com/c/doY5Dbpb/529-3-html-code-hinting-css-class-and-id)~~
+* ~~[Code folding](https://trello.com/c/JXiiVluW/278-41-code-folding-collapse-expand-blocks-5) (expand/collapse blocks of code)~~
+* ~~[JSHint support](https://trello.com/c/SQhvGHri/498-3-jshint-support)~~
+* ~~[User specified keyboard shortcuts](https://trello.com/c/3mZwu1DE/352-2-user-specified-keyboard-shortcuts-for-commands-in-json)~~
+* ~~[Extension enable/disable](https://trello.com/c/DtVjozXu/865-2-extension-enable-disable)~~
+* ~~[Theme support](https://trello.com/c/y5ed9WKY/460-3-theme-support)~~
+* ~~[Live Preview with browsers other than Chrome](https://trello.com/c/wdES3HqH/1008-5-research-live-development-w-open-protocol)~~
 
 Don't see the feature that's on your mind? Take a look below for tips on finding the feature you're interested in.
 
