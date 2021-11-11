@@ -298,9 +298,8 @@ For more info on Brackets, check out these resources:
 * [How to contribute to the Brackets project](https://github.com/brackets-cont/brackets/blob/master/CONTRIBUTING.md), including filing bugs and editing the source code
 * [How to write an extension](https://github.com/brackets-cont/brackets/wiki/How-to-write-extensions)
 * Join the community!
-    * [@brackets on Twitter](https://twitter.com/brackets)
-    * [#brackets on Freenode IRC](http://webchat.freenode.net/?channels=brackets)
-    * [Discussion forum](http://groups.google.com/group/brackets-dev)
+    * [@brackets on Twitter](https://twitter.com/BracketsCont)
+    * [Discord](https://discord.com/invite/rBpTBPttca)
 * [Brackets blog](http://blog.brackets.io/)
 * [Troubleshooting for common issues](Troubleshooting)
 * Watch our [GitHub activity stream](https://github.com/brackets-cont/brackets/pulse) or [latest release notes](https://github.com/brackets-cont/brackets/wiki/Release-Notes) to see what's in the works for the next update!
