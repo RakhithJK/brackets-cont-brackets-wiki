@@ -1,5 +1,10 @@
 Brackets not working for you? Maybe the following will help:
 
+## Places to get support from
+* [Discussion Forum](https://github.com/brackets-cont/brackets/discussions)
+* [Chat with our community @Discord](https://discord.com/invite/rBpTBPttca)
+
+## Troubleshooting
 * [Having trouble installing Brackets?](#installation)
 * [Brackets not launching?](#launching)
 * [Having trouble with Live Preview?](#livedev)
