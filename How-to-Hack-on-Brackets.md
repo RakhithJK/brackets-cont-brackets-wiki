@@ -13,7 +13,8 @@ If you're interested in **submitting a pull request**, review the [guidelines fo
 
 * Latest [Brackets installer build](http://download.brackets.io) (or if you'd rather build the native bits yourself instead, [see below](#nativeshell)).
 * Git command line tools — follow the setup instructions [on GitHub](https://help.github.com/articles/set-up-git) or download [here](http://git-scm.com/downloads)
-* NodeJS installed (https://nodejs.org/en/download/current/)
+* NodeJS 6.17 installed (https://nodejs.org/download/release/v6.17.1/) . Please note that brackets does not build on the latest version of node
+and require version 6.17
 * PHP 7
 * [Composer 1.8.4](https://getcomposer.org/download/) (Make sure that it is added to the path, and the `composer` command works)
 
